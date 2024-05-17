@@ -10,12 +10,12 @@
   </div>
   <div id="waifus">
     <h2>Top 5 Waifus</h2>
-    <ul>
+    <ol>
       <li>Makima</li>
       <li>Sylphiette</li>
       <li>Yamada</li>
       <li>Nagatoro</li>
       <li>Marin</li>
-    </ul>
+    </ol>
   </div>
 </body>
