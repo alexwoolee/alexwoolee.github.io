@@ -8,6 +8,11 @@
     <img src="https://mario.wiki.gallery/images/thumb/5/59/SMG_Mario_and_Luma_Artwork.png/1600px-SMG_Mario_and_Luma_Artwork.png" />
     <h2>2. Hollow Knight</h2>
     <p><strong>Hollow Knight</strong> is a mesmerizing <em>2D side-scrolling Metroidvania game</em> that invites players to explore the enigmatic underground realm of Hallownest. Developed by Team Cherry and initially released in 2017, this captivating adventure introduces players to an insectoid protagonist known as “the Knight”. Armed with a sword-like weapon called a Nail, the Knight delves into twisting caverns, ancient cities, and perilous wastes. Along the way, they encounter tainted creatures, befriend peculiar bugs, and unravel ancient mysteries. The game’s hand-drawn 2D style, atmospheric soundtrack, and challenging gameplay have earned it widespread acclaim, solidifying its place as a beloved gem in the Metroidvania genre.</p>
+    <h2>3. Minecraft</h2>
+    <h2>4. Mario Kart Wii</h2>
+    <h2>5. Wii Sports Resort</h2>
+    <h2>6. The Legend of Zelda: Breath of the Wild</h2>
+    <h2>7. Terraria</h2>
   </div>
   <div id="waifus">
     <h2>Top 5 Waifus</h2>
