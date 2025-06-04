@@ -5,9 +5,6 @@ Short description of project.
 
 ## Features
 
-- Feature 1
-- Feature 2
-
 ## Installation
 
 ```bash
