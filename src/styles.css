@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
 
 :root {
   --white-transparent: rgba(255, 255, 255, 0.5);
@@ -28,6 +29,7 @@ h1 {
   justify-content: space-between;
   width: 100%;
   font-size: smaller;
+  z-index: 9999;
 }
 
 #left {
@@ -139,6 +141,31 @@ h1 {
   background-color: yellow;
   image-rendering: pixelated;
   width: 50px;
+}
+
+.skill-icons {
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frameworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #util-buttons {
