@@ -4,6 +4,7 @@ import catSprite3 from '../assets/frame_2_delay-0.1s.gif';
 import moonLight from '../assets/AgentPowerMoonMetro.png';
 import moonDark from '../assets/AgentPowerMoonSand.png';
 import menuIcon from'../assets/menu-icon.png';
+
 import { useEffect, useRef, useState } from 'react';
 
 const NavBar = () => {
@@ -34,16 +35,6 @@ const NavBar = () => {
     }
   })
 
-  // note to self
-  // - merge navbar branch and main
-  // - create new branch in which it's purpose is to add new tech 
-  // - integrate vite with react
-  // - integrate tailwind.css
-  // - lastly install AOS via npm 
-  // - continue working on navbar branch
-  // - once navbar branch logic is done, move to content 
-
-
   // When window is at a certain width, set of nav links should be held by a menu symbol 
   return (
     <div className="nb-sec">
@@ -56,13 +47,6 @@ const NavBar = () => {
           <li><a href="#skill" className='nav-links'>Skills</a></li>
           <li><a href="#project" className='nav-links'>Projects</a></li>
           <li><a href="#contact" className='nav-links'>Contact</a></li>
-          <li className='nav-links'>
-            <a href="#">More</a>
-            {/* <ul>
-              <li>Experience</li>
-              <li>Hobbies</li>
-            </ul> */}
-          </li>
           <div id="util-buttons">
             <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
             <img src={moonDark} alt="menu-icon" className='pixel-art'/> 
@@ -74,4 +58,3 @@ const NavBar = () => {
 }
 
 export default NavBar;
-
