@@ -7,7 +7,7 @@ export default function FrontPage() {
     <div className="front-sec">
       <h1 id="heading-big">Alex Lee</h1>
       <h3 id="heading-small">Alex Lee</h3>
-      <h4 className="bg-red-500">I'm a h4 element of FrontPage.js</h4>
+      <h4>I'm a h4 element of FrontPage.js</h4>
       <div id="socials">
         <div className="square" id="github"></div>
         <div className="square" id="linkedin"></div>

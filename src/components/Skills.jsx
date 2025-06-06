@@ -1,27 +1,32 @@
 const Skill = () => {
   return (
     <div className="skill-sec" id="skill">
+      <h1 className="text-yellow-300" id="skill-title">Technical Skills</h1>
       <div className="skill-icons">
-        
-        <h1 className="text-yellow-300">Languages</h1>
+
+        <h1 className="text-yellow-300" id="skill-small-title">Languages</h1>
         <div id="languages">
-          <div className="square">1</div>
-          <div className="square">2</div>
-          <div className="square">3</div>
+          <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+          <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+          <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+          <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
+          <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
         </div>
 
-        <h1 className="text-yellow-300">Frameworks & Libraries</h1>
-        <div id="frameworks">
-          <div className="square">4</div>
-          <div className="square">5</div>
-          <div className="square">6</div>
+        <h1 className="text-yellow-300" id="skill-small-title">Frameworks & Libraries</h1>
+        <div id="frameworks"> 
+          <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+          <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwindcss" />
+          <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
         </div>
 
-        <h1 className="text-yellow-300">Environments</h1>
+        <h1 className="text-yellow-300" id="skill-small-title">Environments</h1>
         <div id="envir">
-          <div className="square">7</div>
-          <div className="square">8</div>
-          <div className="square">9</div>
+          <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code" />
+          <img src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
+          <img src="https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" />
         </div>
 
       </div>

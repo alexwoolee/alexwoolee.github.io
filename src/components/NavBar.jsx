@@ -8,38 +8,38 @@ import menuIcon from'../assets/menu-icon.png';
 import { useEffect, useRef, useState } from 'react';
 
 const NavBar = () => {
-  const catRef = useRef(null);
   const catFrames = [catSprite1, catSprite2, catSprite3];
-  const [frameIndex, setFrameIndex] = useState(0);
-
+  const catRef = useRef(null);
+  const [frame, setFrame] = useState(0);
+  // everything that render updates place here in useEffect
   useEffect(() => {
     const cat = catRef.current;
     const handleClick = () => { 
-      let i = 0;
+      let i = 0; 
       const myInterval = setInterval(() => {
-        setFrameIndex(i);
+        setFrame(i)
         i++;
         if (i > catFrames.length) {
           clearInterval(myInterval);
-          setFrameIndex(0);
-        } 
-      }, 250); 
-    };
-    if (cat) { 
+          setFrame(0);
+        }
+      }, 250)
+    }
+    if (cat) {
       cat.addEventListener('click', handleClick);
     }
     return () => {
       if (cat) {
         cat.removeEventListener('click', handleClick);
       }
-    }
-  })
+    }  
+  });
 
   // When window is at a certain width, set of nav links should be held by a menu symbol 
   return (
     <div className="nb-sec">
-      <div id="left"><h2>Alex Lee</h2></div>
-      <div id="center"><img ref={catRef} src={catFrames[frameIndex]} alt="pixel-cat-sprite" className='pixel-art' id="cat" /></div>
+      <div id="left"><h2>Alex Lee</h2></div> 
+      <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art"></img></div>
       <div id="right">
         <ul>
           <li><a href="#" className='nav-links'>Home</a></li>
