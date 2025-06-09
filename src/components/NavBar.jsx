@@ -1,7 +1,6 @@
 import catSprite1 from '../assets/frame_0_delay-0.1s.gif';
 import catSprite2 from '../assets/frame_1_delay-0.1s.gif';
 import catSprite3 from '../assets/frame_2_delay-0.1s.gif';
-import moonLight from '../assets/AgentPowerMoonMetro.png';
 import moonDark from '../assets/AgentPowerMoonSand.png';
 import menuIcon from'../assets/menu-icon.png';
 
