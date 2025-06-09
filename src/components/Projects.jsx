@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, cloneElement } from "react"
+import { useState } from "react"
 import zeus from "../assets/Zeus.png"
 import poseidon from "../assets/Poseidon.png"
 import hades from "../assets/Hades.png"
