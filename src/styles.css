@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
 
 /* IDEA: THE THEME OF WEBSITE SHOULD BE FISHING CATS PIXEL ART */
@@ -18,8 +20,9 @@
 
 body {
   overflow: auto;
-  font-family: 'EB Garamond', 'Inter', sans-serif;
-  background: turquoise;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
+  background: black;
 }
 
 html {
@@ -87,7 +90,7 @@ h1 {
 .front-sec {
   padding-top: 250px;
   padding-bottom: 200px;
-  background-color: turquoise;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,30 +108,66 @@ h1 {
 /* about component */
 
 .about-section {
-  background-color: orange;
-  color: yellow;
+  background-color: black;
+  color: white;
   border: greenyellow solid 5px;
+  width: 70%;
+  margin: auto;
 }
 
 #about-title {
   font-size: 50px;
-  text-align: left;
-  padding: 12px;
+}
+
+#about {
+  scroll-margin-top: 100px;
+}
+
+#profile {
+  height: 224px;
+  width: 224px;
+  border: 4px solid greenyellow;
+  margin: 50px 0px 0px 50px;
+  border-radius: 50%;
 }
 
 .about-content {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  gap: 25px;
   background-color: black;
+}
+
+.about-text { 
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin: 48px 48px 48px 48px;
+}
+
+.about-text div {
+  margin-bottom: 4px;
+}
+
+.about-text p {
+  margin-bottom: 12px;
+}
+
+.about-content .about-text ul {
+  display: flex;
+  margin-top: 4px;
+}
+
+.about-content .about-text ul li {
+  margin-right: 16px;
 }
 
 /* skills component */
 
 .skill-sec {
   padding: 40px 40px;
-  background-color: turquoise;
+  background-color: black;
   color: black;
   border: red solid 5px;
 }
@@ -189,7 +228,7 @@ h1 {
 
 .project-section {
   padding: 40px 40px;
-  background-color: darkorange;
+  background-color: black;
   color: yellow;
   border: greenyellow solid 5px;
 }
@@ -209,7 +248,7 @@ h1 {
   align-items: center;  
   flex-wrap: wrap;
   overflow: hidden; 
-  background-color: red;
+  background-color: yellowgreen;
   min-height: 300px; /* i.e. or enough height for all sets */
 }
 
@@ -256,8 +295,8 @@ h1 {
   background-color: black;
   border-radius: 8px;
   margin: 48px;
-  min-width: 250px;
-  max-width: 250px; /* fixed width */
+  min-width: 265px;
+  max-width: 265px; /* fixed width */
   text-align: center;
   border: 4px solid transparent; /* reserves space for the repo hover to avoid the modal shifting slightly */
 }
@@ -338,8 +377,8 @@ h1 {
 .square {
   width: 50px;
   height: 50px;
-  background-color: pink;
-  border: plum solid 2px;
+  background-color: greenyellow;
+  border: green solid 2px;
   border-radius: 10px;
   margin: 20px;
 }
@@ -353,7 +392,6 @@ h1 {
 }
 
 .pixel-art {
-  background-color: yellow;
   image-rendering: pixelated;
   width: 50px;
 }
