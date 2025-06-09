@@ -8,7 +8,7 @@ const About = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="about-section" data-aos="fade-up">
+    <div className="about-section" data-aos="fade-up" id="about">
       <h1 className="text-yellow-300" id="about-title">About Me</h1>
 
       <div className="about-content">

@@ -106,6 +106,10 @@ h1 {
   border: greenyellow solid 5px;
 }
 
+#about {
+  scroll-margin-top: 100px;
+}
+
 #about-title {
   font-size: 50px;
   text-align: center;
