@@ -22,7 +22,7 @@ const NavBar = () => {
           clearInterval(myInterval);
           setFrame(0);
         }
-      }, 250)
+      }, 60)
     }
     if (cat) {
       cat.addEventListener('click', handleClick);
