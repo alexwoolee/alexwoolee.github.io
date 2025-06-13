@@ -10,6 +10,7 @@ import About from "./components/About.jsx";
 import Skill from "./components/Skills.jsx"
 import Project from "./components/Projects.jsx"
 import Contact from "./components/Contact.jsx";
+import Resume from "./components/Resume.jsx"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -22,15 +23,26 @@ function App() {
     });
   }, []);
 
+  const OnePageLayout = () => {
+    return (<>
+      <FrontPage></FrontPage>
+      <About></About>
+      <Skill></Skill>
+      <Project></Project>
+      <Contact></Contact>
+    </>);
+  };  
+
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <FrontPage /> 
-      <About />
-      <Skill />
-      <Project />
-      <Contact />
-    </>
+      <Routes>
+        <Route>
+          <Route path="/" element={<OnePageLayout />}></Route>
+          <Route path="/resume" element={<Resume />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
