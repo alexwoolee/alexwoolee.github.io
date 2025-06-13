@@ -1,10 +1,11 @@
 import catSprite1 from '../assets/frame_0_delay-0.1s.gif';
 import catSprite2 from '../assets/frame_1_delay-0.1s.gif';
 import catSprite3 from '../assets/frame_2_delay-0.1s.gif';
-import moonDark from '../assets/AgentPowerMoonSand.png';
 import menuIcon from'../assets/menu-icon.png';
 
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
   const catFrames = [catSprite1, catSprite2, catSprite3];
@@ -41,16 +42,16 @@ const NavBar = () => {
       <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art"></img></div>
       <div id="right">
         <ul>
-          <li><a href="#" className='nav-links'>Home</a></li>
-          <li><a href="#about" className='nav-links'>About</a></li>
-          <li><a href="#skill" className='nav-links'>Skills</a></li>
-          <li><a href="#project" className='nav-links'>Projects</a></li>
-          <li><a href="#contact" className='nav-links'>Contact</a></li>
-          <div id="util-buttons">
-            <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
-            <img src={moonDark} alt="menu-icon" className='pixel-art'/> 
-          </div>
+          <HashLink smooth to="/#top" className='nav-links'>Home</HashLink>
+          <HashLink smooth to="/#about" className="nav-links">About</HashLink>
+          <HashLink smooth to="/#skill" className="nav-links">Skills</HashLink>
+          <HashLink smooth to="/#project" className="nav-links">Projects</HashLink>
+          <HashLink smooth to="/#contact" className="nav-links">Contact</HashLink>
+          <Link to="/resume" className='nav-links' onClick={() => {window.scrollTo(0,0)}}>Resume</Link>
         </ul>
+        <div id="util-buttons">
+            <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
+          </div>
       </div>
     </div>
   );
