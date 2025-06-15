@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 
 /* IDEA: THE THEME OF WEBSITE SHOULD BE FISHING CATS PIXEL ART */
 
 :root {
   --white-transparent: rgba(255, 255, 255, 0.5);
+  --color-primary: #030412;
+  --color-midnight: #06091f;
+  --color-navy: #161a31;
+  --color-indigo: #1f1e39;
+  --color-storm: #282b4b;
 }
 
 * {
@@ -20,7 +26,7 @@
 
 body {
   overflow: auto;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Funnel Display', 'M PLUS Rounded 1c', sans-serif;
   font-weight: 500;
   background: black;
 }
@@ -37,26 +43,26 @@ h1 {
 
 .nb-sec {
   position: fixed;
-  background-color: darkslateblue;
+  background-color: var(--color-primary);
+  opacity: 98%;
   padding: 24px;
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: smaller;
-  z-index: 9999;
+  color: white;
+  z-index: 64;
 }
 
 #left {
   width: 40%;
-  background-color: pink;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
 #center {
   width: 20%;
-  background-color: darkorange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +70,6 @@ h1 {
 
 #right {
   width: 40%;
-  background-color: greenyellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +95,8 @@ h1 {
 .front-sec {
   padding-top: 250px;
   padding-bottom: 200px;
-  background-color: whitesmoke;
+  background-color: var(--color-primary);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,10 +367,9 @@ h1 {
   }
   #hide-on-small {
     display: flex;
-    justify-content: center;
   }
-  body {
-    background-color: plum;
+  #right {
+    justify-content: right;
   }
   #heading-big {
     display: none;
@@ -403,14 +408,6 @@ h1 {
   background-color: greenyellow;
   border: green solid 2px;
   border-radius: 10px;
-  margin: 20px;
-}
-
-.arrow {
-  width: 50px;
-  height: 50px;
-  background-color: pink;
-  border: black solid 1px;
   margin: 20px;
 }
 

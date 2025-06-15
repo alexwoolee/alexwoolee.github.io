@@ -1,7 +1,7 @@
 import catSprite1 from '../assets/frame_0_delay-0.1s.gif';
 import catSprite2 from '../assets/frame_1_delay-0.1s.gif';
 import catSprite3 from '../assets/frame_2_delay-0.1s.gif';
-import menuIcon from'../assets/menu-icon.png';
+import menuIcon from '../assets/menu.svg';
 
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -35,10 +35,36 @@ const NavBar = () => {
     }  
   });
 
+  const subMenu = () => {
+    return (
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Skills</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Project</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </div>
+    );
+  };
+
+
   // When window is at a certain width, set of nav links should be held by a menu symbol 
   return (
-    <div className="nb-sec">
-      <div id="left"><h2>Alex Lee</h2></div> 
+    <div className="nb-sec font-extrabold">
+      <div id="left"><a href='\' className='hover:'>Alex Lee</a></div> 
       <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art"></img></div>
       <div id="right">
         <ul>
@@ -51,6 +77,7 @@ const NavBar = () => {
         </ul>
         <div id="util-buttons">
             <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
+            {subMenu}
           </div>
       </div>
     </div>

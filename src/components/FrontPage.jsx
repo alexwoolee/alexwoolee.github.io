@@ -9,19 +9,10 @@ export default function FrontPage() {
       <div className="front-sec">
         <h1 id="heading-big">Alex Lee</h1>
         <h3 id="heading-small">Alex Lee</h3>
-        <h4>I'm a h4 element of FrontPage.js</h4>
-        <div id="socials">
-          <div className="square" id="github"></div>
-          <div className="square" id="linkedin"></div>
-          <div className="square" id="slack"></div>
-          <div className="square" id="email"></div>
-        </div>
+        <h4>I Like Animals</h4>
         <div id="front-links">
-          <div className="square"></div>
-          <div className="square"></div>
-        </div>
-        <div id="arrow">
-          <div className="square"></div>
+          <div className="square"><button>Click me</button></div>
+          <div className="square"><button>Click me</button></div>
         </div>
       </div>
     </>
