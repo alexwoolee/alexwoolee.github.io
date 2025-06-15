@@ -64,20 +64,19 @@ const NavBar = () => {
   // When window is at a certain width, set of nav links should be held by a menu symbol 
   return (
     <div className="nb-sec font-extrabold">
-      <div id="left"><a href='\' className='hover:'>Alex Lee</a></div> 
+      <div id="left"><a href='\' className='text-white/70 hover:text-white transition'>Alex Lee</a></div> 
       <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art"></img></div>
       <div id="right">
         <ul>
-          <HashLink smooth to="/#top" className='nav-links'>Home</HashLink>
-          <HashLink smooth to="/#about" className="nav-links">About</HashLink>
-          <HashLink smooth to="/#skill" className="nav-links">Skills</HashLink>
-          <HashLink smooth to="/#project" className="nav-links">Projects</HashLink>
-          <HashLink smooth to="/#contact" className="nav-links">Contact</HashLink>
-          <Link to="/resume" className='nav-links' onClick={() => {window.scrollTo(0,0)}}>Resume</Link>
+          <HashLink smooth to="/#star-container" className='nav-links text-white/70 hover:text-white transition'>Home</HashLink>
+          <HashLink smooth to="/#about" className="nav-links text-white/70 hover:text-white transition">About</HashLink>
+          <HashLink smooth to="/#skill" className="nav-links text-white/70 hover:text-white transition">Skills</HashLink>
+          <HashLink smooth to="/#project" className="nav-links text-white/70 hover:text-white transition">Projects</HashLink>
+          <HashLink smooth to="/#contact" className="nav-links text-white/70 hover:text-white transition">Contact</HashLink>
+          <Link to="/resume" className='nav-links text-white/70 hover:text-white transition' onClick={() => {window.scrollTo(0,0)}}>Resume</Link>
         </ul>
         <div id="util-buttons">
             <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
-            {subMenu}
           </div>
       </div>
     </div>

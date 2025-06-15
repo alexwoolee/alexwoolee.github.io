@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import "tailwindcss";
 
 /* IDEA: THE THEME OF WEBSITE SHOULD BE FISHING CATS PIXEL ART */
 
@@ -16,10 +16,14 @@
   --color-storm: #282b4b;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* tailwindcss v4 base layer */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 }
 
 /* elements */
@@ -29,6 +33,7 @@ body {
   font-family: 'Funnel Display', 'M PLUS Rounded 1c', sans-serif;
   font-weight: 500;
   background: black;
+  overflow-x: hidden;
 }
 
 html {
@@ -93,14 +98,15 @@ h1 {
 /* front page component */
 
 .front-sec {
-  padding-top: 250px;
-  padding-bottom: 200px;
   background-color: var(--color-primary);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 48px;
+  border: transparent;
+  border-radius: 20px ;
 }
 
 #socials {
@@ -344,7 +350,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 90px;
-}
+} 
 
 #heading-small {
   display: none;
@@ -402,16 +408,55 @@ h1 {
 
 /* other */
 
-.square {
-  width: 50px;
-  height: 50px;
-  background-color: greenyellow;
-  border: green solid 2px;
-  border-radius: 10px;
-  margin: 20px;
+.front-button:hover {
+  background-image: repeating-linear-gradient(135deg, yellow, rgb(242,177,74), 7%, yellow 10%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease; 
 }
 
 .pixel-art {
   image-rendering: pixelated;
   width: 50px;
+}
+
+#star-container {
+  background-color: darkslateblue;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#star-pattern {
+  background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
+  background-size: 18%;  
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  opacity: 0.10;
+  animation: pan 45s linear infinite;
+  will-change: background-position;
+  pointer-events: none;
+}
+
+/* mask-image, will-change, animation, transition, pointer-events, opacity, background-position, background-size, repeating-linear-gradient z-index, top, left */
+/* ::after, :hover, ::before */
+/* keyframes, scroll-bars */
+
+@keyframes pan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 1000px;
+  }
 }
