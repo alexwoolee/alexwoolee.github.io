@@ -32,7 +32,7 @@ body {
   overflow: auto;
   font-family: 'Funnel Display', 'M PLUS Rounded 1c', sans-serif;
   font-weight: 500;
-  background: black;
+  background: var(--color-primary);
   overflow-x: hidden;
 }
 
@@ -120,9 +120,7 @@ h1 {
 /* about component */
 
 .about-section {
-  background-color: black;
   color: white;
-  border: greenyellow solid 5px;
   width: 70%;
   margin: auto;
 }
@@ -151,7 +149,6 @@ h1 {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-color: black;
 }
 
 .about-text { 
@@ -183,9 +180,24 @@ h1 {
 
 .skill-sec {
   padding: 40px 40px;
-  background-color: black;
-  color: black;
-  border: red solid 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-container {
+  border: lightskyblue 2px solid;
+  border-radius: 24px;
+  padding: 20px;
+  background-color: #282b4b;
+  transition: transform ease-in 0.2s;
+}
+
+.skill-container:hover {
+  transform: scale(1.05, 1.05);
+  color: yellow;
 }
 
 #skill {
@@ -194,6 +206,7 @@ h1 {
 
 #skill-title {
   font-size: 50px;
+  margin: 16px;
   text-align: center;
 }
 
@@ -201,52 +214,50 @@ h1 {
   font-size: 25px;
 }
 
-.skill-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  margin: 20px;
-}
-
 .skill-icons img {
   padding: 8px;
+  transition: transform ease-in 0.2s;
+}
+
+.skill-icons img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 #languages {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 24px;
+  width: 400px; 
   justify-content: center;
   align-items: center;
-  background-color: darkslateblue;
+  border-radius: 8px;
 }
 
 #frameworks {
   display: flex;
-  padding: 40px;
+  flex-wrap: wrap;
+  padding: 24px;
+  width: 400px; 
   justify-content: center;
   align-items: center;
-  background-color: darkslateblue;
+  border-radius: 8px;
 }
 
 #envir {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 24px;
+  width: 400px; 
   justify-content: center;
   align-items: center;
-  background-color: darkslateblue;
+  border-radius: 8px;
 }
 
 /* project component */
 
 .project-section {
   padding: 40px 40px;
-  background-color: black;
-  color: yellow;
-  border: greenyellow solid 5px;
+  color: white;
 }
 
 #project {
