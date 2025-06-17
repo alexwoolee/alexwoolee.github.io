@@ -307,7 +307,7 @@ h1 {
   font-weight: lighter;
   background-color: black;
   border-radius: 8px;
-  padding: 16px 16px 0px 16px;
+  padding: 4px 16px 4px 16px;
   display: block;
 }
 
@@ -350,7 +350,7 @@ h1 {
   min-width: 265px;
   max-width: 265px; /* fixed width */
   text-align: center;
-  border: 4px solid transparent; /* reserves space for the repo hover to avoid the modal shifting slightly */
+  border: 4px solid white; /* reserves space for the repo hover to avoid the modal shifting slightly */
 }
 
 .repo:hover {
@@ -368,8 +368,11 @@ h1 {
 }
 
 #play {
-  background-color: yellow !important; 
-  filter: none;
+  background-color: brown; 
+  filter: invert(0);
+  padding: 8px;
+  border: transparent 1px solid;
+  border-radius: 8px;
 }
 
 /* media query elements */

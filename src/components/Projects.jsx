@@ -43,7 +43,7 @@ const Project = () => {
             <p>Cannon Game</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
-              <a className="" href="/cannon-game/game.html" target="_blank" id="play">play</a>  
+              <a className="" href="/cannon-game/game.html" target="_blank" id="play">Play</a>  
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Project = () => {
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a> */}
-              <p>not availble</p>
+              <p>Not Available</p>
             </div>
           </div>
           <div className="repo">
@@ -80,7 +80,7 @@ const Project = () => {
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a> */}
-              <p>not availble</p>
+              <p>Not Availble</p>
             </div>
           </div>
         </div>
