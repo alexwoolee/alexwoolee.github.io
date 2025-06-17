@@ -141,7 +141,7 @@ h1 {
 #about {
   scroll-margin-top: 100px;
 }
-
+  
 #profile-container {
   background-color: rgba(17,17,82,255);
   height: 100%;
@@ -397,7 +397,37 @@ h1 {
 
 /* contact component */
 
+.contact-sec {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+  background-color: var(--color-primary);
+  display: flex;
+}
 
+.contact-sec-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.contact-sec-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.contact-sec ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
 
 /* media queries */
 
