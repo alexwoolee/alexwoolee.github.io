@@ -35,32 +35,6 @@ const NavBar = () => {
     }  
   });
 
-  const subMenu = () => {
-    return (
-      <div>
-        <ul>
-          <li><a href="#">Home</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">About</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Skills</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Project</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </div>
-    );
-  };
-
-
   // When window is at a certain width, set of nav links should be held by a menu symbol 
   return (
     <div className="nb-sec font-extrabold">
