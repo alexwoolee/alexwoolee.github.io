@@ -6,7 +6,12 @@ import mario from "../assets/Mario.png"
 import luigi from "../assets/Luigi.png"
 import peach from "../assets/Peach.png"
 import search from "../assets/search.png"
-
+import ERS from "../assets/emergency_reporting_system.png"
+import PP from "../assets/personal_portfolio.png"
+import cannonGame from "../assets/cannon_game.png"
+import taiwanFlag from "../assets/taiwan-flag.svg"
+import GMS2 from "../assets/gms2-icon.png"
+import calculator from "../assets/calc-demo.jpg"
 
 const Project = () => {   
   const [projectType, setProjectType] = useState("apps");
@@ -16,27 +21,29 @@ const Project = () => {
       <div data-aos="fade-up">
         <div className="project-links">
           <div className="repo">
-            <img src={zeus} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Zeus</a>
+            <img src={ERS} alt="emergency reporting system screenshot" className="project-image"></img>
+            <p>Emergency Reporting System</p>
             <div className="repo-links">
-              <img src={search} alt="search icon" className="project-icons"></img>
-              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <a href="https://github.com/PrimitivePenguin/CMPT272-Map-Project" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              </a>
             </div>
           </div>
           <div className="repo">
-            <img src={poseidon} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Poseidon</a>
+            <img src={PP} alt="personal portfolio screenshot" className="project-image"></img>
+            <p>Personal Website</p>
             <div className="repo-links">
-              <img src={search} alt="search icon" className="project-icons"></img>
-              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              </a>
             </div>
           </div>
           <div className="repo">
-            <img src={hades} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Hades</a>
+            <img src={cannonGame} alt="cannon game screenshot" className="project-image"></img>
+            <p>Cannon Game</p>
             <div className="repo-links">
-              <img src={search} alt="search icon" className="project-icons"></img>
-              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <a className="" href="/cannon-game/game.html" target="_blank" id="play">play</a>  
             </div>
           </div>
         </div>
@@ -48,16 +55,33 @@ const Project = () => {
       <div>
         <div className="project-links">
           <div className="repo">
-            <img src={mario} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Mario</a>
+            <img src={taiwanFlag} alt="taiwan flag" className="project-image"></img>
+            <p>TaiwanExplorers</p>
+            <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <a href="https://github.com/CMPT-276-SUMMER-2025/final-project-18-flowers" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              </a>
+            </div>
           </div>
           <div className="repo">
-            <img src={peach} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Peach</a>
+            <img src={GMS2} alt="gamemaker studio 2 logo" className="project-image"></img>
+            <p>JOTAK (Game)</p>
+             <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              </a> */}
+              <p>not availble</p>
+            </div>
           </div>
           <div className="repo">
-            <img src={luigi} alt="zeus" className="project-image"></img>
-            <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Luigi</a>
+            <img src={calculator} alt="calc demo screenshot" className="project-image"></img>
+            <p>Calculator App</p>
+            <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              </a> */}
+              <p>not availble</p>
+            </div>
           </div>
         </div>
       </div>
@@ -70,14 +94,26 @@ const Project = () => {
           <div className="repo">
             <img src={zeus} alt="zeus" className="project-image"></img>
             <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Link</a>
+            <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+            </div>
           </div>
           <div className="repo">
             <img src={zeus} alt="zeus" className="project-image"></img>
             <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Zelda</a>
+            <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+            </div>
           </div>
           <div className="repo">
             <img src={zeus} alt="zeus" className="project-image"></img>
             <a href="https://github.com/octocat/Hello-World" target="_blank">Project: Ganon</a>
+            <div className="repo-links">
+              {/* <img src={search} alt="search icon" className="project-icons"></img> */}
+              <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+            </div>
           </div>
         </div>
       </div>
@@ -91,17 +127,18 @@ const Project = () => {
         <button className="project-buttons" id="apps" onClick={() => {
           setProjectType("apps");
           console.log(projectType);
-        }}>Apps</button> 
+        }}>Past</button> 
 
         <button className="project-buttons" id="games" onClick={() => {
           setProjectType("games");
           console.log(projectType);
-        }}>Games</button>
-
+        }}>Current</button>
+      
+        {/* 
         <button className="project-buttons" id="ml" onClick={() => {
           setProjectType("ml");
           console.log(projectType);
-        }}>ML</button> 
+        }}>ML</button>  */}
       </div>
       <div>
         {sectionContent}

@@ -300,16 +300,15 @@ h1 {
   justify-content: center;
   align-items: center;  
   flex-wrap: wrap;
-  overflow: hidden; 
-  background-color: yellowgreen;
   min-height: 300px; /* i.e. or enough height for all sets */
 }
 
-.project-links .repo a {
+.project-links .repo p {
   font-weight: lighter;
   background-color: black;
-  padding: 12px 60px 12px 60px;
   border-radius: 8px;
+  padding: 16px 16px 0px 16px;
+  display: block;
 }
 
 .project-buttons-section {
@@ -368,7 +367,10 @@ h1 {
   filter: invert(1);
 }
 
-
+#play {
+  background-color: yellow !important; 
+  filter: none;
+}
 
 /* media query elements */
 
