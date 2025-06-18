@@ -124,12 +124,12 @@ const Project = () => {
       <h1 id="project-title" data-aos="fade-up">Projects</h1>
       <div className="project-buttons-section" data-aos="fade-up"> 
 
-        <button className="project-buttons" id="apps" onClick={() => {
+        <button className={"project-buttons " + (projectType === "apps" ? "bg-blue-600" : "bg-blue-300")} id="apps" onClick={() => {
           setProjectType("apps");
           console.log(projectType);
         }}>Past</button> 
 
-        <button className="project-buttons" id="games" onClick={() => {
+        <button className={"project-buttons " + (projectType === "games" ? "bg-blue-600" : "bg-blue-300")} id="games" onClick={() => {
           setProjectType("games");
           console.log(projectType);
         }}>Current</button>
