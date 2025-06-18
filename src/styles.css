@@ -136,6 +136,7 @@ h1 {
 
 #about-title {
   font-size: 50px;
+  scroll-margin-top: 100px;
 }
 
 #about {
@@ -227,7 +228,7 @@ h1 {
 }
 
 #skill {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 24px;
 }
 
 #skill-title {
@@ -235,6 +236,7 @@ h1 {
   margin: 16px;
   text-align: center;
   color: white;
+  scroll-margin-top: 100px;
 }
 
 #skill-small-title {

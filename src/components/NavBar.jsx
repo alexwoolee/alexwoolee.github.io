@@ -43,7 +43,7 @@ const NavBar = () => {
       <div id="right">
         <ul>
           <HashLink smooth to="/#star-container" className='nav-links text-white/70 hover:text-white transition'>Home</HashLink>
-          <HashLink smooth to="/#about" className="nav-links text-white/70 hover:text-white transition">About</HashLink>
+          <HashLink smooth to="/#about-title" className="nav-links text-white/70 hover:text-white transition">About</HashLink>
           <HashLink smooth to="/#skill" className="nav-links text-white/70 hover:text-white transition">Skills</HashLink>
           <HashLink smooth to="/#project" className="nav-links text-white/70 hover:text-white transition">Projects</HashLink>
           <HashLink smooth to="/#contact" className="nav-links text-white/70 hover:text-white transition">Contact</HashLink>
