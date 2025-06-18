@@ -11,11 +11,13 @@ const About = () => {
     <>
     <h1 className="text-center text-amber-50 m-16" id="about-title">About Me </h1>
     <div className="about-section" data-aos="fade-up" id="about">
+
       <div className="flex flex-row">
         <div className="bg-amber-300 w-72" id="profile-container">
           <img src={dogProfile} alt="picture of me" id="profile"/>
         </div>
       </div>
+
       <div className="about-content">
         <div className="about-text">
           <h1 className="font-bold">Name</h1>
@@ -38,6 +40,7 @@ const About = () => {
             </ul>
         </div>
       </div>
+      
     </div> 
     </>
   );

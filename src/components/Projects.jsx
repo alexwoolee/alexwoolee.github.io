@@ -10,7 +10,7 @@ import ERS from "../assets/emergency_reporting_system.png"
 import PP from "../assets/personal_portfolio.png"
 import cannonGame from "../assets/cannon_game.png"
 import taiwanFlag from "../assets/taiwan-flag.svg"
-import GMS2 from "../assets/gms2-icon.png"
+import jotakAlpha from "../assets/jotak-alpha.png"
 import calculator from "../assets/calc-demo.jpg"
 
 const Project = () => {   
@@ -22,7 +22,7 @@ const Project = () => {
         <div className="project-links">
           <div className="repo">
             <img src={ERS} alt="emergency reporting system screenshot" className="project-image"></img>
-            <p>Emergency Reporting System</p>
+            <p id="project-header">Emergency Reporting System</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               <a href="https://github.com/PrimitivePenguin/CMPT272-Map-Project" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
@@ -31,7 +31,7 @@ const Project = () => {
           </div>
           <div className="repo">
             <img src={PP} alt="personal portfolio screenshot" className="project-image"></img>
-            <p>Personal Website</p>
+            <p id="project-header">Personal Website</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
@@ -40,7 +40,7 @@ const Project = () => {
           </div>
           <div className="repo">
             <img src={cannonGame} alt="cannon game screenshot" className="project-image"></img>
-            <p>Cannon Game</p>
+            <p id="project-header">Cannon Game</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               <a className="" href="/cannon-game/game.html" target="_blank" id="play">Play</a>  
@@ -56,7 +56,7 @@ const Project = () => {
         <div className="project-links">
           <div className="repo">
             <img src={taiwanFlag} alt="taiwan flag" className="project-image"></img>
-            <p>TaiwanExplorers</p>
+            <p id="project-header">TaiwanExplorers</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               <a href="https://github.com/CMPT-276-SUMMER-2025/final-project-18-flowers" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
@@ -64,23 +64,23 @@ const Project = () => {
             </div>
           </div>
           <div className="repo">
-            <img src={GMS2} alt="gamemaker studio 2 logo" className="project-image"></img>
-            <p>JOTAK (Game)</p>
+            <img src={jotakAlpha} alt="gamemaker studio 2 logo" className="project-image"></img>
+            <p id="project-header">JOTAK (Game)</p>
              <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a> */}
-              <p>Not Available</p>
+              <p id="not-available">Not Available</p>
             </div>
           </div>
           <div className="repo">
             <img src={calculator} alt="calc demo screenshot" className="project-image"></img>
-            <p>Calculator App</p>
+            <p id="project-header">Calculator App</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a> */}
-              <p>Not Availble</p>
+              <p id="not-available">Not Availble</p>
             </div>
           </div>
         </div>

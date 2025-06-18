@@ -125,7 +125,7 @@ h1 {
   margin: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   min-height: 300px; /* or any fixed height */
 }
@@ -146,6 +146,7 @@ h1 {
   background-color: rgba(17,17,82,255);
   height: 100%;
   padding: 0px 16px 0px 16px;
+  margin-top: 24px;
   border: transparent 1px solid;
   border-radius: 16px;
   display: flex;
@@ -175,7 +176,7 @@ h1 {
 
 .about-text p {
   margin-bottom: 12px;
-  background-color: bisque;
+  background-color: rgb(255,238,173);
   color: black;
   padding: 16px;
   border: transparent 1px solid;
@@ -206,7 +207,7 @@ h1 {
 
 .skill-sec {
   padding: 40px 40px;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,16 +215,15 @@ h1 {
 }
 
 .skill-container {
-  border: lightskyblue 2px solid;
+  border: rgb(20,195,141) 8px solid;
   border-radius: 24px;
   padding: 20px;
-  background-color: #282b4b;
+  background-color: rgb(255,238,173);
   transition: transform ease-in 0.2s;
 }
 
 .skill-container:hover {
   transform: scale(1.05, 1.05);
-  color: yellow;
 }
 
 #skill {
@@ -234,6 +234,7 @@ h1 {
   font-size: 50px;
   margin: 16px;
   text-align: center;
+  color: white;
 }
 
 #skill-small-title {
@@ -300,15 +301,21 @@ h1 {
   justify-content: center;
   align-items: center;  
   flex-wrap: wrap;
-  min-height: 300px; /* i.e. or enough height for all sets */
+  min-height: 350px; /* i.e. or enough height for all sets */
 }
 
-.project-links .repo p {
-  font-weight: lighter;
-  background-color: black;
+.project-links .repo #project-header {
+  font-weight: heavy;
+  color: black;
+  background-color: rgb(255,238,173);
   border-radius: 8px;
-  padding: 4px 16px 4px 16px;
-  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#not-available {
+  margin: 4px 0px 4px 0px;
+  color: darkslategrey;
 }
 
 .project-buttons-section {
@@ -318,7 +325,8 @@ h1 {
 }
 
 .project-buttons {
-  background-color: black;
+  background-color: rgb(102, 190, 220);
+  color: black;
   border-radius: 24px;
   padding: 12px;
   padding-left: 20px;
@@ -344,13 +352,13 @@ h1 {
 }
 
 .repo {
-  background-color: black;
+  background-color: rgb(255,238,173);
   border-radius: 8px;
   margin: 48px;
   min-width: 265px;
   max-width: 265px; /* fixed width */
   text-align: center;
-  border: 4px solid white; /* reserves space for the repo hover to avoid the modal shifting slightly */
+  border: 4px solid rgb(20,195,141); /* reserves space for the repo hover to avoid the modal shifting slightly */
 }
 
 .repo:hover {
@@ -364,15 +372,15 @@ h1 {
   margin-top: 24px;
   margin-bottom: 16px;
   height: auto;
-  filter: invert(1);
 }
 
 #play {
-  background-color: brown; 
-  filter: invert(0);
-  padding: 8px;
+  background-color: rgb(102, 190, 220); 
+  padding: 2px 12px 2px 12px;
+  color: black;
   border: transparent 1px solid;
-  border-radius: 8px;
+  border-radius: 16px;
+  display: block;
 }
 
 /* media query elements */
@@ -456,10 +464,10 @@ h1 {
     display: flex;
     font-size: 45px;
   }
-
 }
 
 /* resume component */
+
 #resume-sec {
   padding-top: 150px;
   display: flex;
@@ -493,7 +501,7 @@ h1 {
 }
 
 #star-container {
-  background-color: darkslateblue;
+  background-color: rgb(20,195,141);
   padding-top: 250px;
   padding-bottom: 200px;
   height: 100vh;
