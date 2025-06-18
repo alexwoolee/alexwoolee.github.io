@@ -80,7 +80,7 @@ const Project = () => {
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
               {/* <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a> */}
-              <p id="not-available">Not Availble</p>
+              <p id="not-available">Not Available</p>
             </div>
           </div>
         </div>
