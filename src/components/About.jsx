@@ -1,6 +1,5 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ratProfile from '../assets/rat.jpg'
 import dogProfile from '../assets/green_dog_pixel.png'
 
 // opacity, transform, box-sizing
@@ -40,7 +39,7 @@ const About = () => {
             </ul>
         </div>
       </div>
-      
+
     </div> 
     </>
   );
