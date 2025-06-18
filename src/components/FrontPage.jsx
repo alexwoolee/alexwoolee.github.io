@@ -12,7 +12,7 @@ export default function FrontPage() {
           <h1 id="heading-big">Alex Lee</h1>
           <h3 id="heading-small">Alex Lee</h3>
           <h1>Software Developer</h1>
-          <a href="#project" className="bg-green-400 p-2 m-4 border-0 rounded-2xl hover:bg-yellow-400">View Projects</a>
+          <a href="#project" className="bg-green-400 p-3 mt-8 border-0 text-black rounded-3xl hover:bg-yellow-400">View Projects</a>
         </div>
       </div>
     </>

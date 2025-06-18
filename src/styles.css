@@ -207,7 +207,6 @@ h1 {
 /* skills component */
 
 .skill-sec {
-  padding: 40px 40px;
   color: black;
   display: flex;
   align-items: center;
@@ -218,7 +217,7 @@ h1 {
 .skill-container {
   border: rgb(20,195,141) 8px solid;
   border-radius: 24px;
-  padding: 20px;
+  padding: 16px;
   background-color: rgb(255,238,173);
   transition: transform ease-in 0.2s;
 }
@@ -228,7 +227,7 @@ h1 {
 }
 
 #skill {
-  scroll-margin-top: 24px;
+  scroll-margin-top: 64px;
 }
 
 #skill-title {
@@ -334,11 +333,6 @@ h1 {
   padding-right: 20px;
   margin-left: 12px;
   margin-right: 12px;
-}
-
-.project-buttons:hover {
-  background-color: yellow;
-  color: black;
 }
 
 .project-image {
