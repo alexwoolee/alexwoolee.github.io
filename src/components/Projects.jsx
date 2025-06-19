@@ -28,7 +28,7 @@ const Project = () => {
             <p id="project-header">Personal Website</p>
             <div className="repo-links">
               {/* <img src={search} alt="search icon" className="project-icons"></img> */}
-              <a href="https://github.com/octocat/Hello-World" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
+              <a href="https://github.com/alexwoolee/alexwoolee.github.io" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/colored/github.svg" alt="github icon"></img>          
               </a>
             </div>
           </div>
