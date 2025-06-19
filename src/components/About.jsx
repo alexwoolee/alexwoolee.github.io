@@ -14,11 +14,11 @@ const About = () => {
       <h1 className="text-center text-amber-50 m-16" id="about-title">About Me </h1>
       <div className="about-section flex flex-col md:flex-row" id="about">
 
-        <div id="profile-container">
-          <img src={dogProfile} alt="picture of me" id="profile" className="border-0 rounded-xl pt-8 md:pt-38"/>
+        <div id="profile-container" className="w-full md:w-auto flex justify-center">
+          <img src={dogProfile} alt="picture of me" id="profile" className="border-0 rounded-xl pt-8 md:pt-38 lg:w-3/5"/>
         </div>
 
-        <div className="about-content w-full md:w-3/5">
+        <div className="about-content w-full lg:w-3/5">
           <div className="about-text">
             <h1 className="font-bold">Name</h1>
             <p>ALEX LEE</p>
