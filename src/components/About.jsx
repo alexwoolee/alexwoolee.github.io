@@ -4,18 +4,10 @@ import dogProfile from '../assets/green_dog_pixel.png'
 
 // opacity, transform, box-sizing
 
-// - ensure links all match 
 // - fix about me layout with responsive layout
 // - add fades to content
 // - remove submenu feature for now *done*
 // - edit issues 
-
-// links
-// https://github.com/alexwoolee
-// https://x.com/wooalexlee
-// https://www.linkedin.com/in/alex-lee-868008287/
-// http://discordapp.com/users/423544690646712330
-// https://www.instagram.com/wooalexlee/
 
 const About = () => {
   return (
