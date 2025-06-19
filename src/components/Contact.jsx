@@ -13,10 +13,10 @@ const Contact = () => {
       <div className="contact-sec-right">
         <ul>
           <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/github.svg" alt="github icon" /></a></li>
-          <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/twitter-x.svg" alt="github icon" /></a></li>
-          <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/linkedin.svg" alt="github icon" /></a></li>
-          <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/discord.svg" alt="github icon" /></a></li>
-          <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/instagram.svg" alt="github icon" /></a></li>
+          <li className="social-icons"><a href="https://x.com/wooalexlee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/twitter-x.svg" alt="X icon" /></a></li>
+          <li className="social-icons"><a href="https://www.linkedin.com/in/alex-lee-868008287/" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/linkedin.svg" alt="linkedin icon" /></a></li>
+          <li className="social-icons"><a href="http://discordapp.com/users/423544690646712330" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/discord.svg" alt="discord icon" /></a></li>
+          <li className="social-icons"><a href="https://www.instagram.com/wooalexlee/" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/instagram.svg" alt="instagram icon" /></a></li>
         </ul>
       </div>
 
