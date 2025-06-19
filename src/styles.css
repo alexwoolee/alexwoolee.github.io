@@ -119,17 +119,6 @@ h1 {
 
 /* about component */
 
-.about-section {
-  color: white;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 300px; /* or any fixed height */
-}
-
 #about {
   scroll-margin-top: 100px;
 }
@@ -139,28 +128,23 @@ h1 {
   scroll-margin-top: 100px;
 }
 
-#about {
-  scroll-margin-top: 100px;
+.about-section {
+  color: white;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 300px; /* or any fixed height */
 }
   
 #profile-container {
   background-color: rgba(17,17,82,255);
-  height: 100%;
-  padding: 0px 16px 0px 16px;
   margin-top: 24px;
   border: transparent 1px solid;
   border-radius: 16px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: 400px;
-}
-
-.about-content {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  width: 60%;
+  justify-content: center;
 }
 
 .about-text { 
@@ -168,11 +152,7 @@ h1 {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  margin: 0px 48px 48px 48px;
-}
-
-.about-text div {
-  margin-bottom: 4px;
+  margin: 0px 36px 36px 36px;
 }
 
 .about-text p {
@@ -181,7 +161,7 @@ h1 {
   color: black;
   padding: 16px;
   border: transparent 1px solid;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .about-content .about-text ul {
@@ -439,16 +419,22 @@ h1 {
 
 /* media queries */
 
+@media (min-width: 768px) {
+  #profile-container {
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .nb-sec ul {
     gap: 10px;
   }
-  .nav-links {
+  /* .nav-links {
     display: none;
-  }
-  #hide-on-small {
+  } */
+  /* #hide-on-small {
     display: flex;
-  }
+  } */
   #right {
     justify-content: right;
   }

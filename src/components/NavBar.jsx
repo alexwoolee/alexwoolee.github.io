@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <div className="nb-sec font-extrabold">
       <div id="left"><a href='\' className='text-white/70 hover:text-white transition'>Alex Lee</a></div> 
-      <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art"></img></div>
+      <div id="center"><img src={catFrames[frame]} ref={catRef} alt="cat icon" className="pixel-art hidden md:block"></img></div>
       <div id="right">
         <ul>
           <HashLink smooth to="/#star-container" className='nav-links text-white/70 hover:text-white transition'>Home</HashLink>
@@ -50,7 +50,7 @@ const NavBar = () => {
           <Link to="/resume" className='nav-links text-white/70 hover:text-white transition' onClick={() => {window.scrollTo(0,0)}}>Resume</Link>
         </ul>
         <div id="util-buttons">
-            <img src={menuIcon} alt="light-mode" className='pixel-art' id='hide-on-small'/>
+            <img src={menuIcon} alt="light-mode" id='hide-on-small'/>
           </div>
       </div>
     </div>
