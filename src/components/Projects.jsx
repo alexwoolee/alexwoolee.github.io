@@ -81,6 +81,7 @@ const Project = () => {
       </div>
     );
   }
+  /* IGNORE BELOW */
   if (projectType === "ml") {
     sectionContent = ( 
       <div>
