@@ -1,7 +1,7 @@
 // https://github.com/Ileriayo/markdown-badges
 const Skill = () => {
   return (
-    <div className="skill-sec" id="skill">
+    <div className="skill-sec" id="skill" data-aos="fade-up">
       <h1 id="skill-title">Technical Skills</h1>
       <div className="skill-icons grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center w-full max-w-4xl mx-auto">
 

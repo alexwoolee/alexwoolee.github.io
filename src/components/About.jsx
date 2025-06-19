@@ -6,14 +6,13 @@ import dogProfile from '../assets/green_dog_pixel.png'
 
 // - fix about me layout with responsive layout
 // - add fades to content
-// - remove submenu feature for now *done*
 // - edit issues 
 
 const About = () => {
   return (
-    <>
+    <div data-aos="fade-up">
       <h1 className="text-center text-amber-50 m-16" id="about-title">About Me </h1>
-      <div className="about-section flex flex-col md:flex-row" data-aos="fade-up" id="about">
+      <div className="about-section flex flex-col md:flex-row" id="about">
 
         <div id="profile-container">
           <img src={dogProfile} alt="picture of me" id="profile" className="border-0 rounded-xl pt-8 md:pt-38"/>
@@ -43,7 +42,7 @@ const About = () => {
         </div>
 
       </div> 
-    </>
+    </div>
   );
 }  
 
