@@ -21,15 +21,15 @@ const About = () => {
         <div className="about-content w-full lg:w-3/5">
           <div className="about-text">
             <h1 className="font-bold">Name</h1>
-            <p>ALEX LEE</p>
+            <p>ALEX (WOO) LEE</p>
             <h1 className="font-bold">About</h1>
             <p className="text-justify">
               Alex is a developer based in Canada with a passion for building creative and impactful digital experiences. Currently in his second year at Simon Fraser University, he is pursuing a degree in Computing Science, where he continues to strengthen his skills in software development and problem-solving. Alex enjoys bringing ideas to life through code, whether it's crafting intuitive user interfaces, or experimenting with new technologies, he hopes to solve real-world problems using digital solutions.
             </p>
             <h1 className="font-bold">Bio</h1>
-            <p>Born in 2005.</p>
+            <p>Born in April 2005 --- Taiwanese, Korean, Canadian --- Languages: English, Mandarin, Japanese</p>
             <h1 className="font-bold">Hobbies</h1>
-            <p>Coding, Drawing, Gaming, Music</p>
+            <p>Coding, Drawing, Gaming, Music, Anime</p>
             <h1 className="font-bold">Socials</h1>
             <ul>
               <li className="social-icons"><a href="https://github.com/alexwoolee" target="_blank"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/light/github.svg" alt="github icon" /></a></li>
