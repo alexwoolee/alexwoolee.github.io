@@ -4,7 +4,7 @@ const Contact = () => {
 
       <div className="contact-sec-left">
         <div className="flex flex-col items-start">
-          <h1 className="text-white text-4xl">Contact</h1>
+          <h1 className="text-white text-4xl mb-2">Contact</h1>
           <h1 className="text-white text-1xl">email: wooalexlee@gmail.com</h1>
         </div>
         <p className="text-white/70 hover:text-white transition">Developed by @Alex Lee</p>

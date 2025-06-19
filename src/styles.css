@@ -207,12 +207,12 @@ h1 {
 }
 
 #skill {
-  scroll-margin-top: 64px;
+  scroll-margin-top: 24px;
 }
 
 #skill-title {
   font-size: 50px;
-  margin: 16px;
+  margin: 64px;
   text-align: center;
   color: white;
   scroll-margin-top: 100px;
@@ -269,12 +269,13 @@ h1 {
 }
 
 #project {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
 
 #project-title {
   font-size: 50px;
   text-align: center;
+  margin: 72px 72px 24px 72px;
 }
 
 .project-links {
