@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import "tailwindcss";
+/* @plugin "daisyui"; */
 
 /* IDEA: THE THEME OF WEBSITE SHOULD BE FISHING CATS PIXEL ART */
 
@@ -32,8 +33,9 @@ body {
   overflow: auto;
   font-family: 'Funnel Display', 'M PLUS Rounded 1c', sans-serif;
   font-weight: 500;
-  background: var(--color-primary);
+  background: orange;
   overflow-x: hidden;
+  color: white;
 }
 
 html {
@@ -432,10 +434,7 @@ h1 {
   } */
   #right {
     justify-content: right;
-  }
-  #heading-big {
-    display: none;
-  }
+  } 
   #heading-small {
     display: flex;
     font-size: 45px;
@@ -477,7 +476,7 @@ h1 {
 }
 
 #star-container {
-  background-color: rgb(20,195,141);
+  background-color: rgb(26, 20, 195);
   padding-top: 250px;
   padding-bottom: 200px;
   height: 100vh;
