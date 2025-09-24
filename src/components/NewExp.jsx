@@ -4,6 +4,8 @@ import ExperienceCard from './ExperienceCard'
 import sirshinu from '../assets/sirshinu.png'
 import HMART from '../assets/HMART.jpeg'
 import MOCC from '../assets/MOCC.png'
+import SFU from '../assets/SFU.png'
+import placeholder from "../assets/image-placeholder.png"
 
 const NewExp = () => {
   return (
@@ -17,13 +19,13 @@ const NewExp = () => {
       </ExperienceCard>
 
       <h1 className='exp-type'>Events</h1>
-      <ExperienceCard img={sirshinu} company="SFU" title="Fall Hacks 2025" period="Sep. 27th 2025" txt="text">
+      <ExperienceCard img={SFU} company="SFU" title="Fall Hacks 2025" period="Sep. 27th 2025" txt="text">
       </ExperienceCard>
 
-      <ExperienceCard img={sirshinu} company="SFU" title="Surge 2025" period="Sep. 27th 2025" txt="text">
+      <ExperienceCard img={SFU} company="SFU" title="Surge 2025" period="Sep. 27th 2025" txt="text">
       </ExperienceCard>
 
-      <ExperienceCard img={sirshinu} company="Actuarial Students' National Association (ASNA)" title="ASNA Case Competition 2026" period="Sep. 27th 2025" txt="text">
+      <ExperienceCard img={placeholder} company="Actuarial Students' National Association (ASNA)" title="ASNA Case Competition 2026" period="Sep. 27th 2025" txt="text">
       </ExperienceCard>
 
       <h1 className='exp-type'>Volunteering</h1>

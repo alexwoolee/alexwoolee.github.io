@@ -8,6 +8,10 @@
   --color-black: rgb(0, 0, 0);
 }
 
+body {
+  background-color: rgb(0, 0, 0);
+}
+
 /* webkit */
 ::-webkit-scrollbar {
   width: 10px;
@@ -42,18 +46,39 @@
   align-items: center;
   height: 3.75rem;
   background-color: var(--color-black);
+  position: relative;
 }
 
 #contact-btn {
   margin-left: 1rem;
   cursor: pointer;
+  background-color: rgb(241, 55, 55);
+  padding: 8px;
+  border-radius: 8px;
 }
 
-#icon-wrapper {
+.icon-wrapper {
   padding: 8px;
   background-color: var(--color-dark-grey);
   border-radius: 64px;
   margin: 0rem 0.5rem 0rem 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-active-wrapper {
+  padding: 8px;
+  background-color: white;
+  border-radius: 64px;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-wrapper:hover {
+  background-color: #818182;
 }
 
 #home-icon {
@@ -68,7 +93,6 @@
   flex-direction: row;
   gap: 1rem;
   margin: 1rem;
-  background-color: orange;
   max-height: calc(100vh - 3.75rem - 6.5rem);
 }
 
@@ -110,6 +134,15 @@
 
 #link-list .link p {
   margin-left: 1rem;
+}
+
+.link-title {
+  font-size: 1rem;
+}
+
+.link-info {
+  color: #818182;
+  font-size: 0.9rem;
 }
 
 /* about content */
@@ -236,7 +269,10 @@
   justify-content: space-evenly;
   background-color: black;
   margin: 0 -1.5rem 0rem -1.5rem;
-  padding: 1.1rem 0rem 1.25rem 0rem  ;
+  padding: 1.1rem 0rem 1.25rem 0rem;
+  border: 1px solid rgb(38, 36, 36);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -299,7 +335,7 @@
 /* home */
 
 #home-sec {
-  background-color: rgb(6, 2, 57);
+  background-color: rgba(0, 98, 255, 0.864);
   border-radius: 1rem;
   min-height: calc(100vh - 3.75rem - 6.5rem);
   display: flex;

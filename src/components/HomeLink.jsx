@@ -13,8 +13,8 @@ const HomeLink = ({ path, img, title, info }) => {
       >
         <img src={img} alt={path} className='link-img'></img>
         <div>
-          <p>{title}</p>
-          <p>{info}</p>
+          <p className='link-title'>{title}</p>
+          <p className='link-info'>{info}</p>
         </div>
       </NavLink> 
     </div>

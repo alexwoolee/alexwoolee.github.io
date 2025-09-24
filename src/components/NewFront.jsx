@@ -30,11 +30,11 @@ const NewFront = () => {
 
           <HomeLink path="/version" img={verImg} title="Versions" info="Alex Woo Lee"></HomeLink>
 
-          <HomeLink path="/version" img={educImg} title="Education" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/edu" img={educImg} title="Education" info="Alex Woo Lee"></HomeLink>
 
-          <HomeLink path="/version" img={blogImg} title="Blog Posts" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/blog" img={blogImg} title="Blog Posts" info="Alex Woo Lee"></HomeLink>
           
-          <HomeLink path="/version" img={miscImg} title="​Miscellaneous" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/misc" img={miscImg} title="​Miscellaneous" info="Alex Woo Lee"></HomeLink>
 
         </aside>
 

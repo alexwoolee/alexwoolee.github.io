@@ -19,7 +19,10 @@ import NewAbout from "./components/NewAbout.jsx";
 import NewProj from "./components/NewProj.jsx";
 import NewExp from "./components/NewExp.jsx";
 import Version from "./components/Version.jsx";
-import Home from "./archive_componenets/Home.jsx"
+import Home from "./components/Home.jsx"
+import Education from "./components/Education.jsx";
+import Blog from "./components/Blog.jsx";
+import Miscellaneous from "./components/Miscellaneous.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -55,6 +58,9 @@ function App() {
             <Route path="/proj" element={<NewProj></NewProj>}></Route>
             <Route path="/exp" element={<NewExp></NewExp>}></Route>
             <Route path="/version" element={<Version></Version>}></Route>
+            <Route path="/edu" element={<Education></Education>}></Route>
+            <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/misc" element={<Miscellaneous></Miscellaneous>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
