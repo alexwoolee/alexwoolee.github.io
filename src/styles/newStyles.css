@@ -347,6 +347,7 @@ body {
   position: relative;
   min-height: calc(100vh - 3.75rem - 6.5rem);
   border-radius: 1rem;
+  overflow: hidden;
 }
 
 #star-pattern {
