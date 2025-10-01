@@ -15,14 +15,14 @@ import React from "react";
 import NewFront from "./components/NewFront.jsx";
 import NewTop from "./components/NewTop.jsx";
 import MusicPlayer from "./components/MusicPlayer.jsx";
-import NewAbout from "./components/NewAbout.jsx";
-import NewProj from "./components/NewProj.jsx";
-import NewExp from "./components/NewExp.jsx";
-import Version from "./components/Version.jsx";
-import Home from "./components/Home.jsx"
-import Education from "./components/Education.jsx";
-import Blog from "./components/Blog.jsx";
-import Miscellaneous from "./components/Miscellaneous.jsx";
+import NewAbout from "./pages/NewAbout.jsx";
+import NewProj from "./pages/NewProj.jsx";
+import NewExp from "./pages/NewExp.jsx";
+import Version from "./pages/Version.jsx";
+import Home from "./pages/Home.jsx"
+import Education from "./pages/Education.jsx";
+import Blog from "./pages/Blog.jsx";
+import Miscellaneous from "./pages/Miscellaneous.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";

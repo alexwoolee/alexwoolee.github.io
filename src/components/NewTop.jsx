@@ -4,8 +4,8 @@ import { useState } from 'react'
 /* img assets */
 import icon from "../assets/sirshinu.png"
 
-import home_filled from "../assets/home_filled.png"
-import home_empty from "../assets/home_empty.png"
+import home_filled from "../assets/icons/home_filled.png"
+import home_empty from "../assets/icons/home_empty.png"
 
 const NewTop = () => {
   return (

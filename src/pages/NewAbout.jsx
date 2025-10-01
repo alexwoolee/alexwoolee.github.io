@@ -1,5 +1,5 @@
 import React from 'react'
-import yachiyo from "../assets/yachiyo.png"
+import yachiyo from "../assets/about/yachiyo.png"
 
 const NewAbout = () => {
   return (

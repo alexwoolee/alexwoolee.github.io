@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Link, Outlet, } from 'react-router-dom';
-import NewAbout from './NewAbout';
+import NewAbout from '../pages/NewAbout';
 import HomeLink from './HomeLink';
 /* image assets */
 import homeImg from "../assets/rain.png"

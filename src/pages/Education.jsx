@@ -5,7 +5,7 @@ const Education = () => {
     <div id="edu-container">
       <div className='section-bg'></div>
 
-      <img id="uni-logo" src="src/assets/SFU.png" className='w-48'></img>
+      <img id="uni-logo" src="src/assets/education/SFU.png" className='w-48'></img>
       <h1 id="uni">Simon Fraser University</h1>
       <h2 id="uni-location">Burnaby, BC</h2>
       <h2 id="uni-range">(09/03/2023 - Ongoing)</h2>

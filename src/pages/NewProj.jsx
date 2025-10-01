@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectCard from './ProjectCard'
-import ProjInfo from './ProjInfo'
+import ProjectCard from '../components/ProjectCard'
+import ProjInfo from '../components/ProjInfo'
 import { useState } from 'react'
 /* assets */
 import sirshinu from "../assets/sirshinu.png"
