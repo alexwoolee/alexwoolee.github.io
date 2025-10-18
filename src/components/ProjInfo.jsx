@@ -1,5 +1,5 @@
 import React from 'react'
-import placeholder from "../assets/alone.png"
+import placeholder from "../assets/sidebar/alone.png"
 
 const ProjInfo = ({project}) => {
   return (
@@ -15,7 +15,7 @@ const ProjInfo = ({project}) => {
         </div>
         {/* figma */}
         <div className="github-link">
-          <a href={project.figma}><img src="src/assets/figma-logo.svg" /></a>
+          <a href={project.figma}><img src="src/assets/icons/figma-logo.svg" /></a>
         </div>
         {/* live demo */}
         <div className="github-link">

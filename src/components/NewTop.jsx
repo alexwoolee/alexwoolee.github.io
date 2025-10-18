@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 /* img assets */
-import icon from "../assets/sirshinu.png"
+import icon from "../assets/sidebar/sirshinu.png"
 
 import home_filled from "../assets/icons/home_filled.png"
 import home_empty from "../assets/icons/home_empty.png"

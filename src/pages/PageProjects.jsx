@@ -3,9 +3,9 @@ import ProjectCard from '../components/ProjectCard'
 import ProjInfo from '../components/ProjInfo'
 import { useState } from 'react'
 /* assets */
-import sirshinu from "../assets/sirshinu.png"
+import sirshinu from "../assets/sidebar/sirshinu.png"
 /* data */
-import projects from "../data/Projects"
+import projects from "../data/DataProjects"
 
 const NewProj = () => { 
   // selectedProject is an obj that stores a component's prop, to access a prop => selectedProject.prop_example

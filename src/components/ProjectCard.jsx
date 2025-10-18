@@ -1,6 +1,6 @@
 import React from 'react'
 /* img assets */
-import proj1 from "../assets/sirshinu.png"
+import proj1 from "../assets/sidebar/sirshinu.png"
 import { Link } from 'react-router-dom'
 
 const ProjectCard = ({ key, project, onSelect }) => {

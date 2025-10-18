@@ -1,28 +1,22 @@
-import "./styles.css";
-
+/* CSS file */
+import "./styles/styles.css";
+/* Third-party imports / Framework imports */
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import React from "react";
-// import NavBar from "./components/NavBar.jsx";
-// import FrontPage from "./components/FrontPage.jsx";
-// import About from "./components/About.jsx";
-// import Skill from "./components/Skills.jsx"
-// import Project from "./components/Projects.jsx"
-// import Contact from "./components/Contact.jsx";
-// import Resume from "./components/Resume.jsx";
-
-import NewFront from "./components/NewFront.jsx";
+/* Components */
+import Layout from "./components/Layout.jsx";
 import NewTop from "./components/NewTop.jsx";
 import MusicPlayer from "./components/MusicPlayer.jsx";
-import NewAbout from "./pages/NewAbout.jsx";
-import NewProj from "./pages/NewProj.jsx";
-import NewExp from "./pages/NewExp.jsx";
-import Version from "./pages/Version.jsx";
+/* Pages */
+import PageAbout from "./pages/PageAbout.jsx";
+import PageProjects from "./pages/PageProjects.jsx";
+import PageExp from "./pages/PageExp.jsx";
+import PageVersion from "./pages/PageVersion.jsx";
 import Home from "./pages/Home.jsx"
-import Education from "./pages/Education.jsx";
-import Blog from "./pages/Blog.jsx";
-import Miscellaneous from "./pages/Miscellaneous.jsx";
+import PageEduc from "./pages/PageEduc.jsx";
+import PageBlog from "./pages/PageBlog.jsx";
+import PageMisc from "./pages/PageMisc.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -35,44 +29,25 @@ function App() {
     });
   }, []);
 
-  // const OnePageLayout = () => {
-  //   return (<>
-  //     <FrontPage></FrontPage>
-  //     <About></About>
-  //     <Skill></Skill>
-  //     <Project></Project>
-  //     <Contact></Contact>
-  //   </>);
-  // };  
-
   return (
     <>
       <BrowserRouter>
         <NewTop></NewTop>
         <MusicPlayer></MusicPlayer>
         <Routes>
-          <Route path="/" element={<NewFront></NewFront>}>
+          <Route path="/" element={<Layout></Layout>}>
             <Route index element={<Home></Home>}></Route>
             <Route path="home" element={<Home />} /> 
-            <Route path="/about" element={<NewAbout></NewAbout>}></Route>
-            <Route path="/proj" element={<NewProj></NewProj>}></Route>
-            <Route path="/exp" element={<NewExp></NewExp>}></Route>
-            <Route path="/version" element={<Version></Version>}></Route>
-            <Route path="/edu" element={<Education></Education>}></Route>
-            <Route path="/blog" element={<Blog></Blog>}></Route>
-            <Route path="/misc" element={<Miscellaneous></Miscellaneous>}></Route>
+            <Route path="/about" element={<PageAbout></PageAbout>}></Route>
+            <Route path="/proj" element={<PageProjects></PageProjects>}></Route>
+            <Route path="/exp" element={<PageExp></PageExp>}></Route>
+            <Route path="/version" element={<PageVersion></PageVersion>}></Route>
+            <Route path="/edu" element={<PageEduc></PageEduc>}></Route>
+            <Route path="/blog" element={<PageBlog></PageBlog>}></Route>
+            <Route path="/misc" element={<PageMisc></PageMisc>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
-      {/* <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route>
-            <Route path="/" element={<OnePageLayout />}></Route>
-            <Route path="/resume" element={<Resume />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter> */}
     </>
   );
 }

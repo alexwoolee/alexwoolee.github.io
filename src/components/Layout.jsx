@@ -1,16 +1,17 @@
+/* Third-party imports / Framework imports */
 import React from 'react'
-import { BrowserRouter, Link, Outlet, } from 'react-router-dom';
-import NewAbout from '../pages/NewAbout';
+import { Outlet, } from 'react-router-dom';
+/* Components */
 import HomeLink from './HomeLink';
-/* image assets */
-import homeImg from "../assets/rain.png"
-import aboutImg from "../assets/together.png" 
-import projImg from "../assets/proud.png"
-import expImg from "../assets/alone.png"
-import verImg from "../assets/wonder.png"
-import educImg from "../assets/happy.png"
-import blogImg from "../assets/beauty.png"
-import miscImg from "../assets/stars.jpg"
+/* Sidebar assets */
+import homeImg from "../assets/sidebar/rain.png"
+import aboutImg from "../assets/sidebar/together.png" 
+import projImg from "../assets/sidebar/proud.png"
+import expImg from "../assets/sidebar/alone.png"
+import verImg from "../assets/sidebar/wonder.png"
+import educImg from "../assets/sidebar/happy.png"
+import blogImg from "../assets/sidebar/beauty.png"
+import miscImg from "../assets/sidebar/stars.jpg"
 
 const NewFront = () => {
   

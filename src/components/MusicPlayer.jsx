@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import "../styles/newStyles.css";
+import "../styles/styles.css";
 /* img assets */
 import Pause from './icons/Pause';
 import Play from './icons/Play';
@@ -8,7 +8,7 @@ import SkipBack from './icons/SkipBack';
 import SkipForward from './icons/SkipForward';
 import Music from './icons/Music';
 /* audio assets */
-import musicArray from '../data/Music';
+import musicArray from '../data/DataMusic';
 
 /*
 Music Player Design Document
@@ -87,7 +87,7 @@ const MusicPlayer = () => {
         </div>
      </div>
      <div id="progress-bar">
-
+        <input type="range" name="progress" id="music-slider" min="0" max="100"></input>
      </div>
     </>
   )

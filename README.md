@@ -1,23 +1,17 @@
-## Personal Portfolio
-### [https://alexwoolee.github.io/](https://alexwoolee.github.io/)
+<h1 style="display: flex; align-items: center; justify-content: space-between;">
+  <a href="https://alexwoolee.github.io/" style="text-decoration: none; color: inherit;">
+    Personal Portfolio
+  </a>  
+  <img src="https://static.wikia.nocookie.net/fantendo/images/3/37/AgentPowerMoonMetro.png/revision/latest/scale-to-width-down/250?cb=20170801180713" alt="Profile Image" width="50">
+</h1>
 
-## Description
-A personal portfolio.
+<p>A personal portfolio.</p>
 
 ## Tech Stack 
-- HTML
-- CSS
-- JavaScript
+- HTML/JS/CSS
 - React.js
 - Tailwind.css
 
-## Installation 
-```bash
-git clone https://github.com/alexwoolee/alexwoolee.github.io.git
-cd alexwoolee.github.io
-npm install 
-npm run dev
-```
 
 ## Author
 Alex Woo Lee - [GitHub](https://github.com/alexwoolee)
