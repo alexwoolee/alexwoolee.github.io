@@ -40,15 +40,21 @@ body {
 
 /* music player */
 
-#music-player {
-  background-color: var(--color-black);
+#music-section {
+  background-color:#1f1e39;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4.5rem;
+  height: 6rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+#music-player {
+
 }
 
 .music-cover {
@@ -116,6 +122,28 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {
   background: #ddd; /* Light gray for the unfilled part */
   border-radius: 4px;
+}
+
+#progress-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#bar-full {
+  position: relative;
+  width: 300px;
+  height: 4px;
+  background-color: grey;
+  border-radius: 4px;
+}
+
+#bar-fill {
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: white;
+  transition: 2s ease-in;
 }
 
 
@@ -230,7 +258,7 @@ input[type="range"]::-ms-fill-upper {
   padding: 2rem 8rem 2rem 6rem;
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
   border-radius: 1rem;
 }
 
@@ -265,14 +293,14 @@ input[type="range"]::-ms-fill-upper {
 
 .social-icon {
   padding: 12px;
-  background-color: rgb(73, 7, 149);
+  background-color: rgba(235, 129, 63, 0.935);
   border: transparent 1px solid;
   border-radius: 1rem;
   margin-right: 0.5rem;
 }
 
 .social-icon:hover {
-  background-color: rgb(135, 2, 165);
+  background-color: rgb(244, 98, 20);
 }
 
 /* project */
@@ -293,14 +321,14 @@ input[type="range"]::-ms-fill-upper {
   overflow-y: scroll;
   background-color: var(--color-dark-grey);
   border-radius: 1rem;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
 }
 
 #proj-info-display {
   background-color: var(--color-dark-grey);
   border-radius: 12px;
   min-width: 300px;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
   padding: 1.5rem;
   max-width: 300px;
   overflow-y: auto;
@@ -313,7 +341,8 @@ input[type="range"]::-ms-fill-upper {
 
 .proj-img {
   width: 200px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -340,8 +369,10 @@ input[type="range"]::-ms-fill-upper {
   margin: 1rem 0rem 1rem 0rem
 }
 
-#proj-lg-img {
+.proj-info-img {
   border-radius: 0.5rem;
+  height: 250px;
+  object-fit: cover;
 }
 
 #github-links {
@@ -373,7 +404,7 @@ input[type="range"]::-ms-fill-upper {
   padding: 2rem 6rem 2rem 6rem;
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
   border-radius: 1rem;
 }
 
@@ -435,7 +466,7 @@ input[type="range"]::-ms-fill-upper {
   padding: 2rem 20rem 2rem 6rem;
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
   border-radius: 1rem;
 }
 
@@ -457,7 +488,7 @@ input[type="range"]::-ms-fill-upper {
   padding: 2rem 20rem 2rem 6rem;  
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  max-height: calc(100vh - 3.75rem - 6.5rem);
+  height: calc(100vh - 4.5rem - 7rem);
   border-radius: 1rem;
 }
 

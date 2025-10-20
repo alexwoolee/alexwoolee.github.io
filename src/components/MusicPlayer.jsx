@@ -1,103 +1,101 @@
 import React, { useEffect, useRef, useState } from 'react'
-/* Image assets */
-import Pause from './icons/Pause';
 import Play from './icons/Play';
-import Repeat from './icons/Repeat';
-import SkipBack from './icons/SkipBack';
+import Pause from './icons/Pause';
 import SkipForward from './icons/SkipForward';
+import SkipBack from './icons/SkipBack';
+import Repeat from './icons/Repeat';
+// Image assets 
 import Music from './icons/Music';
-/* Audio assets */
+// Audio assets 
 import musicArray from '../data/DataMusic';
 
-// Global variables
 const arraySize = musicArray.length;
-let minutes = 0;
-let seconds = 0;
-let currMinutes = 0;
-let currSeconds = 0;
-var n = true;
 
 const MusicPlayer = () => {
-  const [totalMinutes, setTotalMinutes] = useState(0);
-  const [totalSeconds, setTotalSeconds] = useState(0);
-  const [currentMinutes, setCurrentMinutes] = useState(0);
-  const [currentSeconds, setCurrentSeconds] = useState(0);
+  const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+
   const [isPlaying, setIsPlaying] = useState(false);
-  let [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
+
   const audioRef = useRef(null)
 
-  const audio = audioRef.current;
-
-  /* Detect */
   useEffect(() => {
+    const audio = audioRef.current;
     const handleMetaData = () => {
-      console.log("hello");
-      formatTotalData(audio.duration)
-      console.log("total time: " + audio.duration);
+      setDuration(audio.duration)
+      // console.log("total time: " + audio.duration);
     }
 
     const handleCurrentTime = () => {
-      if ((audio.currentTime % 60) >= 9) {
-        n = false;
-      } else {
-        n = true;
-      }
-      formatCurrentData(audio.currentTime);
+      setCurrentTime(audio.currentTime);
       // console.log("current time: " + audio.currentTime);
-      console.log(audio.currentTime);
-    }
-
-    const formatTotalData = (totalTime) => {
-      minutes = Math.floor(totalTime / 60).toFixed(0);
-      seconds = (totalTime - (60 * minutes)).toFixed(0);
-      setTotalMinutes(minutes);
-      setTotalSeconds(seconds);
     }
   
-    const formatCurrentData = (currentTime) => {
-      currMinutes = Math.floor(currentTime / 60).toFixed(0);
-      currSeconds = (currentTime - (60 * currMinutes)).toFixed(0);
-      setCurrentMinutes(currMinutes);
-      setCurrentSeconds(currSeconds);    
-    }
-
-    if (isPlaying && audio) {
-      console.log("song has ended...");
+    if (audioRef) {
       audio.addEventListener('loadedmetadata', handleMetaData);
       audio.addEventListener('timeupdate', handleCurrentTime);
-      audio.play();
-
       return () => { 
         audio.removeEventListener('loadedmetadata', handleMetaData);
         audio.removeEventListener('timeupdate', handleCurrentTime);
       }
     } 
+  }, [index]); // rerun if index changes, or audio (I think both dependencies are the same)
 
-  }, [index, audio]); // rerun if index changes, or audio (i believe both dependencies are the same)
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      if (isPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  }, [isPlaying, index]); // Run if isPlaying changes or song index, song index more reliable
+
+  // Automatically set the progress bar to 0, if music changes
+  useEffect(() => {
+
+  }, [index]) // Run if index changes
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
-    console.log("togglePlay activated");
     if (!isPlaying) { // if it's not playing, user clicks play, play it
-      audio.play();
       console.log("playing...");
     } else {
-      audio.pause();   
       console.log("pausing...");
     }
   }
 
   const nextSong = () => {
-    setIndex((index + 1) % arraySize);
+    const newIndex = (index + 1) % arraySize;
+    setIndex(newIndex);
     console.log(index);
-    console.log("going to next song...");
+    console.log("switching to next song...");
   }
 
   const prevSong = () =>  {
-    setIndex((index + arraySize - 1) % arraySize);
-    console.log(index);
-    console.log("going to prev song...");
+    const newIndex = (index + arraySize - 1) % arraySize;
+    setIndex(newIndex);
+    console.log(newIndex);
+    console.log("switching to prev song...");
+  }
+
+  const formatData = (time) => {
+    const minutes = Math.floor(time / 60).toFixed(0);
+    const seconds = Math.floor(time % 60).toFixed(0);
+    return `${minutes}:${String(seconds).padStart(2, '0')}`;
+  }
+
+  const formatProgress = (currentTime, duration) => {
+    const progress = Math.floor((currentTime / duration) * 100);
+    console.log(progress);
+    return `${progress}%`;
+  }
+
+  const progress = (currentTime, duration) => {
+    const progress = Math.floor((currentTime / duration) * 100);
+    return progress;
   }
 
   return (
@@ -119,9 +117,24 @@ const MusicPlayer = () => {
      <div>
           <div id="progress-value"></div>
           <div id="progress-bar">
-            <p>{currMinutes}:{n ? '0' : ''}{currentSeconds}</p>
-            <input type="range" name="progress" id="music-slider" min="0" max="100"></input>
-            <p>{totalMinutes + ":" + totalSeconds}</p>
+            <p>{formatData(currentTime)}</p>
+            {/* <input 
+              type="range" 
+              name="progress" 
+              id="music-slider" 
+              min="0" 
+              max="100"
+              value={progress(currentTime, duration)}
+            ></input> */}
+            <div id="bar-full">
+              <div 
+                id="bar-fill" 
+                style={{width: `${progress(currentTime, duration)}%`}}
+              >
+              </div>
+            </div>
+            <p>{formatData(duration)}</p>
+            <p>{formatProgress(currentTime, duration)}</p>
           </div>
           <div id="total-time"></div>
           <div id="music-buttons">
@@ -140,6 +153,7 @@ const MusicPlayer = () => {
         </div>
         <div>
           <h1>Extra controls</h1>
+          <Repeat></Repeat>
         </div>
     </div>
   )
