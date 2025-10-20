@@ -2,7 +2,7 @@ const Projects = [
   {
     id: 1,
     authors: "Alex Lee, Ryan Fu, Ikkyu Li, Tian Zheng",
-    img: "src/assets/taiwan-explorers.png",
+    img: "/projects/cover-taiwan.png",
     title: "Taiwan Explorers",
     txt: "Explore hidden gems and cultural highlights of Taiwan.",
     github: "",
@@ -12,7 +12,7 @@ const Projects = [
   {
     id: 2,
     authors: "Alex Lee, Alexander K., Emily T., Camille Ng, Josevan S. Wijaya",
-    img: "src/assets/emergency-reporting-system.png",
+    img: "/projects/cover-erm.png",
     title: "Emergency Reporting System",
     txt: "Manage and report emergencies efficiently in real time.",
     github: "",
@@ -20,9 +20,19 @@ const Projects = [
     live: ""
   },
   {
+    id: 13,
+    authors: "TBA",
+    img: "/projects/cover-dearly.png",
+    title: "Dearly",
+    txt: "A web application used to format emails to loved ones.",
+    github: "",
+    figma: "",
+    live: ""
+  },
+  {
     id: 3,
     authors: "Alex Lee",
-    img: "src/assets/dogoo-chat.png",
+    img: "/projects/cover-dogoo.png",
     title: "Dogoo Chat",
     txt: "A real-time chat app with AI-powered features.",
     github: "",
@@ -32,7 +42,7 @@ const Projects = [
   {
     id: 4,
     authors: "Alex Lee",
-    img: "src/assets/journey-of-the-alien-king.png",
+    img: "/projects/cover-jotak.png",
     title: "Journey of the Alien King",
     txt: "A story-driven adventure game with unique alien worlds.",
     github: "",
@@ -42,7 +52,7 @@ const Projects = [
   {
     id: 5,
     authors: "Alex Lee",
-    img: "src/assets/chip-8-emulator.png",
+    img: "/projects/image-placeholder.png",
     title: "CHIP-8 Emulator",
     txt: "Run classic CHIP-8 programs with accurate emulation.",
     github: "",
@@ -52,7 +62,7 @@ const Projects = [
   {
     id: 6,
     authors: "Alex Lee",
-    img: "src/assets/calculator.png",
+    img: "/projects/image-placeholder.png",
     title: "Calculator",
     txt: "A clean and responsive calculator app.",
     github: "",
@@ -62,7 +72,7 @@ const Projects = [
   {
     id: 7,
     authors: "Alex Lee",
-    img: "src/assets/todo-list.png",
+    img: "/projects/image-placeholder.png",
     title: "TODO List",
     txt: "Track and manage daily tasks efficiently.",
     github: "",
@@ -72,7 +82,7 @@ const Projects = [
   {
     id: 8,
     authors: "Alex Lee",
-    img: "src/assets/anime-waifu-discord-bot.png",
+    img: "/projects/image-placeholder.png",
     title: "Anime Waifu Discord Bot",
     txt: "Interact with anime characters on Discord.",
     github: "",
@@ -82,7 +92,7 @@ const Projects = [
   {
     id: 9,
     authors: "Alex Lee",
-    img: "src/assets/melas.png",
+    img: "/projects/image-placeholder.png",
     title: "Melas (Undertale Inspired)",
     txt: "A fan-made Undertale-inspired game with unique mechanics.",
     github: "",
@@ -92,7 +102,7 @@ const Projects = [
   {
     id: 10,
     authors: "Alex Lee",
-    img: "src/assets/google-gemini-ai-itinerary-generator.png",
+    img: "/projects/image-placeholder.png",
     title: "Google Gemini AI Itinerary Generator",
     txt: "Generate custom travel plans using AI assistance.",
     github: "",
@@ -102,7 +112,7 @@ const Projects = [
   {
     id: 11,
     authors: "Alex Lee",
-    img: "src/assets/dsa-visualizer.png",
+    img: "/projects/image-placeholder.png",
     title: "DSA Visualizer",
     txt: "Visualize algorithms and data structures interactively.",
     github: "",
@@ -112,7 +122,7 @@ const Projects = [
   {
     id: 12,
     authors: "Alex Lee",
-    img: "src/assets/ios-app.png",
+    img: "/projects/image-placeholder.png",
     title: "iOS App",
     txt: "A mobile app built for iOS devices.",
     github: "",

@@ -1,15 +1,16 @@
 import dpCover from "../assets/covers/pokemon-diamond.jpg"
+import smgCover from "../assets/covers/smg.png"
 import dawnAudio from "../assets/audio/pokemon-dp-dawn.mp3"
 import route201Audio from "../assets/audio/pokemon-dp-route-201-day.mp3"
 import solaceonTownAudio from "../assets/audio/pokemon-dp-solaceon-town-day.mp3"
-import test from "../assets/audio/smb_gameover.wav"
+import test from "../assets/audio/luma.mp3"
 
 const music = [
   {
     id: 4,
-    title: "Test",
+    title: "Luma",
     artist: "Nintendo",
-    cover: dpCover,
+    cover: smgCover,
     audio: test
   },
   {
