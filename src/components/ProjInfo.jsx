@@ -1,11 +1,10 @@
 import React from 'react'
-import placeholder from "../assets/sidebar/alone.png"
 
 const ProjInfo = ({project}) => {
   return (
     <div id="proj-info-display">
       <p id="proj-authors">{project.authors}</p>
-      <img src={placeholder} alt="project info image" id="proj-lg-img"></img>
+      <img src={project.img} alt="project info image" className="proj-info-img"></img>
       <h1 id="proj-lg-title">{project.title}</h1>
       <p>{project.txt}</p>
       <div id="github-links">

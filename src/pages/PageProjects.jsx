@@ -2,9 +2,7 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import ProjInfo from '../components/ProjInfo'
 import { useState } from 'react'
-/* assets */
-import sirshinu from "../assets/sidebar/sirshinu.png"
-/* data */
+/* Data */
 import projects from "../data/DataProjects"
 
 const NewProj = () => { 

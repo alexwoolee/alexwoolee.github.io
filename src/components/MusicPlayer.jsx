@@ -114,7 +114,7 @@ const MusicPlayer = () => {
           onEnded={nextSong}
         ></audio>
      </div>
-     <div>
+     <div id="player-middle">
           <div id="progress-value"></div>
           <div id="progress-bar">
             <p>{formatData(currentTime)}</p>
@@ -138,17 +138,19 @@ const MusicPlayer = () => {
           </div>
           <div id="total-time"></div>
           <div id="music-buttons">
-          <button id="next-button" onClick={() => prevSong()}>
-              <SkipBack></SkipBack>
+
+            <button className='music-button' onClick={() => prevSong()}>
+                <SkipBack></SkipBack>
             </button>
-          <button id="play-button" onClick={() => togglePlay()}>
-            { 
-              isPlaying ? <Pause></Pause> : <Play></Play> 
-            }
-          </button>
-            <button id="next-button" onClick={() => nextSong()}>
-              <SkipForward></SkipForward>
+
+            <button className='music-button' onClick={() => togglePlay()}>
+              {isPlaying ? <Pause></Pause> : <Play></Play>}
             </button>
+
+            <button className='music-button' onClick={() => nextSong()}>
+                <SkipForward></SkipForward>
+            </button>
+
           </div>
         </div>
         <div>

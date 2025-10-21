@@ -25,9 +25,6 @@ const NewExp = () => {
       <ExperienceCard img={SFU} company="SFU" title="Surge 2025" period="Sep. 27th 2025" txt="text">
       </ExperienceCard>
 
-      <ExperienceCard img={placeholder} company="Actuarial Students' National Association (ASNA)" title="ASNA Case Competition 2026" period="Sep. 27th 2025" txt="text">
-      </ExperienceCard>
-
       <h1 className='exp-type'>Volunteering</h1>
       <ExperienceCard img={MOCC} company="Marpole Oakridge Community Centre" title="Marpole Community Food Hub" period="Sep. 2022 - Dec. 2022" txt="text">
       </ExperienceCard>
