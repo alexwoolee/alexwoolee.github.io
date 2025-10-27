@@ -143,19 +143,6 @@ const MusicPlayer = () => {
 
       {/* Middle section */}
       <div id="player-middle">
-        <div id="progress-value"></div>
-        <div id="progress-bar">
-          <p>{formatData(currentTime)}</p>
-          <div id="bar-full">
-            <div
-              id="bar-fill"
-              style={{ width: `${progress(currentTime, duration)}%` }}
-            >
-            </div>
-          </div>
-          <p>{formatData(duration)}</p>
-        </div>
-        <div id="total-time"></div>
         <div id="music-buttons">
           <button className='music-button' onClick={prevSong}>
             <SkipBack></SkipBack>
@@ -167,6 +154,18 @@ const MusicPlayer = () => {
             <SkipForward></SkipForward>
           </button>
         </div>
+        <div id="progress-bar">
+          <p className='music-time'>{formatData(currentTime)}</p>
+          <div id="bar-full">
+            <div
+              id="bar-fill"
+              style={{ width: `${progress(currentTime, duration)}%` }}
+            >
+            </div>
+          </div>
+          <p className='music-time'>{formatData(duration)}</p>
+        </div>
+        <div id="total-time"></div>
       </div>
 
       {/* Right section */}

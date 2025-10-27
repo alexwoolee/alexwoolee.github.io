@@ -16,14 +16,14 @@ const music = [
   {
     id: 1,
     title: "Dawn",
-    artist: "Pokem",
+    artist: "Pokemon",
     cover: dpCover,
     audio: dawnAudio
   },
   {
     id: 2,
     title: "Route 201 Day",
-    artist: "Pokemo",
+    artist: "Pokemon",
     cover: dpCover,
     audio: route201Audio
   },
