@@ -3,23 +3,36 @@ import React from 'react'
 const Version = () => {
   return (
     <div id="version-container">
-      <h1 className='version'>Version 1.0</h1>
-      <h1 className='version-date'>09/21, 09/22, 09/23, 09/24 (2025)</h1>
+      {/* September Version */}
+      <h1 className="version">Version 1.0</h1>
+      <h1 className="version-date">09/21–09/24 (2025)</h1>
       <ul>
-        <li className='version-point'>- new user interface that fits in one screen</li>
-        <li className='version-point'>- new sidebar that displays available links</li>
-        <li className='version-point'>- loads content without reloading the page in the content display</li>
-        <li className='version-point'>- change website title</li>
-        <li className='version-point'>- active link changes its css</li>
-        <li className='version-point'>- about, project, experiences rough design is complete</li>
-        <li className='version-point'>- new home page</li>
-        <li className='version-point'>- added assets</li>
-        <li className='version-point'>- added music player assets</li>
-        <li className='version-point'>- started project info display feature</li>
-        <li className='version-point'>- added education page</li>
-        <li className='version-point'>- added blog posts page</li>
-        <li className='version-point'>- added misc page</li>
-        <li className='version-point'>- finalized work experience design</li>
+        <li className="version-point">Introduced a unified single-screen user interface</li>
+        <li className="version-point">Added a sidebar displaying available navigation links</li>
+        <li className="version-point">Enabled dynamic content loading without page reloads</li>
+        <li className="version-point">Updated website title</li>
+        <li className="version-point">Implemented active link highlighting</li>
+        <li className="version-point">Completed rough designs for About, Projects, and Experience pages</li>
+        <li className="version-point">Added a new Home page</li>
+        <li className="version-point">Added new visual and media assets</li>
+        <li className="version-point">Introduced initial music player assets</li>
+        <li className="version-point">Started implementing project info display feature</li>
+        <li className="version-point">Added Education page</li>
+        <li className="version-point">Added Blog Posts page</li>
+        <li className="version-point">Added Miscellaneous page</li>
+        <li className="version-point">Finalized Work Experience section design</li>
+      </ul>
+
+      {/* October Version */}
+      <h1 className="version">Version 1.1</h1>
+      <h1 className="version-date">10/01–10/21 (2025)</h1>
+      <ul>
+        <li className="version-point">Added a fully functional music player component</li>
+        <li className="version-point">Music player displays current soundtrack, artist, and cover art</li>
+        <li className="version-point">Implemented play, pause, skip forward, and skip backward controls</li>
+        <li className="version-point">Displayed total song duration and current progress in timer format</li>
+        <li className="version-point">Added progress bar (currently unstable, pending fixes)</li>
+        <li className="version-point">Clicking a project now displays detailed project info with image, description, links, and artist credits</li>
       </ul>
     </div>
   )

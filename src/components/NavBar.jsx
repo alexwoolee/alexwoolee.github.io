@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 /* img assets */
 import icon from "../assets/sidebar/sirshinu.png"
@@ -7,7 +7,8 @@ import icon from "../assets/sidebar/sirshinu.png"
 import home_filled from "../assets/icons/home_filled.png"
 import home_empty from "../assets/icons/home_empty.png"
 
-const NewTop = () => {
+const NavBar = () => {
+  const location = useLocation();
   return (
     <>
       <div id="bar">
@@ -16,7 +17,9 @@ const NewTop = () => {
         <NavLink 
           to="/home"
           className={ ({ isActive }) => 
-            isActive ? "icon-active-wrapper" : "icon-wrapper"
+            isActive || location.pathname == "/"
+              ? "icon-active-wrapper" 
+              : "icon-wrapper"
           }
         >
           <img src={home_empty} alt="home icon" id="home-icon"></img> 
@@ -26,4 +29,4 @@ const NewTop = () => {
   )
 }
 
-export default NewTop
+export default NavBar;

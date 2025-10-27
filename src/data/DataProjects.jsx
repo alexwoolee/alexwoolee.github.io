@@ -60,6 +60,16 @@ const Projects = [
     live: ""
   },
   {
+    id: 14,
+    authors: "Alex Lee",
+    img: "/projects/cover-portfolio.png",
+    title: "Personal Portfolio",
+    txt: "My personal portfolio made with HTML/CSS/JS with the React Framework and Tailwindcss for the frontend. Additionally, MongoDB, Express.js, and Node.js was used to implement the blog system.",
+    github: "",
+    figma: "",
+    live: ""
+  },
+  {
     id: 6,
     authors: "Alex Lee",
     img: "/projects/image-placeholder.png",

@@ -12,36 +12,33 @@ import musicArray from '../data/DataMusic';
 const arraySize = musicArray.length;
 
 const MusicPlayer = () => {
+  const audioRef = useRef(null)
   const [duration, setDuration] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
-
-  const [isPlaying, setIsPlaying] = useState(false);
   const [index, setIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-  const audioRef = useRef(null)
-
+  // useEffect #1
   useEffect(() => {
     const audio = audioRef.current;
     const handleMetaData = () => {
       setDuration(audio.duration)
-      // console.log("total time: " + audio.duration);
+    }
+    const handleCurrentTime = () => {
+      setCurrentTime(audio.currentTime)
     }
 
-    const handleCurrentTime = () => {
-      setCurrentTime(audio.currentTime);
-      // console.log("current time: " + audio.currentTime);
-    }
-  
     if (audioRef) {
       audio.addEventListener('loadedmetadata', handleMetaData);
       audio.addEventListener('timeupdate', handleCurrentTime);
-      return () => { 
+      return () => {
         audio.removeEventListener('loadedmetadata', handleMetaData);
         audio.removeEventListener('timeupdate', handleCurrentTime);
       }
-    } 
-  }, [index]); // rerun if index changes, or audio (I think both dependencies are the same)
+    }
+  }, [index]); // Rerun if index changes, or audio (I think both dependencies are the same)
 
+  // useEffect #2
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
@@ -53,10 +50,36 @@ const MusicPlayer = () => {
     }
   }, [isPlaying, index]); // Run if isPlaying changes or song index, song index more reliable
 
-  // Automatically set the progress bar to 0, if music changes
+  // useEffect #3
   useEffect(() => {
+    let interval = null;
+    const audio = audioRef.current
 
-  }, [index]) // Run if index changes
+    if (isPlaying && audio) {
+      interval = setInterval(() => {
+        setCurrentTime(audio.currentTime);
+      }, 200)
+    } else {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isPlaying, index]);
+
+  useEffect(() => {
+    let animationFrame;
+  
+    const updateProgress = () => {
+      if (audioRef.current && isPlaying) {
+        setCurrentTime(audioRef.current.currentTime);
+        animationFrame = requestAnimationFrame(updateProgress);
+      }
+    };
+  
+    if (isPlaying) {
+      animationFrame = requestAnimationFrame(updateProgress);
+    }
+    return () => cancelAnimationFrame(animationFrame);
+  }, [isPlaying]);
 
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
@@ -74,7 +97,7 @@ const MusicPlayer = () => {
     console.log("switching to next song...");
   }
 
-  const prevSong = () =>  {
+  const prevSong = () => {
     const newIndex = (index + arraySize - 1) % arraySize;
     setIndex(newIndex);
     console.log(newIndex);
@@ -94,13 +117,14 @@ const MusicPlayer = () => {
   }
 
   const progress = (currentTime, duration) => {
-    const progress = Math.floor((currentTime / duration) * 100);
-    return progress;
+    const percentage = Math.floor((currentTime / duration) * 100);
+    return percentage;
   }
 
   return (
     <div id="music-section">
-      <div id="music-player">
+      {/* Left section */}
+      <div id="player-left">
         <div className="music-info">
           <img src={musicArray[index].cover} alt="music cover" className='music-cover'></img>
           <div className="music-text">
@@ -112,51 +136,44 @@ const MusicPlayer = () => {
           ref={audioRef}
           src={musicArray[index].audio}
           onEnded={nextSong}
+          min="0"
+          max="1"
         ></audio>
-     </div>
-     <div id="player-middle">
-          <div id="progress-value"></div>
-          <div id="progress-bar">
-            <p>{formatData(currentTime)}</p>
-            {/* <input 
-              type="range" 
-              name="progress" 
-              id="music-slider" 
-              min="0" 
-              max="100"
-              value={progress(currentTime, duration)}
-            ></input> */}
-            <div id="bar-full">
-              <div 
-                id="bar-fill" 
-                style={{width: `${progress(currentTime, duration)}%`}}
-              >
-              </div>
+      </div>
+
+      {/* Middle section */}
+      <div id="player-middle">
+        <div id="progress-value"></div>
+        <div id="progress-bar">
+          <p>{formatData(currentTime)}</p>
+          <div id="bar-full">
+            <div
+              id="bar-fill"
+              style={{ width: `${progress(currentTime, duration)}%` }}
+            >
             </div>
-            <p>{formatData(duration)}</p>
-            <p>{formatProgress(currentTime, duration)}</p>
           </div>
-          <div id="total-time"></div>
-          <div id="music-buttons">
-
-            <button className='music-button' onClick={() => prevSong()}>
-                <SkipBack></SkipBack>
-            </button>
-
-            <button className='music-button' onClick={() => togglePlay()}>
-              {isPlaying ? <Pause></Pause> : <Play></Play>}
-            </button>
-
-            <button className='music-button' onClick={() => nextSong()}>
-                <SkipForward></SkipForward>
-            </button>
-
-          </div>
+          <p>{formatData(duration)}</p>
         </div>
-        <div>
-          <h1>Extra controls</h1>
-          <Repeat></Repeat>
+        <div id="total-time"></div>
+        <div id="music-buttons">
+          <button className='music-button' onClick={prevSong}>
+            <SkipBack></SkipBack>
+          </button>
+          <button className='music-button' id="play" style={{ color: 'black' }} onClick={togglePlay}>
+            {isPlaying ? <Pause></Pause> : <Play></Play>}
+          </button>
+          <button className='music-button' onClick={nextSong}>
+            <SkipForward></SkipForward>
+          </button>
         </div>
+      </div>
+
+      {/* Right section */}
+      <div id="player-right">
+        <Repeat></Repeat>
+        <div id="volume-control"></div>
+      </div>
     </div>
   )
 }

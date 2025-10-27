@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import React from "react";
 /* Components */
 import Layout from "./components/Layout.jsx";
-import NewTop from "./components/NewTop.jsx";
+import NavBar from "./components/NavBar.jsx";
 import MusicPlayer from "./components/MusicPlayer.jsx";
 /* Pages */
 import PageAbout from "./pages/PageAbout.jsx";
@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NewTop></NewTop>
+        <NavBar></NavBar>
         <MusicPlayer></MusicPlayer>
         <Routes>
           <Route path="/" element={<Layout></Layout>}>
