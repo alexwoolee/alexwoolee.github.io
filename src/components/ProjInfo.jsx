@@ -15,7 +15,7 @@ const ProjInfo = ({project}) => {
         </div>
         {/* figma */}
         <div className="github-link">
-          <a href={project.figma}><img src="src/assets/icons/figma-logo.svg" /></a>
+          <a href={project.figma}><img src={FIGMA} /></a>
         </div>
         {/* live demo */}
         <div className="github-link">
