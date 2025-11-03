@@ -12,8 +12,8 @@ const NavBar = () => {
   return (
     <>
       <div id="bar">
-        <img src={icon} className='w-12 border rounded-2xl border-transparent ml-4 cursor-pointer'></img>
-        <button id="contact-btn">Redesigning... (09/21/2025 - Ongoing)</button>
+        <img src={icon} className='w-10 border rounded-2xl border-transparent ml-4 cursor-pointer'></img>
+
         <NavLink 
           to="/home"
           className={ ({ isActive }) => 
