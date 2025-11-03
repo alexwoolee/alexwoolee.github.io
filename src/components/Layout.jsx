@@ -12,6 +12,7 @@ import verImg from "../assets/sidebar/wonder.png"
 import educImg from "../assets/sidebar/happy.png"
 import blogImg from "../assets/sidebar/beauty.png"
 import miscImg from "../assets/sidebar/stars.jpg"
+import "../styles/layout.css"
 
 const NewFront = () => {
   
@@ -35,7 +36,7 @@ const NewFront = () => {
 
           <HomeLink path="/blog" img={blogImg} title="Blog Posts" info="Alex Woo Lee"></HomeLink>
           
-          <HomeLink path="/misc" img={miscImg} title="​Miscellaneous" info="Alex Woo Lee"></HomeLink>z
+          <HomeLink path="/misc" img={miscImg} title="​Miscellaneous" info="Alex Woo Lee"></HomeLink>
 
         </aside>
 

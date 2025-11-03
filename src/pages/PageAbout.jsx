@@ -1,11 +1,22 @@
 import React from 'react'
 import yachiyo from "../assets/about/yachiyo.png"
+import bojji from "../assets/about/ousama-ranking-bojji.gif";
+import "../styles/about.css"
+
+/*
+Section 1: Picture, Name, Title, Contact links
+Resume Link
+Section 2: Short biography
+Section 3: Code tools 
+Section 4: Best Projects
+Section 5: Long biography
+*/
 
 const NewAbout = () => {
   return (
     <div id="about-content">
-      <div id="about-top">
-        <img src={yachiyo} className='w-64 border rounded-xl border-transparent' id="profile"></img>
+      <div id="about-top" className='flex md:flex-row flex-col'>
+        <img src={bojji} className='w-64 h-64 border rounded-xl border-transparent object-cover' id="profile"></img>
         <div>
           <h1 id="about-title">Alex Woo Lee</h1>
           <h2 id="profession">Software Developer</h2>

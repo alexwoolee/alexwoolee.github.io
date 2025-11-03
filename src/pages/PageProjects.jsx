@@ -4,6 +4,7 @@ import ProjInfo from '../components/ProjInfo'
 import { useState } from 'react'
 /* Data */
 import projects from "../data/DataProjects"
+import "../styles/projects.css"
 
 const NewProj = () => { 
   // selectedProject is an obj that stores a component's prop, to access a prop => selectedProject.prop_example

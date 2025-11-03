@@ -1,0 +1,83 @@
+/* Projects page and project components */
+
+#proj-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#proj-card-container {
+  background-color: var(--color-dark-grey);
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  overflow-y: scroll;
+  background-color: var(--color-dark-grey);
+  border-radius: 1rem;
+  height: calc(100vh - 4.5rem - 7rem);
+}
+
+#proj-info-display {
+  background-color: var(--color-dark-grey);
+  border-radius: 12px;
+  min-width: 300px;
+  height: calc(100vh - 4.5rem - 7rem);
+  padding: 1.5rem;
+  max-width: 300px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.proj-card { margin: 1rem; }
+
+.proj-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.proj-txt { max-width: 200px; }
+.proj-title { margin-top: 0.5rem; }
+.proj-authors { color: #818182; }
+
+#proj-authors {
+  color: #818182;
+  margin: 0rem 0rem 1rem 0rem;
+  min-height: 48px;
+}
+
+#proj-lg-title {
+  font-size: x-large;
+  margin: 1rem 0rem 1rem 0rem
+}
+
+.proj-info-img {
+  border-radius: 0.5rem;
+  height: 250px;
+  object-fit: cover;
+}
+
+#github-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  margin: 0 -1.5rem 0rem -1.5rem;
+  padding: 1.1rem 0rem 1.25rem 0rem;
+  border: 1px solid rgb(38, 36, 36);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#github-links img, #github-links svg {  
+  width: 28px;
+  height: 28px;
+}
+
+

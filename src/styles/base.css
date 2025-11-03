@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --white-transparent: rgba(255, 255, 255, 0.5);
+  --color-primary: #030412;
+  --color-midnight: #06091f;
+  --color-navy: #161a31;
+  --color-indigo: #1f1e39;
+  --color-dark-grey: #1a1a1a;
+  --color-black: rgb(0, 0, 0);
+}
+
+body {
+  overflow: auto;
+  font-family: 'Funnel Display', 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+  color: white;
+  background-color: black;
+}
+
+/* webkit */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+/* thumb is controlled by viewport, use max-height */
+::-webkit-scrollbar-thumb { 
+  width: 10px; 
+  height: 4px;
+  background-color: var(--white-transparent);
+  border-radius: 12px;
+}
+
+html { scroll-behavior: smooth; }
+h1 { word-break: nowrap; }
+
+

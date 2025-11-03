@@ -1,0 +1,53 @@
+/* About page styles */
+
+#about-content {
+  background-color: var(--color-dark-grey);
+  overflow-y: scroll;
+  height: calc(100vh - 4.5rem - 7rem);
+  border-radius: 1rem;
+}
+
+#about-top {
+  height: auto;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+#profile {
+  min-width: 256px;
+  max-height: 256px;
+}
+
+#about-title {
+  font-size: 50px;
+}
+
+#profession {
+  font-size: 28px;
+  font-weight: 200;
+  color: #818182;
+}
+
+#socials {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem 0;
+}
+
+.social-icon {
+  padding: 12px;
+  background-color: rgba(235, 129, 63, 0.935);
+  border: transparent 1px solid;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+
+.social-icon:hover {
+  background-color: rgb(244, 98, 20);
+}
+
+#about-bio {
+  margin: 2rem 0 2rem 0;
+}
+
+

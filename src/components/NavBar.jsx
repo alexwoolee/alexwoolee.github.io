@@ -6,6 +6,7 @@ import icon from "../assets/sidebar/sirshinu.png"
 
 import home_filled from "../assets/icons/home_filled.png"
 import home_empty from "../assets/icons/home_empty.png"
+import "../styles/navbar.css"
 
 const NavBar = () => {
   const location = useLocation();

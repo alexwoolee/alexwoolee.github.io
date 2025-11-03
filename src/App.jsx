@@ -1,5 +1,5 @@
 /* CSS file */
-import "./styles/styles.css";
+import "./styles/base.css";
 /* Third-party imports / Framework imports */
 import AOS from "aos";
 import "aos/dist/aos.css";

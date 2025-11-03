@@ -8,6 +8,7 @@ import Repeat from './icons/Repeat';
 import Music from './icons/Music';
 // Audio assets 
 import musicArray from '../data/DataMusic';
+import "../styles/music.css"
 
 const arraySize = musicArray.length;
 

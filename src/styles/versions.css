@@ -1,0 +1,25 @@
+/* Versions page styles */
+
+#version-container {
+  padding: 2rem 20rem 2rem 6rem;
+  background-color: var(--color-dark-grey);
+  overflow-y: scroll;
+  height: calc(100vh - 4.5rem - 7rem);
+  border-radius: 1rem;
+}
+
+.version { font-size: 2.5rem; }
+
+.version-date {
+  font-size: 1.5rem;
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
+.version-point {
+  list-style-type: circle;
+  color: rgb(214, 214, 214);
+  margin-left: 4rem;
+}
+
+

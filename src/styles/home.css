@@ -1,0 +1,58 @@
+/* Home page styles */
+
+#home-sec {
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  color: rgb(255, 157, 0);
+}
+
+#star-container {
+  position: relative;
+  background-color: rgb(26, 20, 195);
+  padding-top: 250px;
+  padding-bottom: 200px;
+  height: calc(100vh - 4.5rem - 7rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#star-pattern {
+  background-image: url("https://assets.codepen.io/1468070/Star+Pattern+3.svg");
+  background-size: 18%;  
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  opacity: 0.10;
+  animation: pan 45s linear infinite;
+  will-change: background-position;
+  pointer-events: none;
+}
+
+@keyframes pan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 1000px;
+  }
+}
+
+

@@ -1,0 +1,48 @@
+/* Navbar Styles */
+
+#bar {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  background-color: var(--color-black);
+  position: relative;
+}
+
+#contact-btn {
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: rgb(241, 55, 55);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.icon-wrapper {
+  padding: 8px;
+  background-color: var(--color-dark-grey);
+  border-radius: 64px;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-active-wrapper {
+  padding: 8px;
+  background-color: white;
+  border-radius: 64px;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-wrapper:hover {
+  background-color: #818182;
+}
+
+#home-icon {
+  width: 32px;
+  border: 0.5px solid transparent;
+}
+
+

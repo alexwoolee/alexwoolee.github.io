@@ -1,5 +1,6 @@
 import React from 'react'
 import SFU from '../assets/education/SFU.png'
+import "../styles/educ.css"
 
 const Education = () => {
   return (
