@@ -1,4 +1,5 @@
 import React from 'react'
+import FIGMA from '../assets/icons/figma-logo.svg';
 
 const ProjInfo = ({project}) => {
   return (
