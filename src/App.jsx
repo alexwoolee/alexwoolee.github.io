@@ -17,6 +17,7 @@ import Home from "./pages/Home.jsx"
 import PageEduc from "./pages/PageEduc.jsx";
 import PageBlog from "./pages/PageBlog.jsx";
 import PageMisc from "./pages/PageMisc.jsx";
+import PageThreeJS from "./pages/PageThreeJS.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -45,6 +46,7 @@ function App() {
             <Route path="/edu" element={<PageEduc></PageEduc>}></Route>
             <Route path="/blog" element={<PageBlog></PageBlog>}></Route>
             <Route path="/misc" element={<PageMisc></PageMisc>}></Route>
+            <Route path="/threejs" element={<PageThreeJS></PageThreeJS>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

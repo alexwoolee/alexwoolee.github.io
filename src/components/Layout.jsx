@@ -12,6 +12,7 @@ import verImg from "../assets/sidebar/wonder.png"
 import educImg from "../assets/sidebar/happy.png"
 import blogImg from "../assets/sidebar/beauty.png"
 import miscImg from "../assets/sidebar/stars.jpg"
+import threeImg from "../assets/sidebar/three.gif"
 import "../styles/layout.css"
 
 const NewFront = () => {
@@ -20,7 +21,7 @@ const NewFront = () => {
     <>
       <div id="main">
 
-        <aside id="link-list">
+        <aside className='link-list lg:min-w-3xs lg:max-w-3xs'>
 
           <HomeLink path="/home" img={homeImg} title="Home" info="Alex Woo Lee"></HomeLink>
 
@@ -36,7 +37,9 @@ const NewFront = () => {
 
           <HomeLink path="/blog" img={blogImg} title="Blog Posts" info="Alex Woo Lee"></HomeLink>
           
-          <HomeLink path="/misc" img={miscImg} title="​Miscellaneous" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/misc" img={miscImg} title="Other" info="Alex Woo Lee"></HomeLink>
+
+          <HomeLink path="/threejs" img={threeImg} title="Three.js" info="Alex Woo Lee"></HomeLink>
 
         </aside>
 
