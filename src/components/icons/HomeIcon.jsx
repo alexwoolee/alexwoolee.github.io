@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeIcon = ({ fill, stroke, alt, className }) => {
+const HomeIcon = ({ alt, className }) => {
   return (
     <div>
       <svg

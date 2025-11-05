@@ -1,11 +1,9 @@
 import React from 'react'
 import ExperienceCard from '../components/ExperienceCard'
 /* img assets */
-import sirshinu from '../assets/sidebar/sirshinu.png'
 import HMART from '../assets/experience/HMART.jpeg'
 import MOCC from '../assets/experience/MOCC.png'
 import SFU from '../assets/experience/SFU.png'
-import placeholder from "../assets/experience/image-placeholder.png"
 import "../styles/exp.css"
 
 const NewExp = () => {

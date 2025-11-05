@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
 
@@ -6,8 +6,6 @@ import "../styles/navbar.css";
 
 import icon from "../assets/sidebar/sirshinu.png";
 import HomeIcon from "./icons/HomeIcon";
-import home_filled from "../assets/icons/home_filled.png";
-import home_empty from "../assets/icons/home_empty.png";
 
 const NavBar = () => {
   const location = useLocation();
