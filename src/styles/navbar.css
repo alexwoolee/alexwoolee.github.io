@@ -1,48 +1,66 @@
 /* Navbar Styles */
 
-#bar {
+.nav-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 3.75rem;
   background-color: var(--color-black);
-  position: relative;
 }
 
-#contact-btn {
-  margin-left: 1rem;
-  cursor: pointer;
-  background-color: rgb(241, 55, 55);
-  padding: 8px;
-  border-radius: 8px;
+/* Base styling for center, left and right */
+.nav-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-center {
+  flex-direction: row;
+}
+
+.nav-bar-left, .nav-bar-right {
+  flex-basis: 4rem;
+  flex-shrink: 0;
+}
+
+.icon-active-wrapper, .icon-wrapper {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 4rem;
+  margin: 0rem 0.5rem 0rem 0.5rem;
 }
 
 .icon-wrapper {
-  padding: 8px;
   background-color: var(--color-dark-grey);
-  border-radius: 64px;
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.icon-active-wrapper {
-  padding: 8px;
-  background-color: white;
-  border-radius: 64px;
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .icon-wrapper:hover {
   background-color: #818182;
 }
 
-#home-icon {
-  width: 32px;
+.home-icon {
+  width: 28px;
   border: 0.5px solid transparent;
 }
+
+/* search bar */
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  background-color: var(--color-dark-grey);
+  color: #f2eeee;
+  padding: 0.65rem 1rem 0.65rem 1rem;
+  border: 1px solid black;
+  border-radius: 4rem;
+  width: 500px;
+}
+
+.search-bar-input {
+  outline: none;
+  border: none;
+  width: 100%;
+} 
 
 
