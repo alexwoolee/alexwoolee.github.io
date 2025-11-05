@@ -11,10 +11,6 @@ import "../styles/exp.css"
 const NewExp = () => {
   return (
     <div id='exp-container'> 
-      <h1 className='exp-type'>Techinical Work Experience</h1>
-      <p className='font-thin'>N/A</p>
-    
-
       <h1 className='exp-type'>Work Experience</h1>
       <ExperienceCard img={HMART} company="H-Mart" title="Grocery Clerk" period="Sep. 2023 - Aug. 2024" txt="text">
       </ExperienceCard>

@@ -3,14 +3,9 @@
 #about-content {
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  height: calc(100vh - 4.5rem - 7rem);
+  height: calc(100vh - 4.5rem - 5.5rem);
   border-radius: 1rem;
-}
-
-#about-top {
-  height: auto;
-  gap: 2rem;
-  align-items: flex-end;
+  padding: 4rem 5rem 4rem 5rem;
 }
 
 #profile {
@@ -28,19 +23,22 @@
   color: #818182;
 }
 
-#socials {
+.socials {
   display: flex;
   flex-direction: row;
   margin: 1rem 0 1rem 0;
+  justify-content: space-between;
 }
 
 .social-icon {
+  width: 48px;
+  height: 48px;
   padding: 12px;
-  background-color: rgba(235, 129, 63, 0.935);
+  background-color: rgba(63, 92, 235, 0.935);
   border: transparent 1px solid;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin-right: 0.5rem;
-}
+} 
 
 .social-icon:hover {
   background-color: rgb(244, 98, 20);
@@ -48,6 +46,11 @@
 
 #about-bio {
   margin: 2rem 0 2rem 0;
+}
+
+.language-class {
+  width: 4rem;
+  height: 4rem;
 }
 
 
