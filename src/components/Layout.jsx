@@ -23,23 +23,23 @@ const NewFront = () => {
 
         <aside className='link-list lg:min-w-3xs lg:max-w-3xs'>
 
-          <HomeLink path="/home" img={homeImg} title="Home" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/home" img={homeImg} title="Home" info="Page"></HomeLink>
 
-          <HomeLink path="/about" img={aboutImg} title="About" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/about" img={aboutImg} title="About" info="Developer"></HomeLink>
 
-          <HomeLink path="/proj" img={projImg} title="Projects" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/proj" img={projImg} title="Projects" info="Page"></HomeLink>
 
-          <HomeLink path="/exp" img={expImg} title="Experiences" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/exp" img={expImg} title="Experiences" info="Page"></HomeLink>
 
-          <HomeLink path="/version" img={verImg} title="Versions" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/version" img={verImg} title="Versions" info="Page"></HomeLink>
 
-          <HomeLink path="/edu" img={educImg} title="Education" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/edu" img={educImg} title="Education" info="Page"></HomeLink>
 
-          <HomeLink path="/blog" img={blogImg} title="Blog Posts" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/blog" img={blogImg} title="Blog Posts" info="Blog"></HomeLink>
           
-          <HomeLink path="/misc" img={miscImg} title="Other" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/misc" img={miscImg} title="Other" info="Page"></HomeLink>
 
-          <HomeLink path="/threejs" img={threeImg} title="Three.js" info="Alex Woo Lee"></HomeLink>
+          <HomeLink path="/threejs" img={threeImg} title="Three.js" info="3D Graphics"></HomeLink>
 
         </aside>
 
