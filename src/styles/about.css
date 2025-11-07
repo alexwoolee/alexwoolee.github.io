@@ -3,7 +3,7 @@
 #about-content {
   background-color: var(--color-dark-grey);
   overflow-y: scroll;
-  height: calc(100vh - 4.5rem - 5.5rem);
+  height: calc(100dvh - 4.5rem - 5.5rem);
   border-radius: 1rem;
   padding: 4rem 5rem 4rem 5rem;
 }

@@ -20,7 +20,7 @@
   background-color: rgb(26, 20, 195);
   padding-top: 250px;
   padding-bottom: 200px;
-  height: calc(100vh - 4.5rem - 5.5rem);
+  height: calc(100dvh - 4.5rem - 5.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;

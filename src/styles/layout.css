@@ -5,7 +5,7 @@
   flex-direction: row;
   gap: 1rem;
   margin: 0rem 1rem 1rem 1rem;
-  max-height: calc(100vh - 4.5rem - 5.5rem);
+  max-height: calc(100dvh - 4.5rem - 5.5rem);
 }
 
 .link-list {

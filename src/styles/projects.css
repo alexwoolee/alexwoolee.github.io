@@ -16,7 +16,7 @@
   overflow-y: scroll;
   background-color: var(--color-dark-grey);
   border-radius: 1rem;
-  height: calc(100vh - 4.5rem - 5.5rem);
+  height: calc(100dvh - 4.5rem - 5.5rem);
 }
 
 .proj-card {
@@ -65,7 +65,7 @@
   background-color: var(--color-dark-grey);
   border-radius: 12px;
   min-width: 280px;
-  height: calc(100vh - 4.5rem - 5.5rem);
+  height: calc(100dvh - 4.5rem - 5.5rem);
   position: relative;
 }
 
