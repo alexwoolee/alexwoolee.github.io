@@ -22,7 +22,7 @@ Section 5: Long biography
 
 const NewAbout = () => {
   return (
-    <div id="about-content">
+    <div className="about-content">
       <div className="w-full flex flex-col lg:justify-start justify-start items-center lg:items-center gap-8">
         <img
           src={bojji}

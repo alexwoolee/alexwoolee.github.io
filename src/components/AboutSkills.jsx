@@ -13,9 +13,9 @@ const AboutSkills = () => {
       <SkillIconWrapper IconComponent={Html} iconName="Html" />
       <SkillIconWrapper IconComponent={Java} iconName="Java" />
       <SkillIconWrapper IconComponent={JavaScript} iconName="JavaScript" />
-      <SkillIconWrapper IconComponent={Python} iconName="Python" />
+      {/* <SkillIconWrapper IconComponent={Python} iconName="Python" />
       <SkillIconWrapper IconComponent={Tailwindcss} iconName="Tailwindcss" />
-      <SkillIconWrapper IconComponent={TypeScript} iconName="TypeScript" />
+      <SkillIconWrapper IconComponent={TypeScript} iconName="TypeScript" /> */}
     </div>
   );
 };
