@@ -1,6 +1,7 @@
 import { React } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
+import ContactButton from "./ContactButton";
 
 import "../styles/navbar.css";
 
@@ -20,21 +21,27 @@ const NavBar = () => {
         </div>
 
         <div className="nav-bar-center nav-section">
-          <NavLink
-            to="/home"
-            className={({ isActive }) =>
-              isActive || location.pathname == "/"
-                ? "icon-active-wrapper"
-                : "icon-wrapper"
-            }
-          >
-            <HomeIcon className="home-icon" alt={"home icoin"}></HomeIcon>
+          <NavLink to="/home" className="icon-wrapper">
+            <HomeIcon
+              className="home-icon"
+              stroke={"lightgray"}
+              fill={
+                location.pathname === "/" || location.pathname === "/home"
+                  ? "lightgray"
+                  : "none"
+              }
+              alt={"home icon"}
+              width={24}
+              height={24}
+            />
           </NavLink>
 
           <SearchBar />
         </div>
 
-        <div className="nav-bar-right nav-section"></div>
+        <div className="nav-bar-right nav-section mr-4">
+          <ContactButton />
+        </div>
       </div>
     </>
   );

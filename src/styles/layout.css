@@ -3,6 +3,7 @@
 #main {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 1rem;
   margin: 0rem 1rem 1rem 1rem;
   max-height: calc(100dvh - 4.5rem - 5.5rem);
@@ -13,19 +14,21 @@
   flex-direction: column;
   background-color: var(--color-dark-grey);
   border-radius: 16px;
-  align-items: center;
   overflow-y: auto;
   overflow-x: hidden;
+  flex-shrink: 0;
 }
 
 #content-display {
-  width: 80%;
+  flex: 1 1 auto;
+  width: 100%;
 }
 
 .link-list .link {
   display: flex;
   padding: 1rem;
   border-radius: 0.5rem;
+  min-width: 3rem;
 }
 
 .link-list .link:hover {
@@ -40,6 +43,7 @@
 .link-list .link-img {
   width: 64px;
   height: 64px;
+  min-width: 64px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -56,5 +60,3 @@
   color: #818182;
   font-size: 0.9rem;
 }
-
-
