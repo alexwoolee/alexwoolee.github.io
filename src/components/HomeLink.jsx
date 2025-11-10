@@ -8,7 +8,7 @@ const HomeLink = ({ path, img, title, info }) => {
       <NavLink 
         to={path} 
         className={( {isActive} ) => 
-          `link lg:min-w-3xs lg:max-w-3xs ${isActive ? "active-link" : ""}`
+          `link ${isActive ? "active-link" : ""}`
         } 
       >
         <img src={img} alt={path} className='link-img'></img>
