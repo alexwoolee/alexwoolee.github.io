@@ -6,22 +6,41 @@
   justify-content: space-between;
   gap: 1rem;
   margin: 0rem 1rem 1rem 1rem;
-  max-height: calc(100dvh - 4.5rem - 5.5rem);
+}
+
+.link-list-wrapper {
+  height: calc(100dvh - 4.5rem - 5.5rem);
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .link-list {
-  display: flex;
-  flex-direction: column;
   background-color: var(--color-dark-grey);
-  border-radius: 16px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  flex-shrink: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.link-list::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.link-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+#about-title {
+  font-size: 50px;
+  text-align: center;
 }
 
 #content-display {
   flex: 1 1 auto;
   width: 100%;
+  height: calc(100dvh - 4.5rem - 5.5rem); /* match parent height */
+  overflow: hidden; /* let simplebar handle it */
 }
 
 .link-list .link {

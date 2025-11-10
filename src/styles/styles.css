@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 @import "tailwindcss";
 
 :root {
+  --framer-font-family: "Inter", sans-serif;
+  --framer-font-family-bold: "Satoshi", sans-serif;
+  --framer-font-family-bold-italic: "Satoshi", sans-serif;
+  --framer-font-family-italic: "Satoshi", sans-serif;
+
   --white-transparent: rgba(255, 255, 255, 0.5);
   --color-primary: #030412;
   --color-midnight: #06091f;
@@ -8,43 +20,81 @@
   --color-indigo: #1f1e39;
   --color-dark-grey: #1a1a1a;
   --color-black: rgb(0, 0, 0);
+  --color-accent: #ff6363;
+  --color-accent-hover: #ffa07a;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  overflow: auto;
-  font-family: "Funnel Display", "M PLUS Rounded 1c", sans-serif;
+  font-family: var(--framer-font-family);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #e0e0e0;
+  background-color: #0d0d0d;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--framer-font-family-bold);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+/* typography */
+strong {
+  font-family: var(--framer-font-family-bold);
+  font-weight: 700;
+}
+
+em {
+  font-family: var(--framer-font-family-italic);
   font-weight: 500;
-  overflow-x: hidden;
-  color: white;
-  background-color: black;
 }
 
-/* Style the entire scrollbar */
-::-webkit-scrollbar {
-  width: 10px; /* Adjust width as needed */
-  height: 10px; /* Adjust height for horizontal scrollbars */
-  background-color: #5b099e; /* Background of the scrollbar area */
+/* links */
+a {
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-/* Style the scrollbar track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  background: #af0a0a;
+a:hover {
+  color: var(--color-accent-hover);
 }
 
-/* Style the scrollbar thumb */
-::-webkit-scrollbar-thumb {
-  background: #115903; /* Color of the scrollbar thumb */
-  border-radius: 10px;
+/* utility classes */
+.text-muted {
+  color: var(--white-transparent);
 }
 
-/* Style the scrollbar thumb on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #0000c9;
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spaced {
+  letter-spacing: 0.05em;
+}
+
+.hero {
+  font-family: "Funnel Display", "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  text-align: center;
+  margin: 2rem 0;
 }

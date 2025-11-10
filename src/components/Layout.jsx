@@ -13,69 +13,71 @@ import blogImg from "../assets/sidebar/beauty.png";
 import miscImg from "../assets/sidebar/stars.jpg";
 import threeImg from "../assets/sidebar/three.gif";
 import "../styles/layout.css";
+import SimpleBar from "simplebar-react";
 
 const NewFront = () => {
   return (
     <>
       <div id="main">
-        <aside className="link-list lg:w-[324px] w-[108px]">
-          <HomeLink
-            path="/home"
-            img={homeImg}
-            title="Home"
-            info="Page"
-          ></HomeLink>
+        <div className="link-list-wrapper lg:min-w-[324px] w-[108px]">
+          <aside className="link-list">
+            <HomeLink
+              path="/home"
+              img={homeImg}
+              title="Home"
+              info="Page"
+            ></HomeLink>
 
-          <HomeLink
-            path="/about"
-            img={aboutImg}
-            title="About"
-            info="Developer"
-          ></HomeLink>
+            <HomeLink
+              path="/about"
+              img={aboutImg}
+              title="About"
+              info="Developer"
+            ></HomeLink>
 
-          <HomeLink
-            path="/proj"
-            img={projImg}
-            title="Projects"
-            info="Page"
-          ></HomeLink>
+            <HomeLink
+              path="/proj"
+              img={projImg}
+              title="Projects"
+              info="Page"
+            ></HomeLink>
 
-          <HomeLink
-            path="/version"
-            img={verImg}
-            title="Versions"
-            info="Page"
-          ></HomeLink>
+            <HomeLink
+              path="/version"
+              img={verImg}
+              title="Versions"
+              info="Page"
+            ></HomeLink>
 
-          <HomeLink
-            path="/edu"
-            img={educImg}
-            title="Education"
-            info="Page"
-          ></HomeLink>
+            <HomeLink
+              path="/edu"
+              img={educImg}
+              title="Education"
+              info="Page"
+            ></HomeLink>
 
-          <HomeLink
-            path="/blog"
-            img={blogImg}
-            title="Blog Posts"
-            info="Blog"
-          ></HomeLink>
+            <HomeLink
+              path="/blog"
+              img={blogImg}
+              title="Blog Posts"
+              info="Blog"
+            ></HomeLink>
 
-          <HomeLink
-            path="/misc"
-            img={miscImg}
-            title="Other"
-            info="Page"
-          ></HomeLink>
+            <HomeLink
+              path="/misc"
+              img={miscImg}
+              title="Other"
+              info="Page"
+            ></HomeLink>
 
-          <HomeLink
-            path="/threejs"
-            img={threeImg}
-            title="Three.js"
-            info="3D Graphics"
-          ></HomeLink>
-        </aside>
-
+            <HomeLink
+              path="/threejs"
+              img={threeImg}
+              title="Three.js"
+              info="3D Graphics"
+            ></HomeLink>
+          </aside>
+        </div>
         <main id="content-display">
           <Outlet></Outlet>
         </main>

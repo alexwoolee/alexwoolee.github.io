@@ -1,9 +1,11 @@
 /* CSS file */
-import "./styles/base.css";
+import "./styles/styles.css";
 /* Third-party imports / Framework imports */
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React from "react";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 /* Components */
 import Layout from "./components/Layout.jsx";
 import NavBar from "./components/NavBar.jsx";
