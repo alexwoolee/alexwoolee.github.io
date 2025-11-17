@@ -4,6 +4,8 @@ import "../styles/about.css";
 import AboutSkills from "../components/AboutSkills";
 import AboutGeneralSkills from "../components/AboutGeneralSkills";
 import ExperienceCard from "../components/ExperienceCard";
+import ProjectButton from "../components/ProjectButton";
+import Button from "../components/Button";
 import Figma from "../components/icons/tools/Figma";
 import Docker from "../components/icons/tools/Docker";
 import Vercel from "../components/icons/tools/Vercel";
@@ -41,6 +43,10 @@ const NewAbout = () => {
               experimenting with creative projects, and finding smart solutions
               to real-world challenges.
             </p>
+          </div>
+          <div className="flex flex-row gap-4">
+            <ProjectButton path="proj"/>
+            <Button path="proj"/>
           </div>
         </div>
         <div className="logo-sliding">
