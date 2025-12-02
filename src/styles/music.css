@@ -25,6 +25,11 @@
     align-items: center;
   }
 
+  #player-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .music-cover {
     width: 56px;
     height: 56px;

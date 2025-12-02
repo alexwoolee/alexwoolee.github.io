@@ -1,5 +1,3 @@
-import React from "react";
-
 const CSharp = ({ className }) => {
   return (
     <div>

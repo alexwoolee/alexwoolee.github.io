@@ -1,38 +1,86 @@
-import dpCover from "../assets/covers/pokemon-diamond.jpg"
-import smgCover from "../assets/covers/smg.png"
-import dawnAudio from "../assets/audio/pokemon-dp-dawn.mp3"
-import route201Audio from "../assets/audio/pokemon-dp-route-201-day.mp3"
-import solaceonTownAudio from "../assets/audio/pokemon-dp-solaceon-town-day.mp3"
-import test from "../assets/audio/luma.mp3"
+import christmasCover from "../assets/covers/christmas-jazz-2025-cover.png"
+
+import allIWantAudio from "../assets/audio/All I Want for Christmas is You.mp3"
+import awayInAMangerAudio from "../assets/audio/Away in a Manger.mp3"
+import hereWeComeAudio from "../assets/audio/Here We Come A-Wassailing.mp3"
+import jingleBellsAudio from "../assets/audio/Jingle Bells.mp3"
+import lastChristmasAudio from "../assets/audio/Last Christmas.mp3"
+import santaClausAudio from "../assets/audio/Santa Claus is Coming to Town.mp3"
+import sleighRideAudio from "../assets/audio/Sleigh Ride.mp3"
+import thisChristmasAudio from "../assets/audio/This Christmas.mp3"
+import upOnHousetopAudio from "../assets/audio/Up on the Housetop.mp3"
+import weWishYouAudio from "../assets/audio/We Wish You a Merry Christmas.mp3"
 
 const music = [
   {
-    id: 4,
-    title: "Luma",
-    artist: "Nintendo",
-    cover: smgCover,
-    audio: test
-  },
-  {
     id: 1,
-    title: "Dawn",
-    artist: "Pokemon",
-    cover: dpCover,
-    audio: dawnAudio
+    title: "All I Want for Christmas is You",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: allIWantAudio
   },
   {
     id: 2,
-    title: "Route 201 Day",
-    artist: "Pokemon",
-    cover: dpCover,
-    audio: route201Audio
+    title: "Away in a Manger",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: awayInAMangerAudio
   },
   {
     id: 3,
-    title: "Solaceon Town",
-    artist: "Pokemon",
-    cover: dpCover,
-    audio: solaceonTownAudio
+    title: "Here We Come A-Wassailing",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: hereWeComeAudio
+  },
+  {
+    id: 4,
+    title: "Jingle Bells",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: jingleBellsAudio
+  },
+  {
+    id: 5,
+    title: "Last Christmas",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: lastChristmasAudio
+  },
+  {
+    id: 6,
+    title: "Santa Claus is Coming to Town",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: santaClausAudio
+  },
+  {
+    id: 7,
+    title: "Sleigh Ride",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: sleighRideAudio
+  },
+  {
+    id: 8,
+    title: "This Christmas",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: thisChristmasAudio
+  },
+  {
+    id: 9,
+    title: "Up on the Housetop",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: upOnHousetopAudio
+  },
+  {
+    id: 10,
+    title: "We Wish You a Merry Christmas",
+    artist: "Christmas Jazz",
+    cover: christmasCover,
+    audio: weWishYouAudio
   },
 ]
 

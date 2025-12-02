@@ -1,5 +1,3 @@
-import React from "react";
-
 const HomeIcon = ({ alt, className, stroke, fill }) => {
   return (
     <div>
