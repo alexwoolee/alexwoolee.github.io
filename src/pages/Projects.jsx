@@ -1,0 +1,35 @@
+import ProjectCard from '../components/projects/ProjectCard'
+import ProjInfo from '../components/projects/ProjInfo'
+import { useState } from 'react'
+/* Data */
+import projects from "../data/DataProjects"
+import "../styles/projects.css"
+
+const Projects = () => { 
+  // selectedProject is an obj that stores a component's prop, to access a prop => selectedProject.prop_example
+  const [ selectedProject, setSelectedProject ] = useState(projects[0]);
+
+  return (
+    <div id="proj-container">
+      <div id="proj-card-container">
+        {projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onSelect={setSelectedProject}
+            >
+            </ProjectCard>
+        ))}
+      </div>
+      { 
+        selectedProject && 
+        (<ProjInfo
+          project={selectedProject}
+        ></ProjInfo>)
+      }
+    </div>
+  )
+}
+
+export default Projects
+
