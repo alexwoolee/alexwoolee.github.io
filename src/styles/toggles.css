@@ -1,0 +1,21 @@
+.toggles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.active-btn {
+  height: 64px;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  box-shadow: 0 0 1px 1px white;
+  width: 36px;
+  height: 36px;
+  margin-right: 0.5rem;
+}
