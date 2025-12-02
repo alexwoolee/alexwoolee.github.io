@@ -16,32 +16,32 @@
   margin-bottom: 1rem;
 }
 
+/* Mimics .version */
 #uni { 
   font-size: 2.5rem;
+  font-weight: 600; /* Added weight */
   margin-bottom: 0.5rem;
 }
 
-#uni-location { 
-  font-size: 1.5rem;
-  color: grey;
-  margin-bottom: 0.5rem;
-}
-
-#uni-range { 
-  font-size: 1.5rem;
-  color: grey;
-  margin-bottom: 0.5rem;
-}
-
+/* Mimics .version-date */
+#uni-location, 
+#uni-range, 
 #degree { 
   font-size: 1.5rem;
-  color: grey;
+  color: rgb(160, 160, 160); /* Specific grey */
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+#degree {
   margin-bottom: 2rem;
 }
 
+/* Mimics .version */
 .edu-section-title {
   font-size: 2.5rem;
-  margin-top: 2rem;
+  font-weight: 600; /* Added weight */
+  margin-top: 3rem; /* Increased spacing */
   margin-bottom: 1rem;
 }
 
@@ -51,22 +51,33 @@
 
 .course-category-title {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: rgb(214, 214, 214);
+  margin-bottom: 1rem;
+  color: rgb(160, 160, 160); /* Matched to sub-text color */
+  font-weight: 500;
+  margin-left: 2rem; /* Indented slightly for hierarchy */
 }
 
-.course-item {
-  list-style-type: circle;
-  color: rgb(214, 214, 214);
-  margin-left: 2rem;
-  margin-bottom: 0.25rem;
-}
-
+/* Shared styles for list items 
+   Mimics .version-point (The Hover Effect)
+*/
+.course-item, 
 .edu-point {
   list-style-type: circle;
   color: rgb(214, 214, 214);
-  margin-left: 4rem;
-  margin-bottom: 0.25rem;
+  margin-left: 4rem; /* Match indentation of version points */
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem; /* Added padding for hover background */
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  line-height: 1.6;
 }
 
-
+/* The Hover Animation */
+.course-item:hover, 
+.edu-point:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgb(230, 230, 230);
+  transform: translateX(4px);
+  padding-left: 1rem;
+}

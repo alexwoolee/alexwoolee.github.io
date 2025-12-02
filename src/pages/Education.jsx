@@ -8,8 +8,7 @@ const Education = () => {
       <div id="uni-section">
         <img id="uni-logo" src={SFU} className='w-48'></img>
         <h1 id="uni">Simon Fraser University</h1>
-        <h2 id="uni-location">Burnaby, BC</h2>
-        <h2 id="uni-range">(09/03/2023 - Ongoing)</h2>
+        <h2 id="uni-location">Burnaby, BC (09/03/2023 - Ongoing)</h2>
         <h2 id="degree">Computing Science</h2>
       </div>
 
@@ -19,8 +18,6 @@ const Education = () => {
       <div className="course-category">
         <h3 className='course-category-title'>Computer Systems</h3>
         <ul>
-          <li className="course-item">CMPT276 - Software Engineering</li>
-          <li className="course-item">CMPT263 - System Programming</li>
           <li className="course-item">CMPT201 - Computer Systems</li>
           <li className="course-item">CMPT295 - Introduction to Computer Systems</li>
         </ul>
@@ -47,6 +44,13 @@ const Education = () => {
           <li className="course-item">CMPT225 - Data Structures and Programming</li>
           <li className="course-item">CMPT307 - Data Structures and Algorithms</li>
           <li className="course-item">CMPT405 - Design and Analysis of Computing Algorithms</li>
+        </ul>
+      </div>
+
+      <div className="course-category">
+        <h3 className='course-category-title'>UI/UX Design</h3>
+        <ul>
+          <li className="course-item">CMPT263 - Intro to UI/UX Design</li>
         </ul>
       </div>
 
