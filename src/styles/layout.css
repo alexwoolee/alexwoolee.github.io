@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 1rem;
   margin: 0rem 1rem 1rem 1rem;
+  background-color: transparent;
 }
 
 .link-list-wrapper {

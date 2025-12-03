@@ -6,7 +6,7 @@
 }
 
 .active-btn {
-  height: 64px;
+  background-color:rgb(0, 205, 241);
 }
 
 .toggle-btn {

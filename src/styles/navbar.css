@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 3.75rem;
-  background-color: var(--color-black);
+  background-color: transparent;
 }
 
 /* Base styling for center, left and right */

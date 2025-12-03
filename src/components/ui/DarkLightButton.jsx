@@ -6,7 +6,7 @@ const DarkLightButton = () => {
   const [darkType, setDarkType] = useState(true);
 
   return (
-    <div onClick={() => setDarkType(!darkType)} className="toggle-btn">
+    <div onClick={() => setDarkType(!darkType)} className={`${darkType === true ? `bg-blue-800` : `bg-orange-500`} toggle-btn`}>
       {darkType === true ? <Dark /> : <Light />}
     </div>
   );
