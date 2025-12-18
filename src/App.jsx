@@ -16,8 +16,6 @@ import Version from "./pages/Version.jsx";
 import Home from "./pages/Home.jsx"
 import Education from "./pages/Education.jsx";
 import Blog from "./pages/Blog.jsx";
-import Miscellaneous from "./pages/Miscellaneous.jsx";
-import ThreeJS from "./pages/ThreeJS.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -44,8 +42,6 @@ function App() {
             <Route path="/version" element={<Version></Version>}></Route>
             <Route path="/edu" element={<Education></Education>}></Route>
             <Route path="/blog" element={<Blog></Blog>}></Route>
-            <Route path="/misc" element={<Miscellaneous></Miscellaneous>}></Route>
-            <Route path="/threejs" element={<ThreeJS></ThreeJS>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

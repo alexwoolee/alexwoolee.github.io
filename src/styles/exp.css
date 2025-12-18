@@ -16,18 +16,42 @@
 .exp {
   display: flex;
   flex-direction: row;
-  margin: 0 0 2.5rem 0;
+  justify-content: space-between;
+  margin: 0 0 1.5rem 0;
+  width: 100%;
 }
 
 .exp-img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0.25rem;
 }
 
-.exp-txt { margin-left: 1rem; }
+.exp-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.exp-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
 .company { font-size: 2rem; }
-.exp-title { font-size: 1.5rem; }
+.exp-title { 
+  font-size: 2rem; 
+  margin: 0;
+}
 .exp-period { color: grey }
 .exp-desc { font-weight: 100; }
 
-
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #cfcccc;
+  margin-bottom: 3rem;
+}

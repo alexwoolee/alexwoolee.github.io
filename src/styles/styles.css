@@ -6,13 +6,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --framer-font-family: "Inter", sans-serif;
-  --framer-font-family-bold: "Satoshi", sans-serif;
+  /* Fredoka (First Choice), Inter (Second Choice) */
+  --framer-font-family: "Fredoka", "Inter", sans-serif;
+
+  --framer-font-family-bold: "Fredoka", sans-serif;
+  --framer-font-family-bold-italic: "Fredoka", sans-serif;
+  --framer-font-family-italic: "Fredoka", sans-serif;
+  /* --framer-font-family-bold: "Satoshi", sans-serif;
   --framer-font-family-bold-italic: "Satoshi", sans-serif;
-  --framer-font-family-italic: "Satoshi", sans-serif;
+  --framer-font-family-italic: "Satoshi", sans-serif; */
 
   --white-transparent: rgba(255, 255, 255, 0.5);
   --color-primary: #030412;
@@ -23,6 +29,19 @@
   --color-black: rgb(0, 0, 0);
   --color-accent: #63c1ff;
   --color-accent-hover: rgb(255, 255, 255);
+
+  --lavender: #DAD8F0ff;
+  --lavender-2: #D7D5EFff;
+  --charcoal: #595959ff;
+  --soft-blush: #F2DDD7ff;
+  --peach-glow: #F8C499ff;
+  --pale-slate: #C9BEC2ff;
+  --pale-slate-2: #B1AFBEff;
+  --white: #FFFFFFff;
+  --rosy-granite: #87868Bff;
+  --bright-snow: #FBFAF8ff;
+  --sand: #F2EFE3;
+  --murk: #5F5D4E;
 }
 
 html {
@@ -36,8 +55,8 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   letter-spacing: 0.02em;
-  color: #e0e0e0;
-  background-color: #000000;
+  color: black;
+  background-color: var(--bright-snow);
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -69,7 +88,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-hover);
+  color: var(--color-indigo);
 }
 
 /* utility classes */
@@ -98,4 +117,16 @@ a:hover {
   color: var(--color-accent);
   text-align: center;
   margin: 2rem 0;
+}
+
+.wrapper {
+  background-color: var(--sand);
+  overflow-x: hidden;
+  height: calc(100dvh - 7rem - 5.5rem);
+  border-radius: 1rem;
+  box-shadow: 
+  /* 1. Wider, softer glow visible on ALL sides */
+  0 0 20px rgba(0, 0, 0, 0.15),
+  /* 2. Slight directional weight to bottom-right for depth */
+  4px 4px 10px rgba(0, 0, 0, 0.1);
 }

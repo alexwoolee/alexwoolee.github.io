@@ -12,7 +12,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   return (
-    <div className="projects-page">
+    <div className="wrapper projects-page">
       {/* いち */}
       <div className="projects-container">
         <section className="projects-header">

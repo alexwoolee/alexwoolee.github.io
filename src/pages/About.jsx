@@ -31,7 +31,7 @@ const About = () => {
           <div>
             <h1 id="about-title">Alex Woo Lee</h1>
             <h2 id="profession" className="text-center">
-              Aspiring <strong>Software Developer</strong>
+              Aspiring Software Developer
             </h2>
           </div>
           <div className="about-bio-container">
@@ -45,8 +45,8 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <ProjectButton path="proj"/>
-            <Button path="proj"/>
+            <ProjectButton path="proj" />
+            <Button path="proj" />
           </div>
         </div>
         <div className="logo-sliding">
@@ -70,44 +70,53 @@ const About = () => {
             <CMake />
           </div>
         </div>
-        <h1 className="about-section-title">Programming Languages</h1>
-        <AboutSkills></AboutSkills>
-        <h1 className="about-section-title">Skills</h1>
-        <AboutGeneralSkills></AboutGeneralSkills>
-        <h1 className="about-section-title">Experience</h1>
-        <ExperienceCard
-          img={HMART}
-          company="H-Mart"
-          title="Grocery Clerk"
-          period="Sep. 2023 - Aug. 2024"
-          txt="text"
-        ></ExperienceCard>
-        <ExperienceCard
-          img={MOCC}
-          company="Marpole Oakridge Community Centre"
-          title="Food Hub"
-          period="Sep. 2022 - Dec. 2022"
-          txt="text"
-        ></ExperienceCard>{" "}
-        <h1 className="exp-type">Events</h1>
-        <ExperienceCard
-          img={SFU}
-          company="SFU"
-          title="Fall Hacks 2025"
-          period="Sep. 27th 2025"
-          txt="text"
-        ></ExperienceCard>
-        <ExperienceCard
-          img={SFU}
-          company="SFU"
-          title="Surge 2025"
-          period="Sep. 27th 2025"
-          txt="text"
-        ></ExperienceCard>
+        <section className="about-general-content">
+          <section>
+            <h1 className="about-section-title">Programming Languages</h1>
+            <AboutSkills></AboutSkills>
+          </section>
+
+          <section>
+            <h1 className="about-section-title">Skills</h1>
+            <AboutGeneralSkills></AboutGeneralSkills>
+          </section>
+
+          <section>
+            <h1 className="about-section-title">Experience</h1>
+            <div className="exp-container">
+
+            <ExperienceCard
+              img={HMART}
+              company="H-Mart"
+              title="Grocery Clerk"
+              period="Sep. 2023 - Aug. 2024"
+            ></ExperienceCard>
+            <ExperienceCard
+              img={MOCC}
+              company="MOCC"
+              title="Food Hub"
+              period="Sep. 2022 - Dec. 2022"
+            ></ExperienceCard>{" "}
+            <h1 className="exp-type">Events</h1>
+            <ExperienceCard
+              img={SFU}
+              company="SFU"
+              title="Fall Hacks 2025"
+              period="Sep. 27th 2025"
+            ></ExperienceCard>
+            <ExperienceCard
+              img={SFU}
+              company="SFU"
+              title="Surge 2025"
+              period="Sep. 27th 2025"
+            ></ExperienceCard>
+                        </div>
+
+          </section>
+        </section>
       </div>
     </div>
   );
 };
 
 export default About;
-

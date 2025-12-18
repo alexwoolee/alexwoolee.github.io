@@ -1,16 +1,29 @@
 /* About page styles */
 
 .about-wrapper {
-  overflow: hidden;
-  height: calc(100dvh - 4.5rem - 5.5rem);
+  position: relative;
+  height: calc(100dvh - 7rem - 5.5rem);
   border-radius: 1rem;
+    /*
+     Layered Shadow:
+     1. The first line creates a soft glow on all edges (0 offset).
+     2. The second line adds the weighted direction to the bottom-right (positive offsets).
+  */
+  box-shadow: 
+  /* 1. Wider, softer glow visible on ALL sides */
+  0 0 20px rgba(0, 0, 0, 0.15),
+  /* 2. Slight directional weight to bottom-right for depth */
+  4px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .about-content {
-  background-color: var(--color-dark-grey);
+  background-color: var(--sand);
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
-  padding: 4rem 5rem 4rem 5rem;
+  padding: 4rem 0rem 4rem 0rem;
+  border-radius: 1rem;
 }
 
 .about-content::-webkit-scrollbar {
@@ -27,8 +40,8 @@
 #about-title {
   font-size: 50px;
   text-align: center;
-  font-family: "Lustria", serif;
-  font-weight: 400;
+  /* font-family: "Lustria", serif; */
+  font-weight: 600;
 }
 
 .about-section-title {
@@ -74,6 +87,16 @@
 .prog-languages {
   display: flex;
   flex-wrap: wrap;
+  margin: 3rem auto;
+}
+
+.prog-languages p { 
+  background-color: rgb(208, 157, 255);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1.5rem;
+  
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .language-class {
@@ -112,9 +135,9 @@
 .logo-sliding {
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
+  width: 75%;    
+  margin: 3rem auto;    
   position: relative;
-  margin: 3rem 0 3rem 0;
 } 
 
 .logo-sliding::before, .logo-sliding::after {
@@ -128,12 +151,12 @@
 
 .logo-sliding::before {
   left: 0;
-  background-image: linear-gradient(to right, var(--color-dark-grey), transparent);
+  background-image: linear-gradient(to right, var(--sand), transparent);
 }
 
 .logo-sliding::after {
   right: 0;
-  background-image: linear-gradient(to left, var(--color-dark-grey), transparent);
+  background-image: linear-gradient(to left, var(--sand), transparent);
 }
 
 
@@ -170,8 +193,8 @@
   justify-content: center;
   align-items: center;
   gap: 0.65rem;
-  border-radius: 3.8rem;
-  height: 2.5rem;
+  border-radius: 0.75rem;
+  height: 3rem;
   /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
   box-shadow: 
   /* 1. A tighter, brighter inner glow */ 0 0.2rem 0.5rem
@@ -192,4 +215,21 @@
 
 .project-button-wrapper:hover .circle {
   display: none;
+}
+
+.about-general-content {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-container {
+  margin: 3rem auto;
 }

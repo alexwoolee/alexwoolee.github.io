@@ -1,4 +1,4 @@
-const Dark = () => {
+const Dark = ({ fill }) => {
   return (
     <div>
       <svg
@@ -6,7 +6,7 @@ const Dark = () => {
         width="24"
         height="24"
         viewBox="0 0 24 24"
-        fill="none"
+        fill={fill}
         stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"

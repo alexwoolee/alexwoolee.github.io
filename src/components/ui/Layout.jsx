@@ -9,7 +9,6 @@ import projImg from "../../assets/sidebar/proud.png";
 import verImg from "../../assets/sidebar/wonder.png";
 import educImg from "../../assets/sidebar/happy.png";
 import blogImg from "../../assets/sidebar/beauty.png";
-import miscImg from "../../assets/sidebar/stars.jpg";
 import threeImg from "../../assets/sidebar/three.gif";
 import "../../styles/layout.css";
 import SimpleBar from "simplebar-react";
@@ -44,7 +43,7 @@ const NewFront = () => {
             <HomeLink
               path="/version"
               img={verImg}
-              title="Versions"
+              title="Versions (TBR)"
               info="Page"
             ></HomeLink>
 
@@ -58,21 +57,14 @@ const NewFront = () => {
             <HomeLink
               path="/blog"
               img={blogImg}
-              title="Blog Posts"
+              title="Blog"
               info="Blog"
-            ></HomeLink>
-
-            <HomeLink
-              path="/misc"
-              img={miscImg}
-              title="Other"
-              info="Page"
             ></HomeLink>
 
             <HomeLink
               path="/threejs"
               img={threeImg}
-              title="Three.js"
+              title="Three.js (TBR)"
               info="3D Graphics"
             ></HomeLink>
           </aside>

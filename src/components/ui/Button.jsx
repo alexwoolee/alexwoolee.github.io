@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Button = ({ path }) => {
   return (
-    <Link to={`/${path}`} className="contact-button-wrapper">
+    <Link to={`/${path}`} className="project-button-wrapper">
       <span>About Me</span>
     </Link>
   );

@@ -12,6 +12,7 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  max-width: 1200px;
   font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -24,13 +25,15 @@
 .projects-header p {
   margin-bottom: 4rem;
   color: rgb(96, 96, 96);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
   /* Box styling */
-  background-color: #0f0f0f;
   border-radius: 1rem;
 
   /* Layout */
@@ -53,7 +56,7 @@
 }
 
 .projects {
-  background-color: #090909;
+  background-color: var(--pale-slate-2);
 }
 
 .projects-list {
@@ -75,7 +78,7 @@
   /* Box styling */
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  background-color: #1c1c1c;
+  background-color: var(--sand);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 
   /* Animation */
