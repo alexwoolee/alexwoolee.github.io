@@ -13,11 +13,13 @@ const NavBar = () => {
   return (
     <div className="nav-bar">
       <div className="nav-bar-left nav-section">
-        <img
-          src={icon}
-          alt="Profile icon"
-          className="w-10 border rounded-2xl border-transparent ml-4 cursor-pointer"
-        ></img>
+        <NavLink to="/home">
+          <img
+            src={icon}
+            alt="Profile icon"
+            className="w-10 border rounded-2xl border-transparent ml-4 cursor-pointer"
+          ></img>
+        </NavLink>
       </div>
 
       <div className="nav-bar-center nav-section">

@@ -31,17 +31,17 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar></NavBar>
-        <MusicPlayer></MusicPlayer>
+        <NavBar />
+        <MusicPlayer />
         <Routes>
-          <Route path="/" element={<Layout></Layout>}>
-            <Route index element={<Home></Home>}></Route>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />}></Route>
             <Route path="home" element={<Home />} />
-            <Route path="/about" element={<About></About>}></Route>
-            <Route path="/proj" element={<Projects></Projects>}></Route>
-            <Route path="/version" element={<Version></Version>}></Route>
-            <Route path="/edu" element={<Education></Education>}></Route>
-            <Route path="/blog" element={<Blog></Blog>}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/proj" element={<Projects />}></Route>
+            <Route path="/version" element={<Version />}></Route>
+            <Route path="/edu" element={<Education />}></Route>
+            <Route path="/blog" element={<Blog />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

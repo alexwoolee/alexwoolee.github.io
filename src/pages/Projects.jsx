@@ -1,7 +1,7 @@
 import ProjectCard from "../components/projects/ProjectCard";
 import ProjectInfo from "../components/projects/ProjectInfo";
 import GridRowToggle from "../components/ui/GridRowToggle";
-import Info from "../components/icons/navigation/Info";
+import PanelRight from "../components/icons/navigation/PanelRight";
 import { useState } from "react";
 /* Data */
 import projects from "../data/DataProjects";
@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="projects">
           <div className="projects-options">
             <GridRowToggle />
-            <Info />
+            <PanelRight />
           </div>
           <div className="projects-list">
             {projects.map((project) => (

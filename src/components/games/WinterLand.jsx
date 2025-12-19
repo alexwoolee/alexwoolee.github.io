@@ -276,7 +276,12 @@ const WinterLand = () => {
     });
 
     // --- EVENT LISTENERS ---
+    const gameKeys = ['ArrowLeft', 'ArrowRight', 'Space'];
+    
     const handleKeyDown = (e) => {
+      if (gameKeys.includes(e.code)) {
+        e.preventDefault();
+      }      
       if (e.code === 'Space') {
           if (gameState.current.activeDialogue) {
               advanceDialogue();
@@ -458,12 +463,14 @@ const WinterLand = () => {
   const styles = {
     container: {
         position: 'relative',
-        width: '100%',  // Changed from 100vw to 100% to fit parent
-        height: '100%', // Changed from 100vh to 100% to fit parent
+        width: '500px',  // Changed from 100vw to 100% to fit parent
+        height: '500px', // Changed from 100vh to 100% to fit parent
         backgroundColor: '#111',
         fontFamily: "'VT323', monospace",
         overflow: 'hidden',
-        userSelect: 'none'
+        userSelect: 'none',
+        borderRadius: '0.5rem',
+        outline: 'none'
     },
     canvasContainer: {
         width: '100%',
@@ -539,13 +546,18 @@ const WinterLand = () => {
         `}
       </style>
       
-      <div ref={containerRef} style={styles.container}>
+      <div 
+        ref={containerRef} 
+        style={styles.container}  
+        tabIndex={0}
+        onClick={() => containerRef.current?.focus()}
+      >
         <div ref={mountRef} style={styles.canvasContainer} />
 
         <div style={styles.uiLayer}>
           <div style={styles.instructions}>
-            HEADSPACE: WINTER<br/>
-            <span style={{fontSize: '18px'}}>← / → to Move &nbsp;&bull;&nbsp; SPACE to Interact</span>
+            Winter<br/>
+            <span style={{fontSize: '18px'}}>← / →</span>
           </div>
 
           {[...Array(6)].map((_, i) => (

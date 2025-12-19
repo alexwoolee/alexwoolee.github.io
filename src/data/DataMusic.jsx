@@ -1,4 +1,4 @@
-import christmasCover from "../assets/covers/christmas-jazz-2025-cover.png"
+import christmasCover from "../assets/covers/christmas-cover.jpg"
 
 import allIWantAudio from "../assets/audio/All I Want for Christmas is You.mp3"
 import awayInAMangerAudio from "../assets/audio/Away in a Manger.mp3"

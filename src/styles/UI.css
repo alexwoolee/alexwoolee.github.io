@@ -9,6 +9,7 @@
   border-radius: 1.5rem;
   display: flex;
   justify-content: space-between;
+  min-height: 160px;
 } 
 
 .weather-date {
@@ -47,21 +48,53 @@
 .toggles {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  justify-content: center;
+  gap: 0.4rem;
+  min-width: 324px;
+  background-color: var(--murk);
+  border-radius: 4rem;
+  padding: 1rem;
+  box-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.15),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
-  border-radius: 8px;
-  box-shadow: 5px 5px 0 black;
-  width: 36px;
-  height: 36px;
+  border: 3px solid white;
+  border-radius: 2rem;
+  /* box-shadow: 5px 5px 0 black; */
+  width: 48px;
+  height: 48px;
   margin-right: 0.5rem;
 }
 
 .active-btn {
   background-color: rgb(0, 205, 241);
+}
+
+/* ============================================
+   CURRENT WORK COMPONENT
+   ============================================ */
+.currwork-ctn {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-top: 1rem;
+  font-family: 'Pixelify Sans', sans-serif;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.currwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: bottom;
 }

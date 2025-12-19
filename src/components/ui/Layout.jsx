@@ -10,8 +10,9 @@ import verImg from "../../assets/sidebar/wonder.png";
 import educImg from "../../assets/sidebar/happy.png";
 import blogImg from "../../assets/sidebar/beauty.png";
 import "../../styles/layout.css";
-import SimpleBar from "simplebar-react";
 import WeatherTime from "./WeatherTime";
+import CurrentWork from "./CurrentWork";
+import "../../styles/UI.css"
 
 const NewFront = () => {
   return (
@@ -20,7 +21,7 @@ const NewFront = () => {
         <div className="column">
           <WeatherTime />
           <div className="link-list-wrapper lg:min-w-[324px] w-[108px]">
-            <aside className="link-list scrollable-content">
+            <aside className="link-list">
               <HomeLink
                 path="/home"
                 img={homeImg}
@@ -31,18 +32,12 @@ const NewFront = () => {
                 path="/about"
                 img={aboutImg}
                 title="About"
-                info="Developer"
+                info="Page"
               ></HomeLink>
               <HomeLink
                 path="/proj"
                 img={projImg}
                 title="Projects"
-                info="Page"
-              ></HomeLink>
-              <HomeLink
-                path="/version"
-                img={verImg}
-                title="Versions (TBR)"
                 info="Page"
               ></HomeLink>
               <HomeLink
@@ -57,8 +52,15 @@ const NewFront = () => {
                 title="Blog"
                 info="Blog"
               ></HomeLink>
+              <HomeLink
+                path="/version"
+                img={verImg}
+                title="Versions"
+                info="Page"
+              ></HomeLink>
             </aside>
           </div>
+          <CurrentWork />
         </div>
         <main id="content-display">
           <Outlet></Outlet>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Snowflake from "../icons/weather/Snowflake";
 import Rain from "../icons/weather/Rain";
-import DarkLightButton from "../ui/DarkLightButton";
+import DarkLightButton from "./DarkLightButton";
 import VolumeLow from "../icons/music/VolumeLow";
 import VolumeMid from "../icons/music/VolumeMid";
 import VolumeHigh from "../icons/music/VolumeHigh";
@@ -9,7 +9,9 @@ import VolumeHigh from "../icons/music/VolumeHigh";
 import Snow from "../effects/Snow";
 import Raining from "../effects/Rain";
 
-const Toggles = () => {
+import "../../styles/UI.css"
+
+const Controls = () => {
   const [activeType, setActiveType] = useState("snow");
 
   return (
@@ -44,4 +46,4 @@ const Toggles = () => {
   );
 };
 
-export default Toggles;
+export default Controls;

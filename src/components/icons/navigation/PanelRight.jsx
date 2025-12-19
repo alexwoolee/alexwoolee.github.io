@@ -1,4 +1,4 @@
-const Info = () => {
+const PanelRight = () => {
   return (
     <div>
       <svg
@@ -11,14 +11,13 @@ const Info = () => {
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="lucide lucide-info-icon lucide-info"
+        class="lucide lucide-panel-right-icon lucide-panel-right"
       >
-        <circle cx="12" cy="12" r="10" />
-        <path d="M12 16v-4" />
-        <path d="M12 8h.01" />
+        <rect width="18" height="18" x="3" y="3" rx="2" />
+        <path d="M15 3v18" />
       </svg>
     </div>
   );
 };
 
-export default Info;
+export default PanelRight;

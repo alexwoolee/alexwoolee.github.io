@@ -66,9 +66,9 @@
    CONTACT BUTTON
    ============================================ */
 .contact-button-wrapper {
-  background-color: white;
+  background-color: var(--murk);
   position: relative;
-  color: black;
+  color: white;
   width: 7.25rem;
   display: flex;
   justify-content: center;
@@ -104,15 +104,16 @@
 .popup-wrapper {
   display: flex;
   flex-direction: column;
+  top: 0;
   right: 0;
   position: absolute;
-  margin-top: calc(100dvh - 50dvh);
+  margin-top: 3.7rem;
   padding: 1rem;
   width: 18rem;
   height: fit-content;
   margin-right: 1rem;
-  border-radius: 1rem;
-  background-color: white;
+  border-radius: 0.5rem;
+  background-color: var(--murk);
   z-index: 200;
 }
 

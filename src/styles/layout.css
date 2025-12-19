@@ -19,14 +19,25 @@
    COLUMN CONTAINER
    ============================================ */
 .column {
-  height: calc(100dvh - 4.5rem - 5.5rem);
+  max-height: calc(100dvh - 4.5rem - 5.5rem);
+  display: flex;
+  flex-direction: column;
 }
 
 /* ============================================
    LINK LIST CONTAINER
    ============================================ */
 .link-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  min-height: 0;
+
   overflow: hidden;
+  height: 304px;
+
+  background-color: var(--sand);
+
   border-radius: 1rem;
   box-shadow: 
     0 0 20px rgba(0, 0, 0, 0.15),
@@ -34,8 +45,13 @@
 }
 
 .link-list {
+  flex: 1;
+  min-height: 0;
+
   background-color: var(--sand);
-  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
 }
 
 /* ============================================
@@ -43,23 +59,24 @@
    ============================================ */
 .link-list .link {
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   min-width: 3rem;
 }
 
 .link-list .link:hover {
-  background-color: var(--peach-glow);
+  background-color: var(--murk);
+  color: white;
 }
 
 .active-link {
-  background-color: var(--peach-glow);
+  background-color: var(--murk);
+  color: white;
 }
 
 .link-list .link-img {
-  width: 64px;
-  height: 64px;
-  min-width: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
 }
