@@ -1,23 +1,36 @@
-/* Layout */
-
+/* ============================================
+   MAIN LAYOUT
+   ============================================ */
 #main {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
   margin: 0rem 1rem 1rem 1rem;
   background-color: transparent;
 }
 
+#content-display {
+  flex: 1 1 auto;
+  width: 100%;
+  height: calc(100dvh - 4.5rem - 5.5rem);
+  overflow: hidden;
+}
+/* ============================================
+   COLUMN CONTAINER
+   ============================================ */
+.column {
+  height: calc(100dvh - 4.5rem - 5.5rem);
+}
+
+/* ============================================
+   LINK LIST CONTAINER
+   ============================================ */
 .link-list-wrapper {
-  height: calc(100dvh - 15rem - 5.5rem);
   overflow: hidden;
   border-radius: 1rem;
-    box-shadow: 
-  /* 1. Wider, softer glow visible on ALL sides */
-  0 0 20px rgba(0, 0, 0, 0.15),
-  /* 2. Slight directional weight to bottom-right for depth */
-  4px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 
+    0 0 20px rgba(0, 0, 0, 0.15),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .link-list {
@@ -25,29 +38,9 @@
   height: 100%;
 }
 
-.link-list::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 1rem;
-  background-color: transparent;
-}
-
-.link-list::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0;
-}
-
-#about-title {
-  font-size: 50px;
-  text-align: center;
-}
-
-#content-display {
-  flex: 1 1 auto;
-  width: 100%;
-  height: calc(100dvh - 4.5rem - 5.5rem); /* match parent height */
-  overflow: hidden; /* let simplebar handle it */
-}
-
+/* ============================================
+   LINK ITEMS
+   ============================================ */
 .link-list .link {
   display: flex;
   padding: 1rem;
@@ -57,7 +50,6 @@
 
 .link-list .link:hover {
   background-color: var(--peach-glow);
-  border-radius: 0.5rem;
 }
 
 .active-link {
@@ -77,11 +69,9 @@
 }
 
 .link-title {
-  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .link-info {
   color: #818182;
-  font-size: 0.9rem;
 }

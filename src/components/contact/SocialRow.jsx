@@ -1,4 +1,4 @@
-import Copy from "../icons/Copy";
+import Copy from "../icons/actions/Copy";
 
 const SocialRow = ({ icon, content }) => {
   const renderIcon = () => {

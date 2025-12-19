@@ -4,10 +4,14 @@ const iconColors = {
   Cpp: "#00599c",
   CSharp: "#9B4F96",
   Css: "#1572B6",
+  Flutter: "#02569B",      
+  GDScript: "#414350",     
   Html: "#E44D26",
   Java: "#0074BD",
   JavaScript: "#F0DB4F",
   Python: "#306998",
+  Ruby: "#CC342D",         
+  SQL: "#008000",          
   Tailwindcss: "#38bdf8",
   TypeScript: "#00599c",
 };
@@ -22,9 +26,8 @@ const hexToRgba = (hex, opacity = 0.2) => {
 
 const SkillIconWrapper = ({ IconComponent, iconName }) => {
   const color = iconColors[iconName] || "#434447";
-  const backgroundColor = hexToRgba(color, 0.2);
+  const backgroundColor = hexToRgba(color, 0.2); // Uses the colors set above
   
-  // Tailwind CSS is rectangular and needs more width
   const containerStyle = {
     backgroundColor: backgroundColor,
     width: "2.3rem",
@@ -42,4 +45,3 @@ const SkillIconWrapper = ({ IconComponent, iconName }) => {
 };
 
 export default SkillIconWrapper;
-

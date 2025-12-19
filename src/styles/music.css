@@ -1,125 +1,131 @@
-  /* Music Player Styles */
+/* ============================================
+   MUSIC PLAYER - MAIN CONTAINER
+   ============================================ */
+#music-section {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0.2rem 0.9rem 0.9rem 0.9rem;
+}
 
-  #music-section {
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5.3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-self: center;
-    padding: 0.2rem 0.9rem 0.9rem 0.9rem;
-  }
+/* ============================================
+   MUSIC PLAYER - SECTIONS
+   ============================================ */
+#player-middle,
+#player-left,
+#player-right {
+  width: 33.3%;
+}
 
-  #player-middle, #player-left, #player-right {
-    width: 33.3%
-  }
+#player-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #player-middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+#player-right {
+  display: flex;
+  justify-content: flex-end;
+}
 
-  #player-right {
-    display: flex;
-    justify-content: flex-end;
-  }
+/* ============================================
+   MUSIC PLAYER - INFO & COVER
+   ============================================ */
+.music-info {
+  display: flex;
+  align-items: center;
+}
 
-  .music-cover {
-    width: 56px;
-    height: 56px;
-    border-radius: 4px;
-  }
+.music-cover {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+}
 
-  .music-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+.music-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
 
-  .music-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-  }
+.music-title {
+  font-size: 0.9rem;
+}
 
-  #music-buttons {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0.4rem;
-  }
+.music-artist {
+  font-size: 0.8rem;
+  color: grey;
+}
 
-  .music-button {
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin: 0 0.5rem 0 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: stroke;
-  }
+/* ============================================
+   MUSIC PLAYER - CONTROLS
+   ============================================ */
+#music-buttons {
+  display: flex;
+  margin-bottom: 0.4rem;
+}
 
-  .music-button:hover {
-    cursor: pointer;
-  }
+.music-button {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #play {
-    padding: 7px;
-    background-color: white;
-  }
+.music-button:hover {
+  cursor: pointer;
+}
 
-  .music-title {
-    font-size: 0.9rem;
-  }
+/* ============================================
+   MUSIC PLAYER - PROGRESS BAR
+   ============================================ */
+#progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 
-  .music-artist {
-    font-size: 0.8rem;
-    color: grey;
-  }
+#bar-full {
+  position: relative;
+  width: 300px;
+  height: 4px;
+  background-color: var(--murk);
+  border-radius: 4px;
+}
 
-  .music-time {
-    font-size:  0.75rem;
-    color: grey;
-  }
+#bar-fill {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: rgb(255, 128, 0);
+  transition: width 0.05s linear;
+  border-radius: 4px;
+}
 
-  input[type="range"]::-ms-fill-lower {
-    background: #ffae00;
-    border-radius: 4px;
-  }
+.music-time {
+  font-size: 0.75rem;
+  color: grey;
+}
 
-  input[type="range"]::-ms-fill-upper {
-    background: #ddd;
-    border-radius: 4px;
-  }
+/* ============================================
+   MUSIC PLAYER - RANGE INPUT
+   ============================================ */
+input[type="range"]::-ms-fill-lower {
+  background: #ffae00;
+  border-radius: 4px;
+}
 
-  #progress-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  #bar-full {
-    position: relative;
-    width: 300px;
-    height: 4px;
-    background-color: grey;
-    border-radius: 4px;
-  }
-
-  #bar-fill {
-    position: absolute;
-    width: 0%;
-    height: 4px;
-    background-color: white;
-    transition: width 0.05s linear;
-    border-radius: 4px;
-  }
-
-
+input[type="range"]::-ms-fill-upper {
+  background: #f88f05;
+  border-radius: 4px;
+}

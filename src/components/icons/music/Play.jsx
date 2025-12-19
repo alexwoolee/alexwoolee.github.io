@@ -1,17 +1,19 @@
-const Play = ({size=24, color="currentColor"}) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} height={size} 
-    viewBox="0 0 24 24" 
-    fill={color} 
+const Play = ({ size = 24, color = "currentColor" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="26"
+    height="26"
+    viewBox="0 0 24 24"
+    fill="none"
     stroke={color}
-    strokeWidth="2" 
-    strokeLinecap="round" 
+    strokeWidth="2"
+    strokeLinecap="round"
     strokeLinejoin="round"
+    class="lucide lucide-circle-play-icon lucide-circle-play"
   >
-    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+    <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />
+    <circle cx="12" cy="12" r="10" />
   </svg>
 );
-  
-export default Play;
 
+export default Play;

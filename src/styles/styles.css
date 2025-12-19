@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
+/* ============================================
+   FONT IMPORTS
+   ============================================ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -9,17 +11,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @import "tailwindcss";
 
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
 :root {
-  /* Fredoka (First Choice), Inter (Second Choice) */
+  /* Font Families */
   --framer-font-family: "Fredoka", "Inter", sans-serif;
-
   --framer-font-family-bold: "Fredoka", sans-serif;
   --framer-font-family-bold-italic: "Fredoka", sans-serif;
   --framer-font-family-italic: "Fredoka", sans-serif;
-  /* --framer-font-family-bold: "Satoshi", sans-serif;
-  --framer-font-family-bold-italic: "Satoshi", sans-serif;
-  --framer-font-family-italic: "Satoshi", sans-serif; */
 
+  /* Colors */
   --white-transparent: rgba(255, 255, 255, 0.5);
   --color-primary: #030412;
   --color-midnight: #06091f;
@@ -30,6 +32,7 @@
   --color-accent: #63c1ff;
   --color-accent-hover: rgb(255, 255, 255);
 
+  /* Palette Colors */
   --lavender: #DAD8F0ff;
   --lavender-2: #D7D5EFff;
   --charcoal: #595959ff;
@@ -44,6 +47,9 @@
   --murk: #5F5D4E;
 }
 
+/* ============================================
+   BASE HTML ELEMENTS
+   ============================================ */
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -70,7 +76,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.5em 0;
 }
 
-/* typography */
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
 strong {
   font-family: var(--framer-font-family-bold);
   font-weight: 700;
@@ -81,7 +89,6 @@ em {
   font-weight: 500;
 }
 
-/* links */
 a {
   text-decoration: none;
   transition: color 0.3s;
@@ -91,7 +98,9 @@ a:hover {
   color: var(--color-indigo);
 }
 
-/* utility classes */
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
 .text-muted {
   color: var(--white-transparent);
 }
@@ -119,14 +128,111 @@ a:hover {
   margin: 2rem 0;
 }
 
+/* ============================================
+   LAYOUT CONTAINERS
+   ============================================ */
 .wrapper {
   background-color: var(--sand);
+  overflow-y: scroll;
   overflow-x: hidden;
-  height: calc(100dvh - 7rem - 5.5rem);
+  height: calc(100dvh - 4.5rem - 5.5rem);
   border-radius: 1rem;
-  box-shadow: 
-  /* 1. Wider, softer glow visible on ALL sides */
-  0 0 20px rgba(0, 0, 0, 0.15),
-  /* 2. Slight directional weight to bottom-right for depth */
-  4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.page-container {
+  background-color: var(--sand);
+  overflow-y: scroll;
+  height: calc(100dvh - 4.5rem - 5.5rem);
+  border-radius: 1rem;
+}
+
+.scrollable-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.scrollable-content-dark {
+  overflow-y: auto;
+}
+
+/* ============================================
+   SCROLLBAR STYLES
+   ============================================ */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+.page-container::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.page-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1rem;
+  background-color: transparent;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+.scrollable-content-dark::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 1rem;
+  background-color: rgb(28, 29, 29);
+}
+
+.scrollable-content-dark::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+
+/* ============================================
+   TYPOGRAPHY UTILITY CLASSES
+   ============================================ */
+.title-xl {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.title-lg {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.title-md {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.title-sm {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-xs {
+  font-size: 0.8rem;
+}
+
+.text-xxs {
+  font-size: 0.75rem;
 }

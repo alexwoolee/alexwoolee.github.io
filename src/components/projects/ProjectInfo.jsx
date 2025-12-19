@@ -4,7 +4,7 @@ import "../../styles/projects.css";
 const ProjectInfo = ({ project }) => {
   return (
     <div className="proj-info-container">
-      <div className="proj-column-content">
+      <div className="proj-column-content scrollable-content">
         <p id="proj-authors">{project.authors}</p>
         <img
           src={project.img}

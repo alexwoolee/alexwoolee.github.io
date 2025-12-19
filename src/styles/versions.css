@@ -1,18 +1,20 @@
-/* Versions page styles */
-
+/* ============================================
+   VERSIONS PAGE - CONTAINER
+   ============================================ */
 #version-container {
   padding: 2rem 20rem 2rem 6rem;
-  background-color: var(--color-dark-grey);
-  overflow-y: scroll;
-  height: calc(100dvh - 4.5rem - 5.5rem);
-  border-radius: 1rem;
 }
 
-.version { 
-  font-size: 2.5rem;
+#version-container ul {
+  margin-bottom: 2rem;
+}
+
+/* ============================================
+   VERSIONS PAGE - TITLES
+   ============================================ */
+.version {
   margin-top: 3rem;
   margin-bottom: 0.5rem;
-  font-weight: 600;
 }
 
 .version:first-child {
@@ -20,15 +22,16 @@
 }
 
 .version-date {
-  font-size: 1.5rem;
-  color: rgb(160, 160, 160);
+  color: #818182;
   margin-bottom: 1.5rem;
-  font-weight: 400;
 }
 
+/* ============================================
+   VERSIONS PAGE - LIST ITEMS
+   ============================================ */
 .version-point {
   list-style-type: circle;
-  color: rgb(214, 214, 214);
+  color: black;
   margin-left: 4rem;
   margin-bottom: 0.75rem;
   padding: 0.5rem 0.75rem;
@@ -39,13 +42,8 @@
 }
 
 .version-point:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: rgb(230, 230, 230);
+  background-color: rgba(0, 0, 0, 0.05);
+  color: black;
   transform: translateX(4px);
   padding-left: 1rem;
 }
-
-#version-container ul {
-  margin-bottom: 2rem;
-}
-

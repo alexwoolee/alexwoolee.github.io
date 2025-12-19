@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ContactPopup from "./ContactPopup";
-import Circle from "../icons/Circle";
-import ArrowDown from "../icons/ArrowDown";
+import Circle from "../icons/shapes/Circle";
+import ArrowDown from "../icons/shapes/ArrowDown";
 
 const ContactButton = () => {
   const [showPopup, setShowPopup] = useState(false);

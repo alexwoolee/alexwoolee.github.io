@@ -1,5 +1,5 @@
-import Row from "../icons/Row";
-import Grid from "../icons/Grid";
+import Row from "../icons/layout/Row";
+import Grid from "../icons/layout/Grid";
 
 const GridRowToggle = () => {
   return (

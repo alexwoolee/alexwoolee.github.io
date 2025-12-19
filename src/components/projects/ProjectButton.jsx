@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Circle from "../icons/Circle";
-import ArrowDown from "../icons/ArrowDown";
+import Circle from "../icons/shapes/Circle";
+import ArrowDown from "../icons/shapes/ArrowDown";
 
 const ProjectButton = ({ path }) => {
   return (

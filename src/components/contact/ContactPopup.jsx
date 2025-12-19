@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SocialRow from "./SocialRow";
-import Mail from "../icons/Mail";
+import Mail from "../icons/actions/Mail";
 import GitHub from "../../assets/icons/github.png"
 import Instagram from "../../assets/icons/instagram.png"
 import X from "../../assets/icons/twitter.png"

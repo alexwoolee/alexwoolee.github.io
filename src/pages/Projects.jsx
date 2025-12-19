@@ -1,7 +1,7 @@
 import ProjectCard from "../components/projects/ProjectCard";
 import ProjectInfo from "../components/projects/ProjectInfo";
 import GridRowToggle from "../components/ui/GridRowToggle";
-import Info from "../components/icons/Info";
+import Info from "../components/icons/navigation/Info";
 import { useState } from "react";
 /* Data */
 import projects from "../data/DataProjects";
@@ -12,9 +12,9 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
   return (
-    <div className="wrapper projects-page">
+    <div className="  projects-page">
       {/* いち */}
-      <div className="projects-container">
+      <div className="projects-container scrollable-content">
         <section className="projects-header">
           <h1>Projects</h1>
           <p>

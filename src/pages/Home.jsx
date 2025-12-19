@@ -1,9 +1,8 @@
-import "../styles/home.css";
 import WinterLand from "../components/games/WinterLand";
 
 const Home = () => {
   return (
-    <div className="game-container">
+    <div className="wrapper">
         <WinterLand />
         {/* <div id="star-pattern"></div>
         <div id="home-sec">

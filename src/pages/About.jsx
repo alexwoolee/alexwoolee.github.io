@@ -5,22 +5,21 @@ import AboutGeneralSkills from "../components/about/AboutGeneralSkills";
 import ExperienceCard from "../components/about/ExperienceCard";
 import ProjectButton from "../components/projects/ProjectButton";
 import Button from "../components/ui/Button";
-import Figma from "../components/icons/tools/Figma";
-import Docker from "../components/icons/tools/Docker";
-import Vercel from "../components/icons/tools/Vercel";
-import Jest from "../components/icons/tools/Jest";
-import AWS from "../components/icons/tools/Aws";
-import GitHub from "../components/icons/tools/GitHub";
-import CMake from "../components/icons/tools/CMake";
+import Figma from "../components/icons/development-tools/Figma";
+import Docker from "../components/icons/development-tools/Docker";
+import Vercel from "../components/icons/development-tools/Vercel";
+import Jest from "../components/icons/development-tools/Jest";
+import AWS from "../components/icons/development-tools/Aws";
+import GitHub from "../components/icons/development-tools/GitHub";
+import CMake from "../components/icons/development-tools/CMake";
 import HMART from "../assets/experience/HMART.jpeg";
 import MOCC from "../assets/experience/MOCC.png";
 import SFU from "../assets/experience/SFU.png";
-import "../styles/exp.css";
 
 const About = () => {
   return (
-    <div className="about-wrapper">
-      <div className="about-content">
+    <div className="wrapper">
+      <div className="about-content scrollable-content">
         <div className="w-full flex flex-col lg:justify-start justify-start items-center lg:items-center gap-8">
           <img
             src={PFP}
@@ -72,17 +71,17 @@ const About = () => {
         </div>
         <section className="about-general-content">
           <section>
-            <h1 className="about-section-title">Programming Languages</h1>
+            <h1 className="about-section-title title-lg">Programming Languages</h1>
             <AboutSkills></AboutSkills>
           </section>
 
           <section>
-            <h1 className="about-section-title">Skills</h1>
+            <h1 className="about-section-title title-lg">Skills</h1>
             <AboutGeneralSkills></AboutGeneralSkills>
           </section>
 
           <section>
-            <h1 className="about-section-title">Experience</h1>
+            <h1 className="about-section-title title-lg">Experience</h1>
             <div className="exp-container">
 
             <ExperienceCard
@@ -97,7 +96,7 @@ const About = () => {
               title="Food Hub"
               period="Sep. 2022 - Dec. 2022"
             ></ExperienceCard>{" "}
-            <h1 className="exp-type">Events</h1>
+            <h1 className="about-section-title title-lg">Events</h1>
             <ExperienceCard
               img={SFU}
               company="SFU"

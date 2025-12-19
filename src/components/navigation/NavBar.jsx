@@ -2,7 +2,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import SearchBar from "./SearchBar";
 import ContactButton from "../contact/ContactButton";
-import HomeIcon from "../icons/HomeIcon";
+import HomeIcon from "../icons/navigation/HomeIcon";
 
 import icon from "../../assets/sidebar/sirshinu.png";
 

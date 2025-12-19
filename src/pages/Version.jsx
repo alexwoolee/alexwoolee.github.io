@@ -2,9 +2,9 @@ import "../styles/versions.css"
 
 const Version = () => {
   return (
-    <div id="version-container">
-      <h1 className="version">2025 Website Remaster</h1>
-      <h1 className="version-date">Creation Date: 09/21</h1>
+    <div id="version-container" className="page-container">
+      <h1 className="version title-xl">2025 Website Remaster</h1>
+      <h1 className="version-date title-md">Creation Date: 09/21</h1>
       <ul>
         <li className="version-point">Introduced a unified single-screen user interface</li>
         <li className="version-point">Added a sidebar displaying available navigation links</li>

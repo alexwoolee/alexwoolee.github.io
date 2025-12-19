@@ -1,11 +1,10 @@
 import { useState } from "react";
-import Snowflake from "../icons/Snowflake";
-import Rain from "../icons/Rain";
+import Snowflake from "../icons/weather/Snowflake";
+import Rain from "../icons/weather/Rain";
 import DarkLightButton from "../ui/DarkLightButton";
 import VolumeLow from "../icons/music/VolumeLow";
 import VolumeMid from "../icons/music/VolumeMid";
 import VolumeHigh from "../icons/music/VolumeHigh";
-import "../../styles/toggles.css";
 
 import Snow from "../effects/Snow";
 import Raining from "../effects/Rain";
