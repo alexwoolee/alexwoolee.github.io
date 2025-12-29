@@ -1,13 +1,17 @@
-import Dark from "../icons/dark-light-mode/Dark";
-import Light from "../icons/dark-light-mode/Light";
 import { useState } from "react";
+// Importing icons from lucide-react
+import { Moon, Sun } from 'lucide-react';
+import styles from './UI.module.css';
 
 const DarkLightButton = () => {
   const [darkType, setDarkType] = useState(true);
 
   return (
-    <div onClick={() => setDarkType(!darkType)} className={`${darkType === true ? `bg-blue-800` : `bg-orange-500`} toggle-btn`}>
-      {darkType === true ? <Dark fill={"yellow"} /> : <Light fill={"yellow"} />}
+    <div 
+      onClick={() => setDarkType(!darkType)} 
+      className={`${darkType === true ? `bg-blue-800` : `bg-orange-500`} ${styles.toggleBtn}`}
+    >
+      {darkType === true ? <Moon fill={"orange"} /> : <Sun fill={"orange"} />}
     </div>
   );
 };

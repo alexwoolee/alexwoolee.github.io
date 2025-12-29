@@ -1,0 +1,256 @@
+/* ============================================
+   COLUMN CONTAINER
+   ============================================ */
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  border-right: var(--border-gray) 1px solid;
+}
+
+/* ============================================
+   LINK LIST CONTAINER
+   ============================================ */
+.linkListWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  min-height: 0;
+
+  overflow: hidden;
+  padding: 0.5rem;
+
+  background-color: var(--light-sand);
+}
+
+.linkList {
+  flex: 1;
+  min-height: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   LINK ITEMS
+   ============================================ */
+.link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem;
+  min-width: 3rem;
+}
+
+.linkListHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: larger;
+}
+
+.link:hover {
+  background-color: var(--brown);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.activeLink {
+  background-color: var(--brown);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.linkImg {
+  width: 24px;
+  height: 24px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.link p {
+  margin-left: 1rem;
+}
+
+.linkTitle {
+  font-weight: 500;
+}
+
+.linkInfo {
+  color: #818182;
+}
+
+/* ============================================
+   WEATHER TIME COMPONENT
+   ============================================ */
+.weatherTimeCtn {
+  /* Modern Gradient Background */
+  background: var(--brown);
+  
+  /* Subtle border and shadow for "Pop" */
+
+  margin-bottom: 1rem;
+  
+  color: #f2eeee;
+  padding: 1.5rem; /* Increased padding for breathing room */   
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center content */
+  min-height: 140px;
+  
+  /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weatherLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherDate {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5; /* Better spacing between lines */
+  letter-spacing: 0.02em;
+  opacity: 0.9; /* Slightly softer white */
+}
+
+/* The container for the Image + Icon */
+.weatherImgMask {
+  width: 100px;       
+  height: 100px;       
+  overflow: hidden; 
+  border-radius: 1.25rem; /* Squircle shape looks more modern than 0.5rem */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Inner shadow gives it a "recessed" look */
+  box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  background-color: rgba(0,0,0,0.2);
+}
+
+.weatherImgMask img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Reduced scale slightly so it's less blurry, adjust as needed */
+  transform: scale(4.5);       
+  transform-origin: center center; 
+  opacity: 0.8; /* Dim the gif slightly so text pops */
+  filter: blur(0.5px); /* Optional: slight blur makes text on top sharper */
+}
+
+/* The Text/Icon sitting ON TOP of the image */
+.weatherIcon {
+  position: relative; /* Ensures it sits above absolute img */
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;       
+  z-index: 100;
+  
+  /* Text Shadow is CRITICAL for reading text over images */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+}
+
+.weatherIcon p {
+  font-size: 1.4rem; /* Make the temperature BIG */
+  font-weight: 800;
+  margin-top: 0.4rem;
+  line-height: 1;
+}
+
+/* Optional: Add a drop shadow to your SVG icons too */
+.weatherIcon svg {
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.8));
+}
+
+@keyframes spin {
+  from { transform : rotate(0deg); }
+  to { transform : rotate(360deg); }
+}
+
+.rotatingObj {
+  animation: spin 2s linear infinite;
+  transform-origin: 12px 12px;
+}
+
+/* ============================================
+   TOGGLES COMPONENT (Redesigned)
+   ============================================ */
+.toggles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem; /* nice spacing between buttons */
+  
+  /* Modern Glass/Dark Background */
+  background: var(--sand);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5); */
+  
+  /* Pill Shape */
+  padding: 0.75rem 1rem;
+  
+  /* Sizing: Fits the content, but stretches nicely */
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box;
+  margin-top: auto; /* Useful if inside a flex column */
+}
+
+.toggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Clean slate: Remove the old thick border */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.03); /* Subtle glass bg */
+  color: #f2eeee;
+  
+  border-radius: 0.5rem;
+  width: 44px;
+  height: 44px;
+  margin: 0; /* Reset margins since we use gap in container */
+  
+  cursor: pointer;
+  /* Bouncy smooth transition */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toggleBtn svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+/* Hover State */
+.toggleBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.toggleBtn:hover svg {
+  opacity: 1;
+}
+
+/* Active State (The "On" Switch) */
+.activeBtn {
+  background-color: black !important; /* Force override hover bg */
+  border-color: rgb(0, 0, 0) !important;
+  color: white !important; /* Dark icon for contrast against bright blue */
+  
+  /* Glow Effect */
+  transform: scale(1.1);
+}

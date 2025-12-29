@@ -4,10 +4,40 @@ const Projects = [
     authors: "Alex Lee, Ryan Fu, Ikkyu Li, Tian Zheng",
     img: "/projects/cover-taiwan.png",
     title: "Taiwan Explorers",
-    txt: "Explore hidden gems and cultural highlights of Taiwan.",
+    txt: "A full-stack travel platform helping users discover and book hidden gems in Taiwan. Features interactive maps, real-time itinerary planning, and a robust backend to handle user reviews and bookings.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
+  },
+  {
+    id: 15,
+    authors: "Alex Lee",
+    img: "/projects/image-placeholder.png",
+    title: "High-Performance Load Balancer",
+    txt: "A multithreaded Layer 7 load balancer capable of handling 10k+ concurrent connections. Implements Round-Robin and Least-Connections algorithms to optimize traffic distribution across microservices.",
+    github: "",
+    figma: "",
+    live: "",
+  },
+  {
+    id: 16,
+    authors: "Alex Lee",
+    img: "/projects/image-placeholder.png",
+    title: "QGuard Secure Messenger",
+    txt: "A post-quantum encrypted messaging app ensuring future-proof privacy. Features end-to-end encryption using Kyber algorithms, designed for high security and smooth mobile performance.",
+    github: "",
+    figma: "",
+    live: "",
+  },
+  {
+    id: 17,
+    authors: "Alex Lee",
+    img: "/projects/image-placeholder.png",
+    title: "Open Source Contributions",
+    txt: "Active contributor to major open-source repositories. Focused on resolving critical bugs, optimizing performance, and collaborating with maintainers to merge production-ready code.",
+    github: "",
+    figma: "",
+    live: "",
   },
   {
     id: 2,
@@ -17,7 +47,7 @@ const Projects = [
     txt: "Manage and report emergencies efficiently in real time.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 13,
@@ -27,7 +57,7 @@ const Projects = [
     txt: "A web application used to format emails to loved ones.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 3,
@@ -37,7 +67,7 @@ const Projects = [
     txt: "A real-time chat app with AI-powered features.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 4,
@@ -47,7 +77,7 @@ const Projects = [
     txt: "A story-driven adventure game with unique alien worlds.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 5,
@@ -57,47 +87,7 @@ const Projects = [
     txt: "Run classic CHIP-8 programs with accurate emulation.",
     github: "",
     figma: "",
-    live: ""
-  },
-  {
-    id: 14,
-    authors: "Alex Lee",
-    img: "/projects/cover-portfolio.png",
-    title: "Portfolio",
-    txt: "My personal portfolio made to display some cool things!",
-    github: "",
-    figma: "",
-    live: ""
-  },
-  {
-    id: 6,
-    authors: "Alex Lee",
-    img: "/projects/image-placeholder.png",
-    title: "Mana",
-    txt: "",
-    github: "",
-    figma: "",
-    live: ""
-  },
-  {
-    id: 7,
-    authors: "Alex Lee",
-    img: "/projects/image-placeholder.png",
-    title: "To-Do List App",
-    txt: "Track and manage daily tasks efficiently.",
-    github: "",
-    figma: "",
-    live: ""
-  },
-  {
-    id: 8,
-    authors: "Alex Lee",
-    img: "/projects/image-placeholder.png",
-    title: "Discord Bot",
-    txt: "Interact with anime characters on Discord.",
-    github: "",
-    figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 9,
@@ -107,7 +97,7 @@ const Projects = [
     txt: "A fan-made Undertale-inspired game with unique mechanics.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 10,
@@ -117,7 +107,7 @@ const Projects = [
     txt: "Generate custom travel plans using AI assistance.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 11,
@@ -127,7 +117,7 @@ const Projects = [
     txt: "Visualize algorithms and data structures interactively.",
     github: "",
     figma: "",
-    live: ""
+    live: "",
   },
   {
     id: 12,
@@ -137,8 +127,8 @@ const Projects = [
     txt: "A mobile app built for iOS devices.",
     github: "",
     figma: "",
-    live: ""
-  }
+    live: "",
+  },
 ];
 
 export default Projects;

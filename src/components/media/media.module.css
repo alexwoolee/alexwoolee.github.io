@@ -1,0 +1,140 @@
+/* ============================================
+   MUSIC CARD CONTAINER
+   ============================================ */
+.musicCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--sand); /* Blends with sidebar */
+  border-top: 1px solid rgba(0,0,0,0.05); /* Subtle separator */
+  margin-top: auto; /* Pushes to bottom if in flex container */
+  gap: 1rem;
+}
+
+/* ============================================
+   MUSIC INFO & COVER
+   ============================================ */
+.musicInfo {
+  display: flex;
+  align-items: center;
+}
+
+.musicCover {
+  width: 64px;
+  height: 64px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.musicText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  overflow: hidden; /* Prevent text overflow */
+}
+
+.musicTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.musicArtist {
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: grey;
+  margin-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================
+   MUSIC CONTROLS
+   ============================================ */
+.musicControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.musicBtn {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--black);
+  transition: transform 0.2s ease;
+}
+
+.musicBtn:hover {
+  transform: scale(1.1);
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Special style for the Play/Pause button */
+.playBtn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.playBtn:hover {
+  background-color: var(--dark-murk);
+  color: white;
+}
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+.progressWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+}
+
+.barFull {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: var(--murk);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.barFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: rgb(255, 128, 0); /* Orange fill */
+  transition: width 0.1s linear;
+  border-radius: 4px;
+}
+
+.progressTimes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.progressTimes span {
+  font-size: 0.75rem;
+  color: grey;
+  font-variant-numeric: tabular-nums; /* Prevents jitter when numbers change */
+}

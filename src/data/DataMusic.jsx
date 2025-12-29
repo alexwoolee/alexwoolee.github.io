@@ -1,5 +1,6 @@
+// Importing cover image
 import christmasCover from "../assets/covers/christmas-cover.jpg"
-
+// Importing audio files
 import allIWantAudio from "../assets/audio/All I Want for Christmas is You.mp3"
 import awayInAMangerAudio from "../assets/audio/Away in a Manger.mp3"
 import hereWeComeAudio from "../assets/audio/Here We Come A-Wassailing.mp3"

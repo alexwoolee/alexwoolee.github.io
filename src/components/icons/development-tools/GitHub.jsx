@@ -2,7 +2,7 @@ const GitHub = () => {
   return (
     <div>
       <svg viewBox="0 0 128 128">
-        <g fill="#FFFFFF">
+        <g fill="#000000">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
