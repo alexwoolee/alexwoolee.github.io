@@ -5,6 +5,7 @@ import { PanelRightOpen } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 import ProjectInfo from "./ProjectInfo";
 import GridRowToggle from "./GridRowToggle";
+import Footer from "../UI/Footer";
 /* Data */
 import projects from "../../data/DataProjects";
 /* Styles */

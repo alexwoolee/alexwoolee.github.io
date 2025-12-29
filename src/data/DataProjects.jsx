@@ -129,6 +129,16 @@ const Projects = [
     figma: "",
     live: "",
   },
+  {
+  id: 18,
+  authors: "Alex Lee",
+  img: "/projects/image-placeholder.png",
+  title: "AI Companion",
+  txt: "A personalized AI companion app that adapts to user mood, habits, and goals. Features emotional tone detection, memory-based context, and daily check-ins designed to improve wellness, productivity, and connection.",
+  github: "",
+  figma: "",
+  live: "",
+},
 ];
 
 export default Projects;

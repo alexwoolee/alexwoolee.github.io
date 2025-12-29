@@ -1,36 +1,39 @@
+import { useState } from "react";
+import styles from "./home.module.css";
+
+// --- Assets ---
 import PFP from "../../assets/gifs/doggiecorgi_swim.gif";
+import HMART from "../../assets/experience/HMART.jpeg";
+import MOCC from "../../assets/experience/MOCC.png";
+import SFU from "../../assets/experience/SFU.png";
+
+// --- Components ---
 import LanguageSkills from "./LanguageSkills";
 import GeneralSkills from "./GeneralSkills";
 import ExperienceCard from "./ExperienceCard";
 import ProjectButton from "./ProjectButton";
 import Button from "../UI/Button";
-import Figma from "../icons/development-tools/Figma";
-import Docker from "../icons/development-tools/Docker";
-import Vercel from "../icons/development-tools/Vercel";
-import Jest from "../icons/development-tools/Jest";
-import AWS from "../icons/development-tools/Aws";
-import GitHub from "../icons/development-tools/GitHub";
-import CMake from "../icons/development-tools/CMake";
-import HMART from "../../assets/experience/HMART.jpeg";
-import MOCC from "../../assets/experience/MOCC.png";
-import SFU from "../../assets/experience/SFU.png";
-import PostgreSQL from "../icons/development-tools/PostgreSQL";
-import MongoDB from "../icons/development-tools/MongoDB";
-import ReactLogo from "../icons/development-tools/ReactLogo";
-import NextJS from "../icons/development-tools/NextJS";
-import NodeJs from "../icons/development-tools/NodeJS";
-import ExpressJS from "../icons/development-tools/ExpressJS";
-import Git from "../icons/development-tools/Git";
 import Education from "./Education";
-import { useState } from "react";
-import styles from "./home.module.css";
+import ContactMe from "./ContactMe";
+import Footer from "../UI/Footer";
+
+// --- React Icons Imports ---
+import { FaAws, FaDocker, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
+import { 
+  SiFigma, 
+  SiVercel, 
+  SiJest, 
+  SiCmake, 
+  SiPostgresql, 
+  SiMongodb, 
+  SiNextdotjs, 
+  SiExpress 
+} from "react-icons/si";
+import { C } from "../icons/icon";
 
 const Home = () => {
-  const [active, setActive] = useState("experience");
-
-  const base = "text-white rounded-md p-2 w-full";
-  const activeButtonStyle = "bg-[var(--murk)]";
-  const inactiveButtonStyle = "bg-[var(--dark-murk)]";
+  const [active, setActive] = useState("education");
+  const iconSize = 50; // Centralized size control
 
   return (
     <div className="wrapper">
@@ -61,31 +64,38 @@ const Home = () => {
             <Button path="about" />
           </div>
         </div>
+
+        {/* --- LOGO SLIDER --- */}
         <div className={styles.logoSliding}>
           <div className={styles.logos}>
-            <ReactLogo />
-            <NextJS />
-            <NodeJs />
-            <ExpressJS />
-            <PostgreSQL />
-            <MongoDB />
-            <Git />
-            <GitHub />
-            <Docker />
-            <AWS />
-            {/* duplicate set */}
-            <ReactLogo />
-            <NextJS />
-            <NodeJs />
-            <ExpressJS />
-            <PostgreSQL />
-            <MongoDB />
-            <Git />
-            <GitHub />
-            <Docker />
-            <AWS />
+            {/* Set 1 */}
+            <FaReact size={iconSize} color="#61DAFB" />
+            <SiNextdotjs size={iconSize} /> {/* Default color (usually black or white based on theme) */}
+            <FaNodeJs size={iconSize} color="#339933" />
+            <SiExpress size={iconSize} /> {/* Default color */}
+            <SiPostgresql size={iconSize} color="#336791" />
+            <SiMongodb size={iconSize} color="#47A248" />
+            <FaGitAlt size={iconSize} color="#F05032" />
+            <FaGithub size={iconSize} /> {/* Default color */}
+            <SiVercel size={iconSize} />
+            <FaDocker size={iconSize} color="#2496ED" />
+            <FaAws size={iconSize} color="#FF9900" />
+
+            {/* Set 2 (Duplicate for infinite scroll) */}
+            <FaReact size={iconSize} color="#61DAFB" />
+            <SiNextdotjs size={iconSize} />
+            <FaNodeJs size={iconSize} color="#339933" />
+            <SiExpress size={iconSize} />
+            <SiPostgresql size={iconSize} color="#336791" />
+            <SiMongodb size={iconSize} color="#47A248" />
+            <FaGitAlt size={iconSize} color="#F05032" />
+            <FaGithub size={iconSize} />
+            <SiVercel size={iconSize} />
+            <FaDocker size={iconSize} color="#2496ED" />
+            <FaAws size={iconSize} color="#FF9900" />
           </div>
         </div>
+
         <section className={styles.generalContent}>
           <section>
             <h1 className={`${styles.sectionTitle} title-lg`}>
@@ -99,28 +109,27 @@ const Home = () => {
             <GeneralSkills></GeneralSkills>
           </section>
 
-          <div className="flex gap-1 justify-evenly">
+          {/* --- SEGMENTED TOGGLE BUTTONS --- */}
+          <div className={styles.toggleContainer}>
             <button
-              className={`${base} ${
-                active === "experience"
-                  ? activeButtonStyle
-                  : inactiveButtonStyle
+              className={`${styles.toggleBtn} ${
+                active === "experience" ? styles.activeBtn : ""
               }`}
               onClick={() => setActive("experience")}
             >
               Experience
             </button>
             <button
-              className={`${base} ${
-                active === "education" ? activeButtonStyle : inactiveButtonStyle
+              className={`${styles.toggleBtn} ${
+                active === "education" ? styles.activeBtn : ""
               }`}
               onClick={() => setActive("education")}
             >
               Education
             </button>
             <button
-              className={`${base} ${
-                active === "events" ? activeButtonStyle : inactiveButtonStyle
+              className={`${styles.toggleBtn} ${
+                active === "events" ? styles.activeBtn : ""
               }`}
               onClick={() => setActive("events")}
             >
@@ -129,57 +138,50 @@ const Home = () => {
           </div>
 
           {active === "experience" && (
-            <>
-              {" "}
-              <section>
-                <div className={styles.expCtn}>
-                  <ExperienceCard
-                    img={HMART}
-                    company="H-Mart"
-                    title="Grocery Clerk"
-                    period="Sep. 2023 - Aug. 2024"
-                  ></ExperienceCard>
-                  <ExperienceCard
-                    img={MOCC}
-                    company="MOCC"
-                    title="Food Hub"
-                    period="Sep. 2022 - Dec. 2022"
-                  ></ExperienceCard>{" "}
-                </div>
-              </section>
-            </>
+            <section>
+              <div className={styles.expCtn}>
+                <ExperienceCard
+                  img={HMART}
+                  company="H-Mart"
+                  title="Grocery Clerk"
+                  period="Sep. 2023 - Aug. 2024"
+                />
+                <ExperienceCard
+                  img={MOCC}
+                  company="MOCC"
+                  title="Food Hub"
+                  period="Sep. 2022 - Dec. 2022"
+                />
+              </div>
+            </section>
           )}
 
           {active === "events" && (
-            <>
-              {" "}
-              <section>
-                <div className={styles.expCtn}>
-                  <ExperienceCard
-                    img={SFU}
-                    company="SFU"
-                    title="Fall Hacks 2025"
-                    period="Sep. 27th 2025"
-                  ></ExperienceCard>
-                  <ExperienceCard
-                    img={SFU}
-                    company="SFU"
-                    title="Surge 2025"
-                    period="Sep. 27th 2025"
-                  ></ExperienceCard>
-                </div>
-              </section>
-            </>
+            <section>
+              <div className={styles.expCtn}>
+                <ExperienceCard
+                  img={SFU}
+                  company="SFU"
+                  title="Fall Hacks 2025"
+                  period="Sep. 27th 2025"
+                />
+                <ExperienceCard
+                  img={SFU}
+                  company="SFU"
+                  title="Surge 2025"
+                  period="Sep. 27th 2025"
+                />
+              </div>
+            </section>
           )}
 
           {active === "education" && (
-            <>
-              {" "}
-              <section>
-                <Education></Education>
-              </section>
-            </>
+            <section>
+              <Education></Education>
+            </section>
           )}
+          <ContactMe />
+          <Foot />
         </section>
       </div>
     </div>

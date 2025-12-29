@@ -6,6 +6,8 @@
   flex-direction: column;
   height: 100dvh;
   border-right: var(--border-gray) 1px solid;
+  position: relative;
+  width: 20rem;
 }
 
 /* ============================================
@@ -28,6 +30,7 @@
   min-height: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding: 0.25rem 0.25rem;
 }
 
 /* ============================================
@@ -38,28 +41,39 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0.5rem;
-  min-width: 3rem;
+  min-width: 8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #818182; 
 }
 
 .linkListHeader {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1rem;
   font-size: larger;
 }
 
+.panelLeft {
+  stroke: var(--murk);
+  stroke-width: 3px;
+}
+
 .link:hover {
-  background-color: var(--brown);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
   border-radius: 0.5rem;
 }
 
 .activeLink {
-  background-color: var(--brown);
-  color: white;
   border-radius: 0.5rem;
+  background-color: var(--murk) !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
 }
 
 .linkImg {

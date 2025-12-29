@@ -1,5 +1,6 @@
 import WinterLand from "./WinterLand";
 import ScrollGallery from "./ScrollGallery";
+import Footer from "../UI/Footer";
 import styles from './about.module.css';
 
 const About = () => {
@@ -46,7 +47,7 @@ const About = () => {
           </div>
           <ScrollGallery />
            <div className={styles.bioCtn}>
-            <p className={`${styles.bio} text-left`}>
+            <p className={`${styles.bio} text-left mb-20`}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -60,6 +61,22 @@ const About = () => {
               fugiat nulla pariatur.
             </p>
           </div>
+          <div className={styles.bioCtn}>
+            <p className={`${styles.bio} text-left mb-20`}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </p>
+          </div>
+          <Footer />
         </div>
       </div>
     </div>
