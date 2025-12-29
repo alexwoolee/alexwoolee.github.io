@@ -335,14 +335,14 @@
 /* ============================================
    GALLERY COMPONENT
    ============================================ */
-.gallery-wrapper {
+.galleryWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
-.gallery-ctn {
+.galleryCtn {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -350,30 +350,47 @@
   max-width: 1200px;
   overflow-x: scroll;
   scroll-behavior: smooth; 
+  /* Hide scrollbar for cleaner look if desired */
+  scrollbar-width: none; /* Firefox */
 }
 
-.gallery-pic {
+.galleryCtn::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.galleryPic {
   height: 250px;
   width: 250px;
   object-fit: cover;
   border-radius: 0.25rem;
   flex-shrink: 0;
-}                                                                    
+  /* Optional: Add a subtle hover effect */
+  transition: transform 0.3s ease;
+}
+
+.galleryPic:hover {
+  transform: scale(1.02);
+}
 
 .chevron {
   background-color: var(--matte-black);
   border-radius: 1rem;
   transition: 0.5s ease transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Added for better UX */
 }
 
 .chevron:hover {
   transform: scale(1.1);
 }
 
-.gallery-wrapper > .chevron:first-child {
+/* Specific padding adjustments for visual centering of icons */
+.chevronLeft {
   padding: 0.5rem 0.5rem 0.5rem 0.4rem;
 }
 
-.gallery-wrapper > .chevron:last-child {
+.chevronRight {
   padding: 0.5rem 0.4rem 0.5rem 0.5rem;
 }
