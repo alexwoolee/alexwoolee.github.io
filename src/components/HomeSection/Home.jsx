@@ -181,7 +181,7 @@ const Home = () => {
             </section>
           )}
           <ContactMe />
-          <Foot />
+          <Footer />
         </section>
       </div>
     </div>
