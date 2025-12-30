@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DarkLightButton from "../ui/DarkLightButto.jsx";
+import DarkLightButton from "../ui/DarkLightButton.jsx";
 import { Volume, Volume1, Volume2, Snowflake, Umbrella } from 'lucide-react';
 
 import Snow from "../ui/Snow";
