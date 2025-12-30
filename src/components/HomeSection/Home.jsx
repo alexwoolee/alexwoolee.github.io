@@ -8,14 +8,14 @@ import MOCC from "../../assets/experience/MOCC.png";
 import SFU from "../../assets/experience/SFU.png";
 
 // --- Components ---
-import LanguageSkills from "./LanguageSkills";
-import GeneralSkills from "./GeneralSkills";
-import ExperienceCard from "./ExperienceCard";
-import ProjectButton from "./ProjectButton";
-import Button from "../UI/Button";
-import Education from "./Education";
-import ContactMe from "./ContactMe";
-import Footer from "../UI/Footer";
+import LanguageSkills from "./LanguageSkills.jsx";
+import GeneralSkills from "./GeneralSkills.jsx";
+import ExperienceCard from "./ExperienceCard.jsx";
+import ProjectButton from "./ProjectButton.jsx";
+import Button from "../UI/Button.jsx";
+import Education from "./Education.jsx";
+import ContactMe from "./ContactMe.jsx";
+import Footer from "../UI/Footer.jsx";
 
 // --- React Icons Imports ---
 import { FaAws, FaDocker, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
