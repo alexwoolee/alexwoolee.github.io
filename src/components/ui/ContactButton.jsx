@@ -3,7 +3,7 @@ import ContactPopup from "./ContactPopup";
 // Importing icons from lucide-react
 import { Circle } from "lucide-react";
 import { ArrowDown } from "lucide-react";
-import styles from './UI.module.css';
+import styles from './ui.module.css';
 
 const ContactButton = () => {
   const [showPopup, setShowPopup] = useState(false);

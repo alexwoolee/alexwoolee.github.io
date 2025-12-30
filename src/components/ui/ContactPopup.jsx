@@ -7,7 +7,7 @@ import GitHub from "../../assets/icons/github.svg";
 import LinkedIn from "../../assets/icons/linkedin.png";
 import Discord from "../../assets/icons/discord.svg";
 import TikTok from "../../assets/icons/tiktok.svg";
-import styles from './UI.module.css';
+import styles from './ui.module.css';
 
 const ContactPopup = () => {
   const [justCopied, setJustCopied] = useState("");

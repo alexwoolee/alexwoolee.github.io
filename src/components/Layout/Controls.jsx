@@ -1,9 +1,9 @@
 import { useState } from "react";
-import DarkLightButton from "../UI/DarkLightButton";
+import DarkLightButton from "../ui/DarkLightButto.jsx";
 import { Volume, Volume1, Volume2, Snowflake, Umbrella } from 'lucide-react';
 
-import Snow from "../UI/Snow";
-import Raining from "../UI/Rain";
+import Snow from "../ui/Snow";
+import Raining from "../ui/Rain";
 /* Styles */
 import styles from './layout.module.css';
 

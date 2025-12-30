@@ -1,7 +1,7 @@
 import { useState } from "react";
 // Importing icons from lucide-react
 import { Moon, Sun } from 'lucide-react';
-import styles from './UI.module.css';
+import styles from './ui.module.css';
 
 const DarkLightButton = () => {
   const [darkType, setDarkType] = useState(true);

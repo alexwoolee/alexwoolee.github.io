@@ -1,5 +1,5 @@
 import { Copy } from 'lucide-react';
-import styles from './UI.module.css';
+import styles from './ui.module.css';
 
 const SocialRow = ({ icon, content }) => {
   const renderIcon = () => {
