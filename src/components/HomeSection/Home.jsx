@@ -1,4 +1,5 @@
 import { useState } from "react";
+// --- Styles ---
 import styles from "./home.module.css";
 
 // --- Assets ---
@@ -12,10 +13,10 @@ import LanguageSkills from "./LanguageSkills.jsx";
 import GeneralSkills from "./GeneralSkills.jsx";
 import ExperienceCard from "./ExperienceCard.jsx";
 import ProjectButton from "./ProjectButton.jsx";
-import Button from "../UI/Button.jsx";
+import Button from "../ui/Button.jsx";
 import Education from "./Education.jsx";
 import ContactMe from "./ContactMe.jsx";
-import Footer from "../UI/Footer.jsx";
+import Footer from "../ui/Footer.jsx";
 
 // --- React Icons Imports ---
 import { FaAws, FaDocker, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
