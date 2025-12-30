@@ -1,6 +1,6 @@
 import WinterLand from "./WinterLand";
 import ScrollGallery from "./ScrollGallery";
-import Footer from "../UI/Footer";
+import Footer from "../ui/Footer";
 import styles from './about.module.css';
 
 const About = () => {
